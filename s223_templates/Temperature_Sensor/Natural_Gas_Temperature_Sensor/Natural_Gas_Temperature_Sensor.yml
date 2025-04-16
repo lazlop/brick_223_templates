@@ -1,0 +1,4 @@
+Natural_Gas_Temperature_Sensor:
+  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
+    \ .\n\np:name a <s223:QuantifiableObservableProperty> ;\n    s223:hasProperty\
+    \ p:medium_name,\n        p:quantitykind_name .\n\n"
