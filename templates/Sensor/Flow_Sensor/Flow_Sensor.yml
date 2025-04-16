@@ -1,9 +1,0 @@
-Natural_Gas_Flow_Sensor:
-  brick_parent: Flow_Sensor
-  brick_definition: Measures the rate of flow of natural gas
-Air_Flow_Sensor:
-  brick_parent: Flow_Sensor
-  brick_definition: Measures the rate of flow of air
-Water_Flow_Sensor:
-  brick_parent: Flow_Sensor
-  brick_definition: Measures the rate of flow of water

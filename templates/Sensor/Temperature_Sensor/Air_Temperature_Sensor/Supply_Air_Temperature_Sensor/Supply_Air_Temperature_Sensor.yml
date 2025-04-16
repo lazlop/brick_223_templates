@@ -1,6 +1,0 @@
-Preheat_Discharge_Air_Temperature_Sensor:
-  brick_parent: Supply_Air_Temperature_Sensor
-  brick_definition: Measures the temperature of discharge air before heating is applied
-Preheat_Supply_Air_Temperature_Sensor:
-  brick_parent: Supply_Air_Temperature_Sensor
-  brick_definition: Measures the temperature of supply air before it is heated

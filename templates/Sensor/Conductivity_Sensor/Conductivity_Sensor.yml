@@ -1,3 +1,0 @@
-Deionised_Water_Conductivity_Sensor:
-  brick_parent: Conductivity_Sensor
-  brick_definition: Measures the electrical conductance of deionised water

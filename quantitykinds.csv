@@ -1,10 +1,9 @@
-QuantityKind
+quantitykinds
 Temperature
 OpeningRatio
 SpeedRatio
 DimensionlessRatio
 VolumeFlowRate
-ThermodynamicTemperature
 LuminousFluxRatio
 Illuminance
 Population
@@ -17,3 +16,5 @@ Power
 Tilt
 Azimuth
 Count
+Torque
+Energy

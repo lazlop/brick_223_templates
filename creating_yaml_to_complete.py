@@ -12,27 +12,6 @@ import pathlib
 # %%
 g = Graph()
 g.parse("https://brickschema.org/schema/1.4.3/Brick.ttl", format = "ttl")
-
-# %%
-# Define the starting parent class
-start_parent = "brick:Sensor"
-start_parent_clean = strip_namespace(start_parent)
-
-# Template for the SPARQL query
-query_template = Template("""SELECT DISTINCT ?brick_class ?brick_definition ?brick_parent WHERE {
-    ?brick_class rdfs:subClassOf $start_parent ;
-        skos:definition ?brick_definition .
-    FILTER NOT EXISTS {
-        ?brick_class2 rdfs:subClassOf $start_parent .
-        ?brick_class rdfs:subClassOf ?brick_class2 .
-    }
-    FILTER NOT EXISTS {
-        ?brick_class owl:deprecated true .
-    }
-    FILTER (!strstarts(str(?brick_class), "https://w3id.org/rec#")) 
-    BIND ($start_parent AS ?brick_parent).
-}""")
-
 # %%
 def strip_namespace(uri):
     """
@@ -54,6 +33,26 @@ def strip_namespace(uri):
         # Return everything after the colon
         return uri.split(':', 1)[1]
     return uri
+
+# %%
+# Define the starting parent class
+start_parent = "brick:Temperature_Sensor"
+start_parent_clean = strip_namespace(start_parent)
+
+# Template for the SPARQL query
+query_template = Template("""SELECT DISTINCT ?brick_class ?brick_definition ?brick_parent WHERE {
+    ?brick_class rdfs:subClassOf $start_parent ;
+        skos:definition ?brick_definition .
+    FILTER NOT EXISTS {
+        ?brick_class2 rdfs:subClassOf $start_parent .
+        ?brick_class rdfs:subClassOf ?brick_class2 .
+    }
+    FILTER NOT EXISTS {
+        ?brick_class owl:deprecated true .
+    }
+    FILTER (!strstarts(str(?brick_class), "https://w3id.org/rec#")) 
+    BIND ($start_parent AS ?brick_parent).
+}""")
 
 def create_directory_structure(parent_class, parent_path=None):
     """

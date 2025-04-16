@@ -1,8 +1,0 @@
-Average_Exhaust_Air_Static_Pressure_Sensor:
-  brick_parent: Exhaust_Air_Static_Pressure_Sensor
-  brick_definition: The computed average static pressure of air in exhaust regions
-    of an HVAC system over some period of time
-Lowest_Exhaust_Air_Static_Pressure_Sensor:
-  brick_parent: Exhaust_Air_Static_Pressure_Sensor
-  brick_definition: The lowest observed static pressure of air in exhaust regions
-    of an HVAC system over some period of time

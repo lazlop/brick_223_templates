@@ -1,9 +1,0 @@
-Active_Power_Sensor:
-  brick_parent: Electric_Power_Sensor
-  brick_definition: Measures the portion of power that, averaged over a complete cycle
-    of the AC waveform, results in net transfer of energy in one direction
-Reactive_Power_Sensor:
-  brick_parent: Electric_Power_Sensor
-  brick_definition: Measures the portion of power that, averaged over a complete cycle
-    of the AC waveform, is due to stored energy which returns to the source in each
-    cycle

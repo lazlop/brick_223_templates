@@ -1,6 +1,0 @@
-Entering_Hot_Water_Flow_Sensor:
-  brick_parent: Hot_Water_Flow_Sensor
-  brick_definition: Measures the rate of flow of hot entering water
-Leaving_Hot_Water_Flow_Sensor:
-  brick_parent: Hot_Water_Flow_Sensor
-  brick_definition: Measures the rate of flow of hot leaving water

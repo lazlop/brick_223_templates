@@ -1,6 +1,0 @@
-Outside_Air_Enthalpy_Sensor:
-  brick_parent: Air_Enthalpy_Sensor
-  brick_definition: Measures the total heat content of outside air
-Return_Air_Enthalpy_Sensor:
-  brick_parent: Air_Enthalpy_Sensor
-  brick_definition: Measures the total heat content of return air

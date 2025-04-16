@@ -1,3 +1,0 @@
-Wind_Direction_Sensor:
-  brick_parent: Direction_Sensor
-  brick_definition: Measures the direction of wind in degrees relative to North
