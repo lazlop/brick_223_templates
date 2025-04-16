@@ -223,7 +223,7 @@ def process_class_hierarchy(parent_class, graph, parent_path=None, processed_cla
 
 # %%
 # Ensure templates directory exists
-templates_dir = "templates"
+templates_dir = "brick_yaml"
 os.makedirs(templates_dir, exist_ok=True)
 print(f"Created directory: {templates_dir}")
 

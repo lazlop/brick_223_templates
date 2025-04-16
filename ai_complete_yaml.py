@@ -296,7 +296,7 @@ def process_brick_template(template_file):
         updated_brick_dict[brick_class] = updated_definition_data
     
     # Write the updated dictionary back to the YAML file
-    with open(os.path.join('filled_in_templates', template_file), "w") as f:
+    with open(os.path.join('brick_yaml_autocomplete', template_file), "w") as f:
         yaml.dump(updated_brick_dict, f, default_flow_style=False, sort_keys=False)
     
     print(f"Updated {template_file} with s223 mappings")
