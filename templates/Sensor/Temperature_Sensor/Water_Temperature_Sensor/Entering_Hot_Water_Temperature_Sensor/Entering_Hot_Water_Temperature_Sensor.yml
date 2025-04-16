@@ -1,0 +1,8 @@
+Entering_High_Temperature_Hot_Water_Temperature_Sensor:
+  brick_parent: Entering_Hot_Water_Temperature_Sensor
+  brick_definition: Measures the temperature of high-temperature hot water enteringed
+    to a hot water system
+Entering_Medium_Temperature_Hot_Water_Temperature_Sensor:
+  brick_parent: Entering_Hot_Water_Temperature_Sensor
+  brick_definition: Measures the temperature of medium-temperature hot water entering
+    a hot water system

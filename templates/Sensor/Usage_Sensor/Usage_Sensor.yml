@@ -1,0 +1,15 @@
+Natural_Gas_Usage_Sensor:
+  brick_parent: Usage_Sensor
+  brick_definition: Measures the amount of natural gas that is consumed or used, over
+    some period of time
+Steam_Usage_Sensor:
+  brick_parent: Usage_Sensor
+  brick_definition: Measures the amount of steam that is consumed or used, over some
+    period of time
+Water_Usage_Sensor:
+  brick_parent: Usage_Sensor
+  brick_definition: Measures the amount of water that is consumed, over some period
+    of time
+Energy_Usage_Sensor:
+  brick_parent: Usage_Sensor
+  brick_definition: Measures the total amount of energy used over some period of time

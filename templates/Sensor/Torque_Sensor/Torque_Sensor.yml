@@ -1,0 +1,3 @@
+Motor_Torque_Sensor:
+  brick_parent: Torque_Sensor
+  brick_definition: Measures the torque, or rotating power, of a motor

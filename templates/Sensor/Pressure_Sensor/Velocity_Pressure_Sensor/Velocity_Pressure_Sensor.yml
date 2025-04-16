@@ -1,0 +1,4 @@
+Air_Velocity_Pressure_Sensor:
+  brick_parent: Velocity_Pressure_Sensor
+  brick_definition: Measures the difference between total air pressure and static
+    air pressure.

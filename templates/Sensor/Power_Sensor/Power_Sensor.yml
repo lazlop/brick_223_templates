@@ -1,0 +1,3 @@
+Electric_Power_Sensor:
+  brick_parent: Power_Sensor
+  brick_definition: Measures the amount of instantaneous electric power consumed

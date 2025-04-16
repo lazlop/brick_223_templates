@@ -1,0 +1,17 @@
+Chilled_Water_Differential_Temperature_Sensor:
+  brick_parent: Chilled_Water_Temperature_Sensor
+  brick_definition: Measures the difference in temperature between the entering water
+    to the chiller or other water cooling device and leaving water from the same chiller
+    or other water cooling device
+Entering_Chilled_Water_Temperature_Sensor:
+  brick_parent: Chilled_Water_Temperature_Sensor
+  brick_definition: Measures the temperature of chilled water that is enteringed to
+    a cooling tower
+Differential_Entering_Leaving_Water_Temperature_Sensor:
+  brick_parent: Chilled_Water_Temperature_Sensor
+  brick_definition: Measures the difference in temperature between entering and leaving
+    water of water a circuit
+Leaving_Chilled_Water_Temperature_Sensor:
+  brick_parent: Chilled_Water_Temperature_Sensor
+  brick_definition: Measures the temperature of chilled water that is supplied from
+    a chiller

@@ -1,0 +1,4 @@
+Air_Static_Pressure_Sensor:
+  brick_parent: Static_Pressure_Sensor
+  brick_definition: Measures the pressure exerted by the air in a system, not influenced
+    by its motion.

@@ -1,0 +1,20 @@
+Bypass_Water_Flow_Sensor:
+  brick_parent: Water_Flow_Sensor
+  brick_definition: Measures the rate of flow of bypass water
+Condenser_Water_Flow_Sensor:
+  brick_parent: Water_Flow_Sensor
+  brick_definition: Measures the flow of the condenser water
+Entering_Water_Flow_Sensor:
+  brick_parent: Water_Flow_Sensor
+  brick_definition: Measures the rate of flow of water entering a piece of equipment
+    or system
+Chilled_Water_Flow_Sensor:
+  brick_parent: Water_Flow_Sensor
+  brick_definition: Measures the rate of flow in a chilled water circuit
+Hot_Water_Flow_Sensor:
+  brick_parent: Water_Flow_Sensor
+  brick_definition: Measures the rate of flow in a hot water circuit
+Leaving_Water_Flow_Sensor:
+  brick_parent: Water_Flow_Sensor
+  brick_definition: Measures the rate of flow of water that is leaving a piece of
+    equipment or system

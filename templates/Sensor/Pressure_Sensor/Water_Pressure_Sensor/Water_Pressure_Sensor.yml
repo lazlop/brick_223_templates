@@ -1,0 +1,6 @@
+Entering_Water_Pressure_Sensor:
+  brick_parent: Water_Pressure_Sensor
+  brick_definition: Measures the water pressure at the entry point of a system.
+Leaving_Water_Pressure_Sensor:
+  brick_parent: Water_Pressure_Sensor
+  brick_definition: Measures the water pressure at the exit point of a system.

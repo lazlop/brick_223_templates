@@ -1,0 +1,3 @@
+Ice_Tank_Leaving_Water_Temperature_Sensor:
+  brick_parent: Leaving_Water_Temperature_Sensor
+  brick_definition: Measures the temperature of water leaving an ice tank

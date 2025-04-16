@@ -1,0 +1,6 @@
+Entering_Chilled_Water_Flow_Sensor:
+  brick_parent: Chilled_Water_Flow_Sensor
+  brick_definition: Measures the rate of flow of chilled entering water
+Leaving_Chilled_Water_Flow_Sensor:
+  brick_parent: Chilled_Water_Flow_Sensor
+  brick_definition: Measures the rate of flow of chilled leaving water

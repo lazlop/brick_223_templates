@@ -1,0 +1,3 @@
+Energy_Usage_Sensor:
+  brick_parent: Energy_Sensor
+  brick_definition: Measures the total amount of energy used over some period of time
