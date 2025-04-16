@@ -9,10 +9,6 @@ import pandas as pd
 from string import Template
 import os
 import pathlib
-# %%
-g = Graph()
-g.parse("https://brickschema.org/schema/1.4.3/Brick.ttl", format = "ttl")
-# %%
 def strip_namespace(uri):
     """
     Strips namespace prefixes from URIs.
@@ -33,11 +29,6 @@ def strip_namespace(uri):
         # Return everything after the colon
         return uri.split(':', 1)[1]
     return uri
-
-# %%
-# Define the starting parent class
-start_parent = "brick:Temperature_Sensor"
-start_parent_clean = strip_namespace(start_parent)
 
 # Template for the SPARQL query
 query_template = Template("""SELECT DISTINCT ?brick_class ?brick_definition ?brick_parent WHERE {
@@ -222,6 +213,12 @@ def process_class_hierarchy(parent_class, graph, parent_path=None, processed_cla
     return processed_classes
 
 # %%
+
+g = Graph()
+g.parse("https://brickschema.org/schema/1.4.3/Brick.ttl", format = "ttl")
+start_parent = "brick:Temperature_Sensor"
+start_parent_clean = strip_namespace(start_parent)
+
 # Ensure templates directory exists
 templates_dir = "brick_yaml"
 os.makedirs(templates_dir, exist_ok=True)

@@ -134,11 +134,6 @@ def get_s223_info(g: Graph):
     
     return s223_properties, s223_media, s223_aspects, s223_eks, quantitykinds,prop_df, media_df, asp_df, ek_df, qk_df
 
-s223 = Graph()
-s223.parse("https://open223.info/223p.ttl", format="ttl")
-bind_prefixes(s223)
-
-s223_properties, s223_media, s223_aspects, s223_eks, quantitykinds, prop_df, media_df, asp_df, ek_df, qk_df = get_s223_info(s223)
 def validate_result(result, df, column_name='s223_class'):
     """
     Validate if a result is in the provided dataframe.
@@ -154,7 +149,7 @@ def validate_result(result, df, column_name='s223_class'):
     result = result.strip()
     return (result in df[column_name].values)
 
-def process_brick_template(template_file):
+def process_brick_template(template_file, new_dir, s223_properties, s223_media, s223_aspects, s223_eks, quantitykinds, prop_df, media_df, asp_df, ek_df, qk_df):
     """
     Process a Brick template file, running prompts on each brick class and definition
     and updating the YAML file with the results.
@@ -296,19 +291,25 @@ def process_brick_template(template_file):
         updated_brick_dict[brick_class] = updated_definition_data
     
     # Write the updated dictionary back to the YAML file
-    with open(os.path.join('brick_yaml_autocomplete', template_file), "w") as f:
+    with open(os.path.join(new_dir, template_file), "w") as f:
         yaml.dump(updated_brick_dict, f, default_flow_style=False, sort_keys=False)
     
     print(f"Updated {template_file} with s223 mappings")
 
 #%%
+s223 = Graph()
+s223.parse("https://open223.info/223p.ttl", format="ttl")
+bind_prefixes(s223)
 
-template_dir = "templates"
+s223_properties, s223_media, s223_aspects, s223_eks, quantitykinds, prop_df, media_df, asp_df, ek_df, qk_df = get_s223_info(s223)
+
+template_dir = "brick_yaml"
+new_dir = "brick_yaml_autocompleteTEST"
 for root, dirs, files in os.walk(template_dir):
     for file in files:
         if file.endswith(".yml"):
             template_file = os.path.join(root, file)
-            process_brick_template(template_file)
+            process_brick_template(template_file, new_dir, s223_properties, s223_media, s223_aspects, s223_eks, quantitykinds, prop_df, media_df, asp_df, ek_df, qk_df)
             print(f"Template file: {template_file}")
 
 # %%

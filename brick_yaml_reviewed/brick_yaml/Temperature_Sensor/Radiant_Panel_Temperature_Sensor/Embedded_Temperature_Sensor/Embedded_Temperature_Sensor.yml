@@ -1,0 +1,12 @@
+Core_Temperature_Sensor:
+  brick_parent: Embedded_Temperature_Sensor
+  brick_definition: Measures the internal temperature of the radiant layer at the
+    heat source or sink level of the radiant heating and cooling HVAC system.
+  s223_class: s223:QuantifiableObservableProperty
+  s223_class_valid: true
+  quantitykind: Temperature
+  quantitykind_valid: true
+  medium: s223:Medium-ThermalContact
+  medium_valid: true
+  aspects: s223:Aspect-DryBulb
+  aspects_valid: true
