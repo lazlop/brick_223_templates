@@ -21,7 +21,7 @@ Heat_Sink_Temperature_Sensor:
   medium_valid: true
   aspects: None
   aspects_valid: true
-  note: This is incomplete because we need it to be on an equipment
+  note: This is incomplete. Should Heat Sink be a role? is a CP enough? 
 Natural_Gas_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of natural gas
@@ -42,8 +42,9 @@ Soil_Temperature_Sensor:
   quantitykind_valid: true
   medium: s223:Medium-ThermalContact
   medium_valid: true
-  aspects: s223:Aspect-DryBulb
+  aspects: None
   aspects_valid: true
+  note: This is incomplete. Don't have ground as a medium. Would maybe be clear if outdoor domain space
 Radiant_Panel_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of the radiant panel of the radiant heating
@@ -54,8 +55,9 @@ Radiant_Panel_Temperature_Sensor:
   quantitykind_valid: true
   medium: s223:Medium-ThermalContact
   medium_valid: true
-  aspects: s223:Aspect-DryBulb,s223:Aspect-WetBulb
+  aspects: None
   aspects_valid: true
+  note: Would need to be related to radiant panel. Should information about applicable systems be in the template?
 Air_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of air

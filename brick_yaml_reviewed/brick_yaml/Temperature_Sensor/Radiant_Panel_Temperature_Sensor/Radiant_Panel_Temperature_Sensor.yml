@@ -8,8 +8,9 @@ Inside_Face_Surface_Temperature_Sensor:
   quantitykind_valid: true
   medium: s223:Medium-ThermalContact
   medium_valid: true
-  aspects: s223:Aspect-DryBulb
+  aspects: None
   aspects_valid: true
+  notes: needs measurement location of radiant panel. Should this be done with dependencies?
 Outside_Face_Surface_Temperature_Sensor:
   brick_parent: Radiant_Panel_Temperature_Sensor
   brick_definition: Measures the outside surface (relative to the space) of the radiant

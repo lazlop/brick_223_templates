@@ -3,8 +3,9 @@ MODEL = "openai/gpt-4o"
 import openai # CBORG API Proxy Server is OpenAI-compatible through the openai module
 import yaml
 with open('/Users/lazlopaul/Desktop/cborg/api_key.yaml', 'r') as file:
-    API_KEY= yaml.safe_load(file)['key']
-    BASE_URL = yaml.safe_load(file)['base_url']
+    config = yaml.safe_load(file)
+    API_KEY = config['key']
+    BASE_URL = config['base_url']
 
 client = openai.OpenAI(
     api_key=API_KEY,

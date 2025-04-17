@@ -1,0 +1,10 @@
+Frost_Sensor:
+  note: This is incomplete, should we have a substance frost?
+Heat_Sink_Temperature_Sensor:
+  note: This is incomplete. Should Heat Sink be a role? is a CP enough?
+Soil_Temperature_Sensor:
+  note: This is incomplete. Don't have ground as a medium. Would maybe be clear if
+    outdoor domain space
+Radiant_Panel_Temperature_Sensor:
+  note: Would need to be related to radiant panel. Should information about applicable
+    systems be in the template?

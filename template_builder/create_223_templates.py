@@ -13,6 +13,9 @@ from .namespaces import (
     BRICK, S223, QUDT, PARAM, QK, UNIT, RDF, RDFS, XSD, OWL, SKOS, SH, 
     TAG, BSH, REF, BACNET, BM, CONSTRAINT, HPF, HPFS, bind_prefixes, get_prefixes
 )
+from importlib.resources import files
+
+notes_file = str(files('template_builder').joinpath('data/notes.yml'))
 
 # TODO: correct namespace handling
 def create_template_for_entity(entity_name, entity_data):
@@ -111,7 +114,26 @@ def process_yaml_file(yaml_path, output_path):
             sort_keys=False
 )
         
+def save_notes(yaml_path):
+    with open(yaml_path, 'r') as f:
+        data = yaml.safe_load(f)
 
+    with open(notes_file, 'r') as f:
+        notes_dict = yaml.safe_load(f)
+
+    for entity_name, entity_data in data.items():
+        if entity_data.get('note'):
+            notes_dict[entity_name] = {'note':entity_data['note']}
+    
+        
+    with open(notes_file, 'w') as f:
+        yaml.safe_dump(
+            notes_dict,
+            f,
+            default_flow_style=False,
+            sort_keys=False
+        )
+    
 
 def process_directory(input_dir, output_dir):
     """
@@ -121,6 +143,12 @@ def process_directory(input_dir, output_dir):
         dir_path: Path to the directory containing YAML files
         output_dir: Directory to write the templates to
     """
+    for root, dirs, files in os.walk(input_dir):
+        for file in files:
+            if file.endswith('.yml'):
+                yaml_path = os.path.join(root, file)
+                save_notes(yaml_path)
+
     for root, dirs, files in os.walk(input_dir):
         for file in files:
             if file.endswith('.yml'):

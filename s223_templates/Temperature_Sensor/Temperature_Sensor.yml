@@ -51,7 +51,6 @@ Soil_Temperature_Sensor:
 
 
     P:name a s223:QuantifiableObservableProperty ;
-        s223:hasAspect s223:Aspect-DryBulb ;
         s223:ofMedium s223:Medium-ThermalContact ;
         qudt:hasQuantityKind quantitykind:Temperature .
 
@@ -67,8 +66,6 @@ Radiant_Panel_Temperature_Sensor:
 
 
     P:name a s223:QuantifiableObservableProperty ;
-        s223:hasAspect s223:Aspect-DryBulb,
-            s223:Aspect-WetBulb ;
         s223:ofMedium s223:Medium-ThermalContact ;
         qudt:hasQuantityKind quantitykind:Temperature .
 
