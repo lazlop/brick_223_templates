@@ -10,6 +10,9 @@ from template_builder import (
     process_directory,
     process_yaml_file
 )
+# %% 
+
+prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df= get_s223_info()
 #%%
 g = Graph()
 g.parse("https://brickschema.org/schema/1.4.3/Brick.ttl", format = "ttl")
@@ -27,9 +30,7 @@ processed_classes = process_class_hierarchy(start_parent, g, templates_dir)
 # Print overall summary
 print(f"\nOverall Summary:")
 print(f"Processed {len(processed_classes)} unique classes in the hierarchy")
-# %% 
 
-prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df= get_s223_info()
 #running autocomplete
 #%%
 template_dir = "brick_yaml"

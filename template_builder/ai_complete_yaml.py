@@ -166,10 +166,11 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         
         #prompt5 determine measurement location
         prompt5 =f"""
-        Determine what kind of equipment or connection point the brick_class should be associated with, based on its name and definition.
-        The possible euqipment and connection points are <equipment_and_connection_point>{df_to_csv_str(meas_loc_df)}</equipment_and_connection_point> 
-        If there are no directly applicable equipment or connection point, return None.
-        Only return the equipment or connection point. Do not return any other information.
+        Determine what kind of equipment or connection point the brick_class may measure, based on its name and definition.
+        The possible equipment and connection points that can be measured are <equipment_and_connection_point>{df_to_csv_str(meas_loc_df)}</equipment_and_connection_point> 
+        If there is no possible equipment or connection points that may be measured by this brick_class, return None.
+        Do not return Sensor, return what the sensor may be measuring. 
+        Only return the equipment or connection point. Do not return any other information. 
 
         brick_class: {brick_class}
         definition: {text_definition}
