@@ -8,8 +8,9 @@ This project provides a workflow for converting Brick ontology classes to ASHRAE
 
 1. Extracting Brick classes and their hierarchies from the Brick ontology
 2. Creating YAML representations of these classes
-3. Enhancing the YAML files with S223-specific information using AI
-4. Generating S223 templates in yaml and Turtle (TTL) format
+3. Enhancing the YAML files with S223-specific information using an LLM
+4. Reviewing the LLM provided yaml files by hand
+5. Generating S223 BuildingMOTIF templates
 
 ## Installation
 
@@ -36,7 +37,7 @@ This project provides a workflow for converting Brick ontology classes to ASHRAE
 - `brick_yaml/`: Initial YAML files extracted from Brick ontology
 - `brick_yaml_autocomplete/`: AI-enhanced YAML files (automatically generated)
 - `brick_yaml_reviewed/`: AI-enhanced YAML files after manual review
-- `s223_templates/`: Generated S223 templates in TTL and YAML formats
+- `s223_templates/`: Generated S223 templates in yaml format
 - `quantitykinds.csv`: Reference quantitykinds that are applicable to buildings
 - `namespaces.py`: Namespace definitions for RDF processing
 - `utils.py`: Utility functions for RDF processing
@@ -112,8 +113,6 @@ A Brick class like "Water_Temperature_Sensor" is converted to an S223 template w
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [BSD3](LICENSE).
