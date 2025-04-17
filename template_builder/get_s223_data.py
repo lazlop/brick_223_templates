@@ -142,7 +142,11 @@ def get_s223_info():
     {
     ?s223_class rdfs:subClassOf+ s223:ConnectionPoint .
     }
-
+    # Adding physical spaces
+    UNION
+    {
+    ?s223_class rdfs:subClassOf* s223:PhysicalSpace .
+    }
     ?s223_class rdfs:comment ?s223_definition .
     
     # have to remove sensors since they are not measurement locations

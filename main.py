@@ -44,6 +44,7 @@ for root, dirs, files in os.walk(template_dir):
             process_brick_template(template_file, new_dir,prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df)
             print(f"Template file: {template_file}")
 
+# creating the templates
 # %%
 input_dir = os.path.join('brick_yaml_reviewed', 'brick_yaml')
 output_dir = 's223_templates'

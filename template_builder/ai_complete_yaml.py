@@ -94,6 +94,7 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         print(f"quantitykind/enumerationkind: {qk_ek_result}")
         
         # Check if result is in quantitykind or enumerationkind list
+        # may want to namespace quantitykinds, this is working fine for now
         is_quantitykind = qk_ek_result in qk_df['quantitykinds'].values
         is_enumerationkind = validate_result(qk_ek_result, ek_df)
         
@@ -165,6 +166,8 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         updated_definition_data['aspects_valid'] = is_valid_aspects
         
         #prompt5 determine measurement location
+        # Claude having more trouble with this than openai. Should think more about how I do namespacing, if I do namespacing of the brick_class. 
+        # adding the brick namespace helped with getting namespaces in the output of this prompt for equipment. DomainSpace still not namespaced
         prompt5 =f"""
         Determine what kind of equipment or connection point the brick_class may measure, based on its name and definition.
         The possible equipment and connection points that can be measured are <equipment_and_connection_point>{df_to_csv_str(meas_loc_df)}</equipment_and_connection_point> 
@@ -172,7 +175,7 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         Do not return Sensor, return what the sensor may be measuring. 
         Only return the equipment or connection point. Do not return any other information. 
 
-        brick_class: {brick_class}
+        brick_class: brick:{brick_class}
         definition: {text_definition}
         """
         meas_loc_result = get_completion(prompt5, system_prompt)

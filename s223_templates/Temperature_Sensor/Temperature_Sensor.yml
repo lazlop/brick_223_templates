@@ -5,10 +5,20 @@ Frost_Sensor:
     @prefix s223: <http://data.ashrae.org/standard223#> .
 
 
-    P:name a s223:ObservableProperty ;
-        s223:hasEnumerationKind s223:EnumerationKind-Binary ;
-        s223:ofMedium s223:Substance-Medium .
+    P:AirHandlingUnit s223:hasProperty P:name .
 
+
+    P:name a s223:ObservableProperty ;
+        s223:hasAspect s223:Aspect-Alarm ;
+        s223:hasEnumerationKind s223:EnumerationKind-Binary ;
+        s223:ofMedium s223:Medium-ThermalContact .
+
+  optional:
+  - AirHandlingUnit
+  dependencies:
+  - template: AirHandlingUnit
+    args:
+      name: AirHandlingUnit
 Heat_Sink_Temperature_Sensor:
   body: >+
     @prefix P: <urn:___param___#> .
@@ -20,10 +30,19 @@ Heat_Sink_Temperature_Sensor:
     @prefix s223: <http://data.ashrae.org/standard223#> .
 
 
+    P:VariableFrequencyDrive s223:hasProperty P:name .
+
+
     P:name a s223:QuantifiableObservableProperty ;
         s223:ofMedium s223:Medium-ThermalContact ;
         qudt:hasQuantityKind quantitykind:Temperature .
 
+  optional:
+  - VariableFrequencyDrive
+  dependencies:
+  - template: VariableFrequencyDrive
+    args:
+      name: VariableFrequencyDrive
 Natural_Gas_Temperature_Sensor:
   body: >+
     @prefix P: <urn:___param___#> .
@@ -35,10 +54,20 @@ Natural_Gas_Temperature_Sensor:
     @prefix s223: <http://data.ashrae.org/standard223#> .
 
 
+    P:Pipe s223:hasProperty P:name .
+
+
     P:name a s223:QuantifiableObservableProperty ;
+        s223:hasAspect s223:Aspect-DryBulb ;
         s223:ofMedium s223:Fluid-NaturalGas ;
         qudt:hasQuantityKind quantitykind:Temperature .
 
+  optional:
+  - Pipe
+  dependencies:
+  - template: Pipe
+    args:
+      name: Pipe
 Soil_Temperature_Sensor:
   body: >+
     @prefix P: <urn:___param___#> .
@@ -50,10 +79,20 @@ Soil_Temperature_Sensor:
     @prefix s223: <http://data.ashrae.org/standard223#> .
 
 
+    P:DomainSpace s223:hasProperty P:name .
+
+
     P:name a s223:QuantifiableObservableProperty ;
+        s223:hasAspect s223:Aspect-DryBulb ;
         s223:ofMedium s223:Medium-ThermalContact ;
         qudt:hasQuantityKind quantitykind:Temperature .
 
+  optional:
+  - DomainSpace
+  dependencies:
+  - template: DomainSpace
+    args:
+      name: DomainSpace
 Radiant_Panel_Temperature_Sensor:
   body: >+
     @prefix P: <urn:___param___#> .
@@ -65,10 +104,19 @@ Radiant_Panel_Temperature_Sensor:
     @prefix s223: <http://data.ashrae.org/standard223#> .
 
 
+    P:RadiantHeater s223:hasProperty P:name .
+
+
     P:name a s223:QuantifiableObservableProperty ;
         s223:ofMedium s223:Medium-ThermalContact ;
         qudt:hasQuantityKind quantitykind:Temperature .
 
+  optional:
+  - RadiantHeater
+  dependencies:
+  - template: RadiantHeater
+    args:
+      name: RadiantHeater
 Air_Temperature_Sensor:
   body: >+
     @prefix P: <urn:___param___#> .
@@ -80,11 +128,20 @@ Air_Temperature_Sensor:
     @prefix s223: <http://data.ashrae.org/standard223#> .
 
 
+    P:AirHandlingUnit s223:hasProperty P:name .
+
+
     P:name a s223:QuantifiableObservableProperty ;
         s223:hasAspect s223:Aspect-DryBulb ;
         s223:ofMedium s223:Fluid-Air ;
         qudt:hasQuantityKind quantitykind:Temperature .
 
+  optional:
+  - AirHandlingUnit
+  dependencies:
+  - template: AirHandlingUnit
+    args:
+      name: AirHandlingUnit
 Water_Temperature_Sensor:
   body: >+
     @prefix P: <urn:___param___#> .
@@ -96,10 +153,18 @@ Water_Temperature_Sensor:
     @prefix s223: <http://data.ashrae.org/standard223#> .
 
 
+    P:Pipe s223:hasProperty P:name .
+
+
     P:name a s223:QuantifiableObservableProperty ;
         s223:hasAspect s223:Aspect-DryBulb,
             s223:Aspect-WetBulb ;
         s223:ofMedium s223:Fluid-Water ;
         qudt:hasQuantityKind quantitykind:Temperature .
 
-...
+  optional:
+  - Pipe
+  dependencies:
+  - template: Pipe
+    args:
+      name: Pipe

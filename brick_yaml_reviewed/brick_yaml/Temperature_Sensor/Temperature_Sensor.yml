@@ -5,11 +5,12 @@ Frost_Sensor:
   s223_class_valid: true
   enumerationkind: s223:EnumerationKind-Binary
   enumerationkind_valid: true
-  medium: s223:Substance-Medium
+  medium: s223:Medium-ThermalContact
   medium_valid: true
-  aspects: None
+  aspects: s223:Aspect-Alarm
   aspects_valid: true
-  note: This is incomplete, should we have a substance frost? 
+  property_of: s223:AirHandlingUnit
+  property_of_valid: true
 Heat_Sink_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measure temperature of the heat sink on a device such as a VFD.
@@ -20,8 +21,9 @@ Heat_Sink_Temperature_Sensor:
   medium: s223:Medium-ThermalContact
   medium_valid: true
   aspects: None
-  aspects_valid: true
-  note: This is incomplete. Should Heat Sink be a role? is a CP enough? 
+  aspects_valid: false
+  property_of: s223:VariableFrequencyDrive
+  property_of_valid: true
 Natural_Gas_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of natural gas
@@ -31,8 +33,10 @@ Natural_Gas_Temperature_Sensor:
   quantitykind_valid: true
   medium: s223:Fluid-NaturalGas
   medium_valid: true
-  aspects: None
+  aspects: s223:Aspect-DryBulb
   aspects_valid: true
+  property_of: s223:Pipe
+  property_of_valid: true
 Soil_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of soil
@@ -42,9 +46,10 @@ Soil_Temperature_Sensor:
   quantitykind_valid: true
   medium: s223:Medium-ThermalContact
   medium_valid: true
-  aspects: None
+  aspects: s223:Aspect-DryBulb
   aspects_valid: true
-  note: This is incomplete. Don't have ground as a medium. Would maybe be clear if outdoor domain space
+  property_of: s223:OutdoorPhysicalSpace
+  property_of_valid: false
 Radiant_Panel_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of the radiant panel of the radiant heating
@@ -56,8 +61,9 @@ Radiant_Panel_Temperature_Sensor:
   medium: s223:Medium-ThermalContact
   medium_valid: true
   aspects: None
-  aspects_valid: true
-  note: Would need to be related to radiant panel. Should information about applicable systems be in the template?
+  aspects_valid: false
+  property_of: s223:RadiantHeater
+  property_of_valid: true
 Air_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of air
@@ -69,6 +75,8 @@ Air_Temperature_Sensor:
   medium_valid: true
   aspects: s223:Aspect-DryBulb
   aspects_valid: true
+  property_of: s223:AirHandlingUnit
+  property_of_valid: true
 Water_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of water
@@ -80,3 +88,5 @@ Water_Temperature_Sensor:
   medium_valid: true
   aspects: s223:Aspect-DryBulb,s223:Aspect-WetBulb
   aspects_valid: true
+  property_of: s223:Pipe
+  property_of_valid: true

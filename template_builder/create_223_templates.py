@@ -72,6 +72,7 @@ def create_template_for_entity(entity_name, entity_data):
     # add property of if present
     if entity_data.get('property_of') and entity_data.get('property_of') != 'None':
         property_of = entity_data.get('property_of').split(':')[-1]
+        print('ADDING PROP OF: ', property_of)
         g.add((PARAM[property_of], S223.hasProperty, entity))
 
         # TODO: Decide how to handle optional and dependencies 
