@@ -43,6 +43,7 @@ This project provides a workflow for converting Brick ontology classes to ASHRAE
 - `create_yaml_brick.py`: Script to extract Brick classes and create YAML files
 - `ai_complete_yaml.py`: Script to enhance YAML files with S223 information using AI
 - `get_completion.py`: Utility for AI completions
+- `main.py`: runs through workflow of creating yaml structure, completing it using an LLM, and turning those into templates
 
 ## Workflow
 
