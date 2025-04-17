@@ -1,5 +1,6 @@
 #%% 
 from buildingmotif.namespaces import bind_prefixes, A, XSD, QUDT, RDFS, A, SH, Namespace, RDF
+
 HPF = Namespace(f"urn:hpflex#")
 HPFS = Namespace('urn:hpflex/shapes#')
 

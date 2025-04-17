@@ -1,8 +1,8 @@
 # %%
 from rdflib import Graph
-from utils import * 
-from namespaces import * 
-from get_completion import get_completion
+from template_builder.utils import * 
+from template_builder.namespaces import * 
+from template_builder.get_completion import get_completion
 import yaml
 import re
 import pandas as pd
@@ -212,22 +212,3 @@ def process_class_hierarchy(parent_class, graph, parent_path=None, processed_cla
     
     return processed_classes
 
-# %%
-
-g = Graph()
-g.parse("https://brickschema.org/schema/1.4.3/Brick.ttl", format = "ttl")
-start_parent = "brick:Temperature_Sensor"
-start_parent_clean = strip_namespace(start_parent)
-
-# Ensure templates directory exists
-templates_dir = "brick_yaml"
-os.makedirs(templates_dir, exist_ok=True)
-print(f"Created directory: {templates_dir}")
-
-# Start processing from the root parent class
-processed_classes = process_class_hierarchy(start_parent, g, templates_dir)
-
-# Print overall summary
-print(f"\nOverall Summary:")
-print(f"Processed {len(processed_classes)} unique classes in the hierarchy")
-# %%
