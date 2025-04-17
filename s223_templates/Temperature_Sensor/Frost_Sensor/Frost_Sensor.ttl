@@ -1,6 +1,0 @@
-@prefix p: <urn:___param___#> .
-@prefix s223: <http://data.ashrae.org/standard223#> .
-
-p:name a <s223:ObservableProperty> ;
-    s223:hasProperty p:medium_name .
-

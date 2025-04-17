@@ -9,10 +9,7 @@ from pathlib import Path
 import rdflib
 from rdflib import Graph, Literal, URIRef
 import sys
-
-# Add the parent directory to the path so we can import namespaces
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from namespaces import (
+from .namespaces import (
     BRICK, S223, QUDT, PARAM, QK, UNIT, RDF, RDFS, XSD, OWL, SKOS, SH, 
     TAG, BSH, REF, BACNET, BM, CONSTRAINT, HPF, HPFS, bind_prefixes, get_prefixes
 )
@@ -37,26 +34,29 @@ def create_template_for_entity(entity_name, entity_data):
     
     # Add the type based on s223_class
     s223_class = entity_data.get('s223_class')
-    if s223_class:
-        s223_class_uri = URIRef(s223_class)
+    if entity_data.get('s223_class'):
+        s223_class_uri = S223[s223_class.split(':')[-1]]
         g.add((entity, RDF.type, s223_class_uri))
     
+    # prefix_map = {prefix: namespace for prefix, namespace in g.namespace_manager.namespaces()}
+    
     # For quantifiable properties, add the quantity kind
+    # TODO: correct namespacing issues 
     if entity_data.get('quantitykind'):
         # Create a property for the quantity kind
         quantitykind = entity_data.get('quantitykind')
-        g.add((entity, QUDT.hasQuantityKind, quantitykind(quantitykind)))
+        g.add((entity, QUDT.hasQuantityKind, QK[quantitykind]))
     
     # if enumerationkind present add it
     if entity_data.get('enumerationkind'):
         # Create a property for the enumeration kind
         enumerationkind = entity_data.get('enumerationkind')
-        g.add((entity, S223.hasEnumerationKind, URIRef(enumerationkind)))
+        g.add((entity, S223.hasEnumerationKind, S223[enumerationkind.split(':')[-1]]))
 
     # Add medium if present
     if entity_data.get('medium') and entity_data.get('medium') != 'None':
         medium = entity_data.get('medium')
-        g.add((entity, S223.ofMedium, URIRef(medium)))
+        g.add((entity, S223.ofMedium, S223[medium.split(':')[-1]]))
     
     # Add aspects if present
     if entity_data.get('aspects') and entity_data.get('aspects') != 'None':
@@ -64,62 +64,8 @@ def create_template_for_entity(entity_name, entity_data):
         for i, aspect in enumerate(aspects):
             aspect = aspect.strip()
             if aspect:
-                g.add((entity, S223.hasAspect, URIRef(aspect)))
-    
-    # Determine which namespaces are actually used in the graph
-    used_namespaces = set()
-    for s, p, o in g:
-        if isinstance(s, URIRef):
-            ns = str(s).split('#')[0] + '#'
-            used_namespaces.add(ns)
-        if isinstance(p, URIRef):
-            ns = str(p).split('#')[0] + '#'
-            used_namespaces.add(ns)
-        if isinstance(o, URIRef):
-            ns = str(o).split('#')[0] + '#'
-            used_namespaces.add(ns)
-    
-    # Create a minimal graph with only the necessary namespaces
-    minimal_g = Graph()
-    
-    # Only bind the namespaces that are actually used
-    if str(PARAM) in used_namespaces:
-        minimal_g.bind('p', PARAM)
-    if str(BRICK) in used_namespaces:
-        minimal_g.bind('brick', BRICK)
-    if str(S223) in used_namespaces:
-        minimal_g.bind('s223', S223)
-    if str(QUDT) in used_namespaces:
-        minimal_g.bind('qudt', QUDT)
-    if str(QK) in used_namespaces:
-        minimal_g.bind('quantitykind', QK)
-    
-    # Add all triples to the minimal graph
-    for s, p, o in g:
-        minimal_g.add((s, p, o))
-    
-    # Get the prefixes in Turtle format
-    prefixes = []
-    for prefix, namespace in minimal_g.namespace_manager.namespaces():
-        if prefix and str(namespace) in used_namespaces:
-            prefixes.append(f"@prefix {prefix}: <{namespace}> .")
-    
-    # # Serialize the graph without prefixes
-    # turtle = minimal_g.serialize(format="turtle")
-    
-    # # Extract just the triples part (remove the prefixes)
-    # turtle_lines = turtle.split('\n')
-    # content_start = 0
-    # for i, line in enumerate(turtle_lines):
-    #     if not line.startswith('@prefix'):
-    #         content_start = i
-    #         break
-    
-    # # Combine our custom prefixes with the triples
-    # template = '\n'.join(prefixes) + '\n' + '\n'.join(turtle_lines[content_start:])
-
-    template = minimal_g.serialize(format="turtle")
-    return template
+                g.add((entity, S223.hasAspect, S223[aspect.split(':')[-1]]))
+    return g.serialize()
 
 # Define a custom class for folded style text
 class FoldedString(str):
@@ -133,7 +79,7 @@ def folded_str_representer(dumper, data):
 yaml.add_representer(FoldedString, folded_str_representer)
 
 
-def process_yaml_file(yaml_path, output_dir):
+def process_yaml_file(yaml_path, output_path):
     """
     Process a YAML file and create templates for each entity in it.
     
@@ -143,32 +89,21 @@ def process_yaml_file(yaml_path, output_dir):
     """
     with open(yaml_path, 'r') as f:
         data = yaml.safe_load(f)
-    print(data)
+    # print(data)
     if not data:
         return
-    
-    # Create the output directory structure
-    rel_path = os.path.relpath(yaml_path, start=os.path.join('brick_yaml_reviewed', 'brick_yaml'))
-    template_dir = os.path.join(output_dir, os.path.dirname(rel_path))
-    os.makedirs(template_dir, exist_ok=True)
     
     # Process each entity in the YAML file
     template_dict = {}
     for entity_name, entity_data in data.items():
         # Generate the S223 template
         template = create_template_for_entity(entity_name, entity_data)
-        
-        # Create the entity directory
-        entity_dir = os.path.join(template_dir, entity_name)
-        os.makedirs(entity_dir, exist_ok=True)
-        
         # Create the YAML template file in the format requested
         template_dict[entity_name] = {
                 'body': FoldedString(template),  # Use the custom class for folded style template
             }
     print(template_dict)
-    yaml_path = os.path.join(entity_dir, f"{entity_name}.yml")
-    with open(yaml_path, 'w') as f:
+    with open(output_path, 'w') as f:
         yaml.dump(
             template_dict,
             f,
@@ -178,7 +113,7 @@ def process_yaml_file(yaml_path, output_dir):
         
 
 
-def process_directory(dir_path, output_dir):
+def process_directory(input_dir, output_dir):
     """
     Recursively process all YAML files in a directory.
     
@@ -186,26 +121,16 @@ def process_directory(dir_path, output_dir):
         dir_path: Path to the directory containing YAML files
         output_dir: Directory to write the templates to
     """
-    for root, dirs, files in os.walk(dir_path):
+    for root, dirs, files in os.walk(input_dir):
         for file in files:
             if file.endswith('.yml'):
                 yaml_path = os.path.join(root, file)
-                process_yaml_file(yaml_path, output_dir)
+                # Create the output directory structure
+                rel_path = os.path.relpath(yaml_path, start=os.path.join('brick_yaml_reviewed', 'brick_yaml'))
+                template_dir = os.path.join(output_dir, os.path.dirname(rel_path))
+                # print(template_dir)
+                os.makedirs(template_dir, exist_ok=True)
+                output_path = os.path.join(template_dir, file)
+                # print(output_path)
+                process_yaml_file(yaml_path, output_path)
 
-def main():
-    """Main function to run the script."""
-    input_dir = os.path.join('brick_yaml_reviewed', 'brick_yaml')
-    output_dir = 's223_templates'
-    
-    # Create the output directory if it doesn't exist
-    os.makedirs(output_dir, exist_ok=True)
-    
-    # Process all YAML files in the input directory
-    process_directory(input_dir, output_dir)
-    
-    print(f"Templates generated in {output_dir}")
-
-if __name__ == "__main__":
-    main()
-
-# %%
