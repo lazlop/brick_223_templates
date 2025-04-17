@@ -101,7 +101,7 @@ The generated S223 templates include:
 - Enumeration kind for enumerable properties
 - Medium information (e.g., air, water)
 - Aspect information (e.g., dry bulb, wet bulb)
-- Property of information (e.g. connection point, equipment type, domain space)
+- Property of information (e.g. what kind of connection point (Inlet, Outlet, Bidirectional), equipment type (e.g. Damper), Connection (e.g. Pipe), domain space, or physical space). These are defined optionally
 
 ## Example
 
