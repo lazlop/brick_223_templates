@@ -1,13 +1,44 @@
-Embedded_Temperature_Sensor:
-  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
-    \ .\n\np:name a <s223:QuantifiableObservableProperty> ;\n    s223:hasProperty\
-    \ p:aspect1_name,\n        p:aspect2_name,\n        p:medium_name,\n        p:quantitykind_name\
-    \ .\n\n"
 Inside_Face_Surface_Temperature_Sensor:
-  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
-    \ .\n\np:name a <s223:QuantifiableObservableProperty> ;\n    s223:hasProperty\
-    \ p:aspect1_name,\n        p:medium_name,\n        p:quantitykind_name .\n\n"
+  body: >+
+    @prefix ns1: <http://qudt.org/schema/qudt/> .
+
+    @prefix p: <urn:___param___#> .
+
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+
+    p:name a <s223:QuantifiableObservableProperty> ;
+        s223:hasAspect <s223:Aspect-DryBulb> ;
+        s223:ofMedium <s223:Medium-ThermalContact> ;
+        ns1:hasQuantityKind <Temperature> .
+
 Outside_Face_Surface_Temperature_Sensor:
-  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
-    \ .\n\np:name a <s223:QuantifiableObservableProperty> ;\n    s223:hasProperty\
-    \ p:aspect1_name,\n        p:medium_name,\n        p:quantitykind_name .\n\n"
+  body: >+
+    @prefix ns1: <http://qudt.org/schema/qudt/> .
+
+    @prefix p: <urn:___param___#> .
+
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+
+    p:name a <s223:QuantifiableObservableProperty> ;
+        s223:hasAspect <s223:Aspect-DryBulb> ;
+        s223:ofMedium <s223:Medium-ThermalContact> ;
+        ns1:hasQuantityKind <Temperature> .
+
+Embedded_Temperature_Sensor:
+  body: >+
+    @prefix ns1: <http://qudt.org/schema/qudt/> .
+
+    @prefix p: <urn:___param___#> .
+
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+
+    p:name a <s223:QuantifiableObservableProperty> ;
+        s223:hasAspect <s223:Aspect-DryBulb>,
+            <s223:Aspect-WetBulb> ;
+        s223:ofMedium <s223:Medium-ThermalContact> ;
+        ns1:hasQuantityKind <Temperature> .
+
+...

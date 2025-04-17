@@ -17,6 +17,7 @@ from namespaces import (
     TAG, BSH, REF, BACNET, BM, CONSTRAINT, HPF, HPFS, bind_prefixes, get_prefixes
 )
 
+# TODO: correct namespace handling
 def create_template_for_entity(entity_name, entity_data):
     """
     Create an S223 template for a given entity based on its Brick YAML data.
@@ -43,13 +44,19 @@ def create_template_for_entity(entity_name, entity_data):
     # For quantifiable properties, add the quantity kind
     if entity_data.get('quantitykind'):
         # Create a property for the quantity kind
-        qk_property = PARAM[f"quantitykind_name"]
-        g.add((entity, S223.hasProperty, qk_property))
+        quantitykind = entity_data.get('quantitykind')
+        g.add((entity, QUDT.hasQuantityKind, quantitykind(quantitykind)))
     
+    # if enumerationkind present add it
+    if entity_data.get('enumerationkind'):
+        # Create a property for the enumeration kind
+        enumerationkind = entity_data.get('enumerationkind')
+        g.add((entity, S223.hasEnumerationKind, URIRef(enumerationkind)))
+
     # Add medium if present
     if entity_data.get('medium') and entity_data.get('medium') != 'None':
-        medium_property = PARAM[f"medium_name"]
-        g.add((entity, S223.hasProperty, medium_property))
+        medium = entity_data.get('medium')
+        g.add((entity, S223.ofMedium, URIRef(medium)))
     
     # Add aspects if present
     if entity_data.get('aspects') and entity_data.get('aspects') != 'None':
@@ -57,8 +64,7 @@ def create_template_for_entity(entity_name, entity_data):
         for i, aspect in enumerate(aspects):
             aspect = aspect.strip()
             if aspect:
-                aspect_property = PARAM[f"aspect{i+1}_name"]
-                g.add((entity, S223.hasProperty, aspect_property))
+                g.add((entity, S223.hasAspect, URIRef(aspect)))
     
     # Determine which namespaces are actually used in the graph
     used_namespaces = set()
@@ -115,6 +121,18 @@ def create_template_for_entity(entity_name, entity_data):
     template = minimal_g.serialize(format="turtle")
     return template
 
+# Define a custom class for folded style text
+class FoldedString(str):
+    pass
+
+# Create a custom representer for the folded style
+def folded_str_representer(dumper, data):
+    return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='>')
+
+# Register the representer
+yaml.add_representer(FoldedString, folded_str_representer)
+
+
 def process_yaml_file(yaml_path, output_dir):
     """
     Process a YAML file and create templates for each entity in it.
@@ -146,17 +164,19 @@ def process_yaml_file(yaml_path, output_dir):
         
         # Create the YAML template file in the format requested
         template_dict[entity_name] = {
-                'body': template
+                'body': FoldedString(template),  # Use the custom class for folded style template
             }
-        
+    print(template_dict)
     yaml_path = os.path.join(entity_dir, f"{entity_name}.yml")
     with open(yaml_path, 'w') as f:
-        yaml.dump(template_dict, f)
+        yaml.dump(
+            template_dict,
+            f,
+            default_flow_style=False,
+            sort_keys=False
+)
         
-    # For debugging/reference, also save the raw turtle file
-    ttl_path = os.path.join(entity_dir, f"{entity_name}.ttl")
-    with open(ttl_path, 'w') as f:
-        f.write(template)
+
 
 def process_directory(dir_path, output_dir):
     """

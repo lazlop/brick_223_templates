@@ -1,9 +1,10 @@
+@prefix ns1: <http://qudt.org/schema/qudt/> .
 @prefix p: <urn:___param___#> .
 @prefix s223: <http://data.ashrae.org/standard223#> .
 
 p:name a <s223:QuantifiableObservableProperty> ;
-    s223:hasProperty p:aspect1_name,
-        p:aspect2_name,
-        p:medium_name,
-        p:quantitykind_name .
+    s223:hasAspect <s223:Aspect-DryBulb>,
+        <s223:Aspect-WetBulb> ;
+    s223:ofMedium <s223:Medium-ThermalContact> ;
+    ns1:hasQuantityKind <Temperature> .
 

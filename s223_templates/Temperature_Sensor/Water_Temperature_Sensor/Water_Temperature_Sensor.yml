@@ -1,30 +1,96 @@
-Air_Temperature_Sensor:
-  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
-    \ .\n\np:name a <s223:QuantifiableObservableProperty> ;\n    s223:hasProperty\
-    \ p:aspect1_name,\n        p:medium_name,\n        p:quantitykind_name .\n\n"
 Frost_Sensor:
-  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
-    \ .\n\np:name a <s223:ObservableProperty> ;\n    s223:hasProperty p:medium_name\
-    \ .\n\n"
+  body: >+
+    @prefix p: <urn:___param___#> .
+
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+
+    p:name a <s223:ObservableProperty> ;
+        s223:hasEnumerationKind <s223:EnumerationKind-Binary> ;
+        s223:ofMedium <s223:Substance-Medium> .
+
 Heat_Sink_Temperature_Sensor:
-  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
-    \ .\n\np:name a <s223:QuantifiableObservableProperty> ;\n    s223:hasProperty\
-    \ p:medium_name,\n        p:quantitykind_name .\n\n"
+  body: >+
+    @prefix ns1: <http://qudt.org/schema/qudt/> .
+
+    @prefix p: <urn:___param___#> .
+
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+
+    p:name a <s223:QuantifiableObservableProperty> ;
+        s223:ofMedium <s223:Medium-ThermalContact> ;
+        ns1:hasQuantityKind <Temperature> .
+
 Natural_Gas_Temperature_Sensor:
-  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
-    \ .\n\np:name a <s223:QuantifiableObservableProperty> ;\n    s223:hasProperty\
-    \ p:medium_name,\n        p:quantitykind_name .\n\n"
-Radiant_Panel_Temperature_Sensor:
-  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
-    \ .\n\np:name a <s223:QuantifiableObservableProperty> ;\n    s223:hasProperty\
-    \ p:aspect1_name,\n        p:aspect2_name,\n        p:medium_name,\n        p:quantitykind_name\
-    \ .\n\n"
+  body: >+
+    @prefix ns1: <http://qudt.org/schema/qudt/> .
+
+    @prefix p: <urn:___param___#> .
+
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+
+    p:name a <s223:QuantifiableObservableProperty> ;
+        s223:ofMedium <s223:Fluid-NaturalGas> ;
+        ns1:hasQuantityKind <Temperature> .
+
 Soil_Temperature_Sensor:
-  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
-    \ .\n\np:name a <s223:QuantifiableObservableProperty> ;\n    s223:hasProperty\
-    \ p:aspect1_name,\n        p:medium_name,\n        p:quantitykind_name .\n\n"
+  body: >+
+    @prefix ns1: <http://qudt.org/schema/qudt/> .
+
+    @prefix p: <urn:___param___#> .
+
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+
+    p:name a <s223:QuantifiableObservableProperty> ;
+        s223:hasAspect <s223:Aspect-DryBulb> ;
+        s223:ofMedium <s223:Medium-ThermalContact> ;
+        ns1:hasQuantityKind <Temperature> .
+
+Radiant_Panel_Temperature_Sensor:
+  body: >+
+    @prefix ns1: <http://qudt.org/schema/qudt/> .
+
+    @prefix p: <urn:___param___#> .
+
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+
+    p:name a <s223:QuantifiableObservableProperty> ;
+        s223:hasAspect <s223:Aspect-DryBulb>,
+            <s223:Aspect-WetBulb> ;
+        s223:ofMedium <s223:Medium-ThermalContact> ;
+        ns1:hasQuantityKind <Temperature> .
+
+Air_Temperature_Sensor:
+  body: >+
+    @prefix ns1: <http://qudt.org/schema/qudt/> .
+
+    @prefix p: <urn:___param___#> .
+
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+
+    p:name a <s223:QuantifiableObservableProperty> ;
+        s223:hasAspect <s223:Aspect-DryBulb> ;
+        s223:ofMedium <s223:Fluid-Air> ;
+        ns1:hasQuantityKind <Temperature> .
+
 Water_Temperature_Sensor:
-  body: "@prefix p: <urn:___param___#> .\n@prefix s223: <http://data.ashrae.org/standard223#>\
-    \ .\n\np:name a <s223:QuantifiableObservableProperty> ;\n    s223:hasProperty\
-    \ p:aspect1_name,\n        p:aspect2_name,\n        p:medium_name,\n        p:quantitykind_name\
-    \ .\n\n"
+  body: >+
+    @prefix ns1: <http://qudt.org/schema/qudt/> .
+
+    @prefix p: <urn:___param___#> .
+
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+
+    p:name a <s223:QuantifiableObservableProperty> ;
+        s223:hasAspect <s223:Aspect-DryBulb>,
+            <s223:Aspect-WetBulb> ;
+        s223:ofMedium <s223:Fluid-Water> ;
+        ns1:hasQuantityKind <Temperature> .
+
+...
