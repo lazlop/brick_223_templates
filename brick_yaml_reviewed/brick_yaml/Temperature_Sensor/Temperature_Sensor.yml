@@ -9,7 +9,7 @@ Frost_Sensor:
   medium_valid: true
   aspects: s223:Aspect-Alarm
   aspects_valid: true
-  property_of: s223:AirHandlingUnit
+  property_of: None
   property_of_valid: true
 Heat_Sink_Temperature_Sensor:
   brick_parent: Temperature_Sensor
@@ -75,7 +75,7 @@ Air_Temperature_Sensor:
   medium_valid: true
   aspects: s223:Aspect-DryBulb
   aspects_valid: true
-  property_of: s223:AirHandlingUnit
+  property_of: None
   property_of_valid: true
 Water_Temperature_Sensor:
   brick_parent: Temperature_Sensor
@@ -88,5 +88,5 @@ Water_Temperature_Sensor:
   medium_valid: true
   aspects: s223:Aspect-DryBulb,s223:Aspect-WetBulb
   aspects_valid: true
-  property_of: s223:Pipe
+  property_of: None
   property_of_valid: true
