@@ -166,20 +166,20 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         
         #prompt5 determine measurement location
         prompt5 =f"""
-        Determine what kind of entity the brick_class should be associated with, based on its name and definition.
-        The possible entity are <entity>{df_to_csv_str(meas_loc_df)}</entity> 
-        If there are no directly applicable entity, return None.
-        Only return the entity. Do not return any other information.
+        Determine what kind of equipment or connection point the brick_class should be associated with, based on its name and definition.
+        The possible euqipment and connection points are <equipment_and_connection_point>{df_to_csv_str(meas_loc_df)}</equipment_and_connection_point> 
+        If there are no directly applicable equipment or connection point, return None.
+        Only return the equipment or connection point. Do not return any other information.
 
         brick_class: {brick_class}
         definition: {text_definition}
         """
         meas_loc_result = get_completion(prompt5, system_prompt)
         meas_loc_result = meas_loc_result.strip()
-        
+        print(f"measurement location: {meas_loc_result}")
         # Validate medium result
         if meas_loc_result.lower() == "none":
-            is_valid_equip = True
+            is_valid_meas_loc = True
         else:
             is_valid_meas_loc = validate_result(meas_loc_result, meas_loc_df)
             print(f"Is valid property: {is_valid_meas_loc}")

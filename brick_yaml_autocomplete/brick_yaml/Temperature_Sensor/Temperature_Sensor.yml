@@ -5,10 +5,12 @@ Frost_Sensor:
   s223_class_valid: true
   enumerationkind: s223:EnumerationKind-Binary
   enumerationkind_valid: true
-  medium: None
+  medium: s223:Medium-ThermalContact
   medium_valid: true
-  aspects: s223:Aspect-OperatingStatus
+  aspects: s223:Aspect-Alarm
   aspects_valid: true
+  property_of: s223:Sensor
+  property_of_valid: false
 Heat_Sink_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measure temperature of the heat sink on a device such as a VFD.
@@ -18,8 +20,10 @@ Heat_Sink_Temperature_Sensor:
   quantitykind_valid: true
   medium: s223:Medium-ThermalContact
   medium_valid: true
-  aspects: s223:Aspect-DryBulb
-  aspects_valid: true
+  aspects: s223_class
+  aspects_valid: false
+  property_of: s223:Sensor
+  property_of_valid: false
 Natural_Gas_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of natural gas
@@ -31,6 +35,8 @@ Natural_Gas_Temperature_Sensor:
   medium_valid: true
   aspects: s223:Aspect-DryBulb
   aspects_valid: true
+  property_of: s223:Sensor
+  property_of_valid: false
 Soil_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of soil
@@ -38,10 +44,12 @@ Soil_Temperature_Sensor:
   s223_class_valid: true
   quantitykind: Temperature
   quantitykind_valid: true
-  medium: s223:Fluid-Earth
-  medium_valid: false
+  medium: s223:Medium-ThermalContact
+  medium_valid: true
   aspects: s223:Aspect-DryBulb
   aspects_valid: true
+  property_of: s223:Sensor
+  property_of_valid: false
 Radiant_Panel_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of the radiant panel of the radiant heating
@@ -52,22 +60,23 @@ Radiant_Panel_Temperature_Sensor:
   quantitykind_valid: true
   medium: s223:Medium-ThermalContact
   medium_valid: true
-  aspects: s223:Aspect-DryBulb,s223:Aspect-WetBulb
-  aspects_valid: true
+  aspects: s223_class,s223_definition
+  aspects_valid: false
+  property_of: s223:Sensor
+  property_of_valid: false
 Air_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of air
   s223_class: s223:QuantifiableObservableProperty
   s223_class_valid: true
-  quantitykind_valid: false
-  enumerationkind_valid: false
-  quantitykind: 'quantitykinds
-
-    Temperature'
+  quantitykind: Temperature
+  quantitykind_valid: true
   medium: s223:Fluid-Air
   medium_valid: true
-  aspects: s223:Aspect-DryBulb,s223:Aspect-WetBulb
+  aspects: s223:Aspect-DryBulb
   aspects_valid: true
+  property_of: s223:Sensor
+  property_of_valid: false
 Water_Temperature_Sensor:
   brick_parent: Temperature_Sensor
   brick_definition: Measures the temperature of water
@@ -79,3 +88,5 @@ Water_Temperature_Sensor:
   medium_valid: true
   aspects: s223:Aspect-DryBulb,s223:Aspect-WetBulb
   aspects_valid: true
+  property_of: s223:Sensor
+  property_of_valid: false

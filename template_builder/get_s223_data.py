@@ -142,10 +142,17 @@ def get_s223_info():
     {
     ?s223_class rdfs:subClassOf+ s223:ConnectionPoint .
     }
+
     ?s223_class rdfs:comment ?s223_definition .
     
-    # Getting rid of extensions
-    FILTER(STRSTARTS (str(?p), \"http://data.ashrae.org/standard223#\")
+    # have to remove sensors since they are not measurement locations
+    FILTER NOT EXISTS {
+        ?s223_class rdfs:subClassOf* s223:Sensor .
+    }
+    # Generic equipment might not be a useful measurement location, so we remove it 
+    FILTER ( ?s223_class != s223:Equipment )
+    FILTER ( ?s223_class != s223:Sensor )
+    FILTER(STRSTARTS (str(?s223_class), \"http://data.ashrae.org/standard223#\"))
     }
     """
     meas_loc_df = query_to_df(meas_loc_query, s223)
