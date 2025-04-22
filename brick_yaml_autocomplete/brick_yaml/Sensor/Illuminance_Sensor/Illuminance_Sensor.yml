@@ -1,4 +1,0 @@
-Outside_Illuminance_Sensor:
-  brick_parent: Illuminance_Sensor
-  brick_definition: Measures the total luminous flux incident on an outside, per unit
-    area

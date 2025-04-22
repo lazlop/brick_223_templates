@@ -16,13 +16,18 @@ def get_s223_info():
     s223 = Graph()
     s223.parse("https://open223.info/223p.ttl", format="ttl")
     bind_prefixes(s223, override=True)
-    # Get properties
+    # Get properties, not including electricity/voltage stuff
+    # Shouldn't every property be quantifiableobservable, quantifiableactuatable, enumeratedobservable, or enumeratedactuatable
     prop_query = """ SELECT DISTINCT ?s223_class ?s223_definition WHERE {
         ?s223_class rdfs:subClassOf* s223:Property ;
         rdfs:comment ?s223_definition .
         FILTER NOT EXISTS {
             ?s223_class qudt:hasQuantityKind ?qk .
         }
+        FILTER NOT EXISTS {
+            ?s223_class2 rdfs:subClassOf ?s223_class .
+        }
+        FILTER(STRSTARTS (str(?s223_class), \"http://data.ashrae.org/standard223#\"))
     }
     """
     prop_df = query_to_df(prop_query, s223, remove_namespaces=True)
@@ -40,6 +45,7 @@ def get_s223_info():
                 ?s223_class rdfs:subClassOf+ s223:Electricity-AC .
             }
         }
+        FILTER(STRSTARTS (str(?s223_class), \"http://data.ashrae.org/standard223#\"))
     }
     """
     media_df = query_to_df(med_query, s223, remove_namespaces=True)
@@ -91,6 +97,7 @@ def get_s223_info():
         FILTER NOT EXISTS {        
             ?s223_class rdfs:subClassOf* s223:EnumerationKind-DayOfWeek .
         }
+        FILTER(STRSTARTS (str(?s223_class), \"http://data.ashrae.org/standard223#\"))
     }
     """
     asp_df = query_to_df(asp_query, s223, remove_namespaces=True)
@@ -125,6 +132,7 @@ def get_s223_info():
         FILTER NOT EXISTS {        
             ?s223_class rdfs:subClassOf* s223:EnumerationKind-Domain .
         }
+        FILTER(STRSTARTS (str(?s223_class), \"http://data.ashrae.org/standard223#\"))
     }
     """
     ek_df = query_to_df(ek_query, s223, remove_namespaces=True)
@@ -163,7 +171,8 @@ def get_s223_info():
 
     # Convert quantitykinds to dataframe for validation
     qk_df = pd.read_csv(quantityknds_file)
-    qk_df.quantitykinds = qk_df.quantitykinds.apply(lambda x: f"quantitykind:{x}")
+    
     # adding namespace
+    # qk_df.quantitykinds = qk_df.quantitykinds.apply(lambda x: f"quantitykind:{x}")
 
     return prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df

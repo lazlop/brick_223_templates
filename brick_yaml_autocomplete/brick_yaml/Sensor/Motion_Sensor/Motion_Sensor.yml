@@ -1,4 +1,0 @@
-PIR_Sensor:
-  brick_parent: Motion_Sensor
-  brick_definition: Detects the presense of motion in some area using the differential
-    change in infrared intensity between two or more receptors

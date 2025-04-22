@@ -1,3 +1,0 @@
-Exhaust_Air_Stack_Flow_Sensor:
-  brick_parent: Exhaust_Air_Flow_Sensor
-  brick_definition: Measures the rate of flow of air in the exhaust air stack

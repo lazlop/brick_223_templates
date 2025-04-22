@@ -1,6 +1,0 @@
-Intake_Air_Temperature_Sensor:
-  brick_parent: Outside_Air_Temperature_Sensor
-  brick_definition: Measures air at the interface between the building and the outside
-Outside_Air_Wet_Bulb_Temperature_Sensor:
-  brick_parent: Outside_Air_Temperature_Sensor
-  brick_definition: A sensor measuring the wet-bulb temperature of outside air

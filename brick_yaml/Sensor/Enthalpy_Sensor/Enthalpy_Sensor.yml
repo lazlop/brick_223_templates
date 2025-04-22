@@ -1,3 +1,0 @@
-Air_Enthalpy_Sensor:
-  brick_parent: Enthalpy_Sensor
-  brick_definition: Measures the total heat content of air

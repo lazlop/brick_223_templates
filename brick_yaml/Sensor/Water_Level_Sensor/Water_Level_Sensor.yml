@@ -1,7 +1,0 @@
-Collection_Basin_Water_Level_Sensor:
-  brick_parent: Water_Level_Sensor
-  brick_definition: Measures the level of the water in the collection basin, e.g.
-    within a Cooling_Tower
-Deionised_Water_Level_Sensor:
-  brick_parent: Water_Level_Sensor
-  brick_definition: Measures the height/level of deionised water in some container

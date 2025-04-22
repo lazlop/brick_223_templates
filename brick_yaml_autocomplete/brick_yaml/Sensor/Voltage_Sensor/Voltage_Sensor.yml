@@ -1,9 +1,0 @@
-Battery_Voltage_Sensor:
-  brick_parent: Voltage_Sensor
-  brick_definition: Measures the capacity of a battery
-DC_Bus_Voltage_Sensor:
-  brick_parent: Voltage_Sensor
-  brick_definition: Measures the voltage across a DC bus
-Output_Voltage_Sensor:
-  brick_parent: Voltage_Sensor
-  brick_definition: Measures the voltage output by some process or device

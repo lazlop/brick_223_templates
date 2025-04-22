@@ -1,7 +1,0 @@
-Temperature_Adjust_Sensor:
-  brick_parent: Adjust_Sensor
-  brick_definition: Measures user-provided adjustment of temperature
-Warm_Cool_Adjust_Sensor:
-  brick_parent: Adjust_Sensor
-  brick_definition: User provided adjustment of zone temperature, typically in the
-    range of +/- 5 degrees

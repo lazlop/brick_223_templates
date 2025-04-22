@@ -1,8 +1,0 @@
-Filter_Air_Differential_Pressure_Sensor:
-  brick_parent: Filter_Differential_Pressure_Sensor
-  brick_definition: Measures the difference in air pressure before and after an air
-    filter.
-Filter_Water_Differential_Pressure_Sensor:
-  brick_parent: Filter_Differential_Pressure_Sensor
-  brick_definition: Measures the difference in water pressure before and after a water
-    filter.

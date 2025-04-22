@@ -1,3 +1,0 @@
-Air_Differential_Pressure_Sensor:
-  brick_parent: Air_Pressure_Sensor
-  brick_definition: Measures the difference in pressure between two regions of air

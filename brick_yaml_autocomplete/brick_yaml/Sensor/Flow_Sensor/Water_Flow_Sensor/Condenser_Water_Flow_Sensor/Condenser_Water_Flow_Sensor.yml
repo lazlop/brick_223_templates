@@ -1,3 +1,0 @@
-Leaving_Condenser_Water_Flow_Sensor:
-  brick_parent: Condenser_Water_Flow_Sensor
-  brick_definition: Measures the flow of the leaving condenser water

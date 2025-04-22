@@ -1,7 +1,0 @@
-PV_Current_Output_Sensor:
-  brick_parent: Current_Output_Sensor
-  brick_definition: See Photovoltaic_Current_Output_Sensor
-Photovoltaic_Current_Output_Sensor:
-  brick_parent: Current_Output_Sensor
-  brick_definition: Senses the amperes of electrical current produced as output by
-    a photovoltaic device

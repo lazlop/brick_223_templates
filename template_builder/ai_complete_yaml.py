@@ -28,7 +28,7 @@ def validate_result(result, df, column_name='s223_class'):
 def df_to_csv_str(df):
     return df.to_csv(index=False)
 
-def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df):
+def process_brick_template(template_file, prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df, as_agent = False):
     """
     Process a Brick template file, running prompts on each brick class and definition
     and updating the YAML file with the results.
@@ -68,7 +68,7 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         brick_class: {brick_class}
         definition: {text_definition}
         """
-        s223_class_result = get_completion(prompt1, system_prompt)
+        s223_class_result = get_completion(prompt1, system_prompt, as_agent = as_agent)
         s223_class_result = s223_class_result.strip()
         print(f"s223_class: {s223_class_result}")
         
@@ -89,7 +89,7 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         brick_class: {brick_class}
         definition: {text_definition}
         """
-        qk_ek_result = get_completion(prompt2, system_prompt)
+        qk_ek_result = get_completion(prompt2, system_prompt, as_agent = as_agent)
         qk_ek_result = qk_ek_result.strip()
         print(f"quantitykind/enumerationkind: {qk_ek_result}")
         
@@ -122,7 +122,7 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         brick_class: {brick_class}
         definition: {text_definition}
         """
-        medium_result = get_completion(prompt3, system_prompt)
+        medium_result = get_completion(prompt3, system_prompt, as_agent = as_agent)
         medium_result = medium_result.strip()
         print(f"medium: {medium_result}")
         
@@ -147,7 +147,7 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         brick_class: {brick_class}
         definition: {text_definition}
         """
-        aspects_result = get_completion(prompt4, system_prompt)
+        aspects_result = get_completion(prompt4, system_prompt, as_agent = as_agent)
         aspects_result = aspects_result.strip()
         print(f"aspects: {aspects_result}")
         
@@ -178,9 +178,9 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         brick_class: brick:{brick_class}
         definition: {text_definition}
         """
-        meas_loc_result = get_completion(prompt5, system_prompt)
+        meas_loc_result = get_completion(prompt5, system_prompt, as_agent = as_agent)
         meas_loc_result = meas_loc_result.strip()
-        print(f"measurement location: {meas_loc_result}")
+        print(f"property of: {meas_loc_result}")
         # Validate medium result
         if meas_loc_result.lower() == "none":
             is_valid_meas_loc = True
@@ -195,7 +195,7 @@ def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek
         updated_brick_dict[brick_class] = updated_definition_data
     
     # Write the updated dictionary back to the YAML file
-    with open(os.path.join(new_dir, template_file), "w") as f:
-        yaml.dump(updated_brick_dict, f, default_flow_style=False, sort_keys=False)
+    with open(template_file, "w") as f:
+        yaml.dump(updated_brick_dict, f)
     
     print(f"Updated {template_file} with s223 mappings")

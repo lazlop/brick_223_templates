@@ -35,24 +35,25 @@ print(f"Processed {len(processed_classes)} unique classes in the hierarchy")
 #%%
 template_dir = "brick_yaml"
 new_dir = "brick_yaml_autocomplete"
+#%%
 # have to copy brick_yaml (or parts of brick_yaml I want to complete) to brick_yaml_autocomplete
 # Could limit AI usage to certain files this way.
-os.makedirs(os.path.join(new_dir, template_dir), exist_ok=True)
-shutil.copytree(template_dir, os.path.join(new_dir, template_dir), dirs_exist_ok=True)
+os.makedirs(new_dir, exist_ok=True)
+shutil.copytree(template_dir, new_dir, dirs_exist_ok=True)
 #running autocomplete
 #%%
-for root, dirs, files in os.walk(template_dir):
+for root, dirs, files in os.walk(new_dir):
     for file in files:
         if file.endswith(".yml"):
             template_file = os.path.join(root, file)
-            process_brick_template(template_file, new_dir,prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df)
+            process_brick_template(template_file, prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df, as_agent= False)
             print(f"Template file: {template_file}")
 
  #%%
 # Now manually review and edit the files
 review_dir = "brick_yaml_reviewed"
-os.makedirs(os.path.join(review_dir, template_dir), exist_ok=False)
-shutil.copytree(template_dir, review_dir, dirs_exist_ok=False)
+os.makedirs(review_dir, exist_ok=False)
+shutil.copytree(new_dir, review_dir, dirs_exist_ok=False)
 
 # %%
 input_dir = os.path.join('brick_yaml_reviewed', 'brick_yaml')

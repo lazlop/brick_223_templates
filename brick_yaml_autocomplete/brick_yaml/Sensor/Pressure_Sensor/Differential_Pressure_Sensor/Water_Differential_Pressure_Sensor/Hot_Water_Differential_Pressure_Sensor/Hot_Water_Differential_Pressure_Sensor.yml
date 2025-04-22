@@ -1,7 +1,0 @@
-Domestic_Hot_Water_Differential_Pressure_Sensor:
-  brick_parent: Hot_Water_Differential_Pressure_Sensor
-  brick_definition: Measures the pressure difference in domestic hot water systems.
-Medium_Temperature_Hot_Water_Differential_Pressure_Sensor:
-  brick_parent: Hot_Water_Differential_Pressure_Sensor
-  brick_definition: Measures the difference in water pressure between sections of
-    a medium temperature hot water system

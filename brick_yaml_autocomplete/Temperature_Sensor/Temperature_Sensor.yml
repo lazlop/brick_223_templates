@@ -1,0 +1,92 @@
+Air_Temperature_Sensor:
+  aspects: s223_class
+  aspects_valid: false
+  brick_definition: Measures the temperature of air
+  brick_parent: Temperature_Sensor
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: AirHandlingUnit
+  property_of_valid: true
+  quantitykind: Temperature
+  quantitykind_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Frost_Sensor:
+  aspects: None
+  aspects_valid: false
+  brick_definition: Senses the presence of frost or conditions that may cause frost
+  brick_parent: Temperature_Sensor
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: Temperature
+  quantitykind_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Heat_Sink_Temperature_Sensor:
+  aspects: s223_class,s223_definition
+  aspects_valid: false
+  brick_definition: Measure temperature of the heat sink on a device such as a VFD.
+  brick_parent: Temperature_Sensor
+  medium: Medium-ThermalContact
+  medium_valid: true
+  property_of: VariableFrequencyDrive
+  property_of_valid: true
+  quantitykind: Temperature
+  quantitykind_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Natural_Gas_Temperature_Sensor:
+  aspects: s223_class,s223_definition
+  aspects_valid: false
+  brick_definition: Measures the temperature of natural gas
+  brick_parent: Temperature_Sensor
+  medium: Fluid-NaturalGas
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: Temperature
+  quantitykind_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Radiant_Panel_Temperature_Sensor:
+  aspects: s223_class,s223_definition
+  aspects_valid: false
+  brick_definition: Measures the temperature of the radiant panel of the radiant heating
+    and cooling HVAC system.
+  brick_parent: Temperature_Sensor
+  medium: Medium-ThermalContact
+  medium_valid: true
+  property_of: RadiantHeater
+  property_of_valid: true
+  quantitykind: Temperature
+  quantitykind_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Soil_Temperature_Sensor:
+  aspects: None
+  aspects_valid: false
+  brick_definition: Measures the temperature of soil
+  brick_parent: Temperature_Sensor
+  medium: None
+  medium_valid: true
+  property_of: PhysicalSpace
+  property_of_valid: true
+  quantitykind: Temperature
+  quantitykind_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Water_Temperature_Sensor:
+  aspects: None
+  aspects_valid: false
+  brick_definition: Measures the temperature of water
+  brick_parent: Temperature_Sensor
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: Temperature
+  quantitykind_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

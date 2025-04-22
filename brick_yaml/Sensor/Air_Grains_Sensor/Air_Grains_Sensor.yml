@@ -1,6 +1,0 @@
-Outside_Air_Grains_Sensor:
-  brick_parent: Air_Grains_Sensor
-  brick_definition: Measures the mass of water vapor in outside air
-Return_Air_Grains_Sensor:
-  brick_parent: Air_Grains_Sensor
-  brick_definition: Measures the mass of water vapor in return air

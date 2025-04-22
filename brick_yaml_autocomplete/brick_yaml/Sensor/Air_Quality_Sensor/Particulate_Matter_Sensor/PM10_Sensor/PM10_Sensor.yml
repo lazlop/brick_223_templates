@@ -1,3 +1,0 @@
-PM10_Level_Sensor:
-  brick_parent: PM10_Sensor
-  brick_definition: Detects level of particulates of size 10 microns
