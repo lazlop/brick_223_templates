@@ -15,12 +15,26 @@ def convert_to_prefixed(uri, g: Graph):
         print(e)
         return uri
 
-def query_to_df(query, g: Graph, remove_prefixes=False):
+def remove_namespaces(uri, g: Graph):
+    try:
+        prefix, uri_ref, local_name = g.compute_qname(uri)
+        return local_name
+    except Exception as e:
+        print(e)
+        return uri
+
+def query_to_df(query, g: Graph, remove_namespaces=False):
     results = g.query(query)
-    formatted_results = [
-        [convert_to_prefixed(value, g) if isinstance(value, (str, bytes)) and value.startswith("http") else str(value) for value in row]
-        for row in results
-    ]
+    if remove_namespaces:
+        formatted_results = [
+            [remove_namespaces(value, g) if isinstance(value, (str, bytes)) and value.startswith("http") else str(value) for value in row]
+            for row in results
+        ]
+    else:        
+        formatted_results = [
+            [convert_to_prefixed(value, g) if isinstance(value, (str, bytes)) and value.startswith("http") else str(value) for value in row]
+            for row in results
+        ]
     df = pd.DataFrame(formatted_results, columns=[str(var) for var in results.vars])
     return df
 

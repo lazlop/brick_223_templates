@@ -25,7 +25,7 @@ def get_s223_info():
         }
     }
     """
-    prop_df = query_to_df(prop_query, s223)
+    prop_df = query_to_df(prop_query, s223, remove_namespaces=True)
     
     # Get Media
     med_query = """ SELECT DISTINCT ?s223_class ?s223_definition WHERE {
@@ -42,7 +42,7 @@ def get_s223_info():
         }
     }
     """
-    media_df = query_to_df(med_query, s223)
+    media_df = query_to_df(med_query, s223, remove_namespaces=True)
     
     # Get Aspects
 
@@ -93,7 +93,7 @@ def get_s223_info():
         }
     }
     """
-    asp_df = query_to_df(asp_query, s223)
+    asp_df = query_to_df(asp_query, s223, remove_namespaces=True)
     
     # Get EnumerationKind
     ek_query = """ SELECT DISTINCT ?s223_class ?s223_definition WHERE {
@@ -127,7 +127,7 @@ def get_s223_info():
         }
     }
     """
-    ek_df = query_to_df(ek_query, s223)
+    ek_df = query_to_df(ek_query, s223, remove_namespaces=True)
     
     # Get possible measurement locations/conncetables that have the property
     meas_loc_query = """ SELECT DISTINCT ?s223_class ?s223_definition WHERE {
@@ -159,7 +159,7 @@ def get_s223_info():
     FILTER(STRSTARTS (str(?s223_class), \"http://data.ashrae.org/standard223#\"))
     }
     """
-    meas_loc_df = query_to_df(meas_loc_query, s223)
+    meas_loc_df = query_to_df(meas_loc_query, s223, remove_namespaces=True))
 
     # Convert quantitykinds to dataframe for validation
     qk_df = pd.read_csv(quantityknds_file)

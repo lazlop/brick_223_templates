@@ -1,6 +1,12 @@
-# MODEL = "openai/gpt-4o"
-MODEL = "anthropic/claude-sonnet"
-# MODEL = "google/gemini-pro"
+# MODEL = "openai/gpt-4.1" # Unsure on performance, more expesnvie
+# MODEL = "anthropic/claude-sonnet" # Best, most expesnvie 
+# MODEL = "lbl/cborg-chat:latest" # Free
+# MODEL = "lbl/cborg-coder:latest" # Free, least compute
+MODEL = "lbl/llama" # Free
+# MODEL = "google/gemini-flash-exp" # Free during experiment, temporary
+# MODEL = "google/gemini-flash" # Cheapest tokens
+# MODEL = "anthropic/claude-haiku" # More expensive, less performant than gemeni
+
 import openai # CBORG API Proxy Server is OpenAI-compatible through the openai module
 import yaml
 with open('/Users/lazlopaul/Desktop/cborg/api_key.yaml', 'r') as file:

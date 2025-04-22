@@ -2,6 +2,7 @@
 import os 
 from rdflib import Graph
 import yaml 
+import shutil
 from template_builder import (
     process_brick_template, 
     get_s223_info, 
@@ -31,12 +32,15 @@ processed_classes = process_class_hierarchy(start_parent, g, templates_dir)
 print(f"\nOverall Summary:")
 print(f"Processed {len(processed_classes)} unique classes in the hierarchy")
 
-#running autocomplete
 #%%
 template_dir = "brick_yaml"
-# have to copy brick_yaml (or parts of brick_yaml I want to complete) to brick_yaml_autocomplete
-# currently doing this to limit AI usage.
 new_dir = "brick_yaml_autocomplete"
+# have to copy brick_yaml (or parts of brick_yaml I want to complete) to brick_yaml_autocomplete
+# Could limit AI usage to certain files this way.
+os.makedirs(os.path.join(new_dir, template_dir), exist_ok=True)
+shutil.copytree(template_dir, os.path.join(new_dir, template_dir), dirs_exist_ok=True)
+#running autocomplete
+#%%
 for root, dirs, files in os.walk(template_dir):
     for file in files:
         if file.endswith(".yml"):
@@ -44,7 +48,12 @@ for root, dirs, files in os.walk(template_dir):
             process_brick_template(template_file, new_dir,prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df)
             print(f"Template file: {template_file}")
 
-# creating the templates
+ #%%
+# Now manually review and edit the files
+review_dir = "brick_yaml_reviewed"
+os.makedirs(os.path.join(review_dir, template_dir), exist_ok=False)
+shutil.copytree(template_dir, review_dir, dirs_exist_ok=False)
+
 # %%
 input_dir = os.path.join('brick_yaml_reviewed', 'brick_yaml')
 output_dir = 's223_templates'
@@ -74,11 +83,19 @@ approximate_completion = 's223:Aspect-DryBulb, s223:Aspect-WetBulb, s223:Medium-
 prompt_encoded = enc.encode((example_prompt * 5 + input_data) * len(processed_classes))
 completion_encoded = enc.encode(approximate_completion * len(processed_classes))
 
-input_cost = 3
-output_cost = 15
-
-prompt_cost = len(prompt_encoded) / 1_000_000 * 3
-completion_cost = len(completion_encoded) / 1_000_000 * 15
-print(f"{prompt_cost} + {completion_cost} = {prompt_cost + completion_cost}")
+def compute_cost(prompt_encoded, completion_encoded, model = 'sonnet'):
+    if model == "sonnet":
+        input_cost = 3
+        output_cost = 15
+    if model == "flash":
+        input_cost = 0.35
+        output_cost = 0.7
+    prompt_cost = len(prompt_encoded) / 1_000_000 * input_cost 
+    completion_cost = len(completion_encoded) / 1_000_000 * output_cost
+    total_cost = prompt_cost + completion_cost
+    print(f"Prompt cost: {prompt_cost}, Completion cost: {completion_cost}, Total cost: {total_cost}")
+    return total_cost
+print(f"For Most Expensive Model: {compute_cost(prompt_encoded, completion_encoded, model = 'sonnet')}")
+print(f"For Cheapest Model: {compute_cost(prompt_encoded, completion_encoded, model = 'flash')}")
 
 # %%
