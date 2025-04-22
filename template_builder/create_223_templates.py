@@ -90,7 +90,7 @@ class FoldedString(str):
 
 # Create a custom representer for the folded style
 def folded_str_representer(dumper, data):
-    return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='>')
+    return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='|')
 
 # Register the representer
 yaml.add_representer(FoldedString, folded_str_representer)
@@ -127,8 +127,7 @@ def process_yaml_file(yaml_path, output_path):
         yaml.dump(
             template_dict,
             f,
-            default_flow_style=False,
-            sort_keys=False
+            explicit_end=False
 )
         
 def save_notes(yaml_path):

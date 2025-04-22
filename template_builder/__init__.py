@@ -8,7 +8,7 @@ from .utils import *
 from .namespaces import *
 from .get_completion import get_completion
 from .get_s223_data import get_s223_info
-from .create_223_templates import process_yaml_file, process_directory
+from .create_223_templates import process_yaml_file, process_directory, create_template_for_entity
 
 
 def hello() -> str:
