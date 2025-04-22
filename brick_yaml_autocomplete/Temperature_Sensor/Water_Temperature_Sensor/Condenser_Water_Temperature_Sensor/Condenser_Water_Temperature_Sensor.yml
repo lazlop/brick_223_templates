@@ -1,6 +1,0 @@
-Entering_Condenser_Water_Temperature_Sensor:
-  brick_parent: Condenser_Water_Temperature_Sensor
-  brick_definition: Measures the temperature of the entering condenser water
-Leaving_Condenser_Water_Temperature_Sensor:
-  brick_parent: Condenser_Water_Temperature_Sensor
-  brick_definition: Measures the temperature of the leaving condenser water

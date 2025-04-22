@@ -1,10 +1,10 @@
 # MODEL = "openai/gpt-4.1" # Unsure on performance, more expesnvie
 # MODEL = "anthropic/claude-sonnet" # Best, most expesnvie. So far no other model seems to work
 # MODEL = "lbl/cborg-chat:latest" # Free
-# MODEL = "lbl/cborg-coder:latest" # Free, least compute
+MODEL = "lbl/cborg-coder:latest" # Free, least compute, seems to perform better and faster than llama 
 # MODEL = "lbl/llama" # Free, Does not do well. Needs help to come up with single class answers. Often comes up with wrong thing
 # MODEL = "google/gemini-flash-exp" # Free during experiment, temporary, seems to perform adequately, not as well as sonnet
-MODEL = "google/gemini-flash" # Cheapest tokens
+# MODEL = "google/gemini-flash" # Cheapest tokens
 # MODEL = "anthropic/claude-haiku" # More expensive, less performant than gemeni
 
 import asyncio
@@ -32,7 +32,7 @@ client = openai.OpenAI(
     api_key=API_KEY,
     base_url=BASE_URL
 )
-SYSTEM_PROMPT = "Think hard about your answer."
+SYSTEM_PROMPT = None
 # llama needs a little help returning a single class
 def get_simple_completion(prompt, system_prompt):
     messages = [
