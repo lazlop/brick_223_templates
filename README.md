@@ -75,6 +75,8 @@ This script:
 - Validates the AI-generated information against S223 ontology
 - Saves the enhanced YAML files to `brick_yaml_autocomplete/`
 
+The schema used in this YAML may also be useful for "flattening" 223P graphs into a tag-based structure for storage in tabular databases. This will be explored more in the future.
+
 ### 3. Review and Refine (Manual Step)
 
 Review the AI-enhanced YAML files and make any necessary corrections:
