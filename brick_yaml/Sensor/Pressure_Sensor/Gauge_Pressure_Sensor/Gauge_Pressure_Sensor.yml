@@ -1,0 +1,8 @@
+Chilled_Water_Gauge_Pressure_Sensor:
+  brick_parent: Gauge_Pressure_Sensor
+  brick_definition: Sensor measuring the gauge pressure (zero-referenced against ambient
+    air pressure) of chilled water
+Hot_Water_Gauge_Pressure_Sensor:
+  brick_parent: Gauge_Pressure_Sensor
+  brick_definition: Sensor measuring the gauge pressure (zero-referenced against ambient
+    air pressure) of hot water

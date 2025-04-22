@@ -1,0 +1,6 @@
+Average_Discharge_Air_Flow_Sensor:
+  brick_parent: Supply_Air_Flow_Sensor
+  brick_definition: The computed average flow of discharge air over some interval
+Average_Supply_Air_Flow_Sensor:
+  brick_parent: Supply_Air_Flow_Sensor
+  brick_definition: The computed average flow of supply air over some interval

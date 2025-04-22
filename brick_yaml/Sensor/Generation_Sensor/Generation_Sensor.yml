@@ -1,0 +1,3 @@
+Energy_Generation_Sensor:
+  brick_parent: Generation_Sensor
+  brick_definition: A sensor measuring the amount of generated energy.

@@ -1,0 +1,7 @@
+Absolute_Humidity_Sensor:
+  brick_parent: Humidity_Sensor
+  brick_definition: Measures the present state of absolute humidity
+Relative_Humidity_Sensor:
+  brick_parent: Humidity_Sensor
+  brick_definition: Measures the present state of absolute humidity relative to a
+    maximum humidity given the same temperature

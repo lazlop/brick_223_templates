@@ -1,0 +1,8 @@
+Electrical_Energy_Usage_Sensor:
+  brick_parent: Energy_Usage_Sensor
+  brick_definition: A sensor that records the quantity of electrical energy consumed
+    in a given period
+Thermal_Energy_Usage_Sensor:
+  brick_parent: Energy_Usage_Sensor
+  brick_definition: A sensor that records the quantity of thermal energy consumed
+    in a given period

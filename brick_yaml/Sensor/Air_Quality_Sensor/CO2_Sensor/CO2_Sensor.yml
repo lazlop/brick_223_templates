@@ -1,0 +1,13 @@
+CO2_Differential_Sensor:
+  brick_parent: CO2_Sensor
+  brick_definition: Measures the difference between CO2 levels of inside and outside
+    air
+Outside_Air_CO2_Sensor:
+  brick_parent: CO2_Sensor
+  brick_definition: Measures the concentration of CO2 in outside air
+Return_Air_CO2_Sensor:
+  brick_parent: CO2_Sensor
+  brick_definition: Measures the concentration of CO2 in return air
+CO2_Level_Sensor:
+  brick_parent: CO2_Sensor
+  brick_definition: Measures the concentration of CO2 in air
