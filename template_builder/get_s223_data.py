@@ -26,7 +26,6 @@ def get_s223_info():
     }
     """
     prop_df = query_to_df(prop_query, s223)
-    s223_properties = prop_df.to_csv(index=False)
     
     # Get Media
     med_query = """ SELECT DISTINCT ?s223_class ?s223_definition WHERE {
@@ -44,7 +43,6 @@ def get_s223_info():
     }
     """
     media_df = query_to_df(med_query, s223)
-    s223_media = media_df.to_csv(index=False)
     
     # Get Aspects
 
@@ -96,7 +94,6 @@ def get_s223_info():
     }
     """
     asp_df = query_to_df(asp_query, s223)
-    s223_aspects = asp_df.to_csv(index=False)
     
     # Get EnumerationKind
     ek_query = """ SELECT DISTINCT ?s223_class ?s223_definition WHERE {
@@ -131,10 +128,40 @@ def get_s223_info():
     }
     """
     ek_df = query_to_df(ek_query, s223)
-    s223_eks = ek_df.to_csv(index=False)
     
+    # Get possible measurement locations/conncetables that have the property
+    meas_loc_query = """ SELECT DISTINCT ?s223_class ?s223_definition WHERE {
+    {
+    ?s223_class rdfs:subClassOf+ s223:Connectable .
+    }
+    UNION
+    {
+    ?s223_class rdfs:subClassOf* s223:Connection .
+    }
+    UNION
+    {
+    ?s223_class rdfs:subClassOf+ s223:ConnectionPoint .
+    }
+    # Adding physical spaces
+    UNION
+    {
+    ?s223_class rdfs:subClassOf* s223:PhysicalSpace .
+    }
+    ?s223_class rdfs:comment ?s223_definition .
+    
+    # have to remove sensors since they are not measurement locations
+    FILTER NOT EXISTS {
+        ?s223_class rdfs:subClassOf* s223:Sensor .
+    }
+    # Generic equipment might not be a useful measurement location, so we remove it 
+    FILTER ( ?s223_class != s223:Equipment )
+    FILTER ( ?s223_class != s223:Sensor )
+    FILTER(STRSTARTS (str(?s223_class), \"http://data.ashrae.org/standard223#\"))
+    }
+    """
+    meas_loc_df = query_to_df(meas_loc_query, s223)
+
     # Convert quantitykinds to dataframe for validation
     qk_df = pd.read_csv(quantityknds_file)
-    quantitykinds = qk_df.to_csv(index=False)
     
-    return s223_properties, s223_media, s223_aspects, s223_eks, quantitykinds,prop_df, media_df, asp_df, ek_df, qk_df
+    return prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df

@@ -1,4 +1,5 @@
-MODEL = "openai/gpt-4o"
+# MODEL = "openai/gpt-4o"
+MODEL = "anthropic/claude-sonnet"
 # MODEL = "google/gemini-pro"
 import openai # CBORG API Proxy Server is OpenAI-compatible through the openai module
 import yaml

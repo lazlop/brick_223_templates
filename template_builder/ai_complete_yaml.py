@@ -25,7 +25,10 @@ def validate_result(result, df, column_name='s223_class'):
     result = result.strip()
     return (result in df[column_name].values)
 
-def process_brick_template(template_file, new_dir, s223_properties, s223_media, s223_aspects, s223_eks, quantitykinds, prop_df, media_df, asp_df, ek_df, qk_df):
+def df_to_csv_str(df):
+    return df.to_csv(index=False)
+
+def process_brick_template(template_file, new_dir, prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df):
     """
     Process a Brick template file, running prompts on each brick class and definition
     and updating the YAML file with the results.
@@ -34,8 +37,6 @@ def process_brick_template(template_file, new_dir, s223_properties, s223_media, 
         template_file (str): Path to the template YAML file
     """
     print(f"Processing template file: {template_file}")
-
-    
     # Load the brick template
     with open(template_file, "r") as f:
         brick_dict = yaml.safe_load(f)
@@ -60,7 +61,7 @@ def process_brick_template(template_file, new_dir, s223_properties, s223_media, 
         # Prompt 1: Determine s223_class
         prompt1 = f"""
         Determine what s223_class the brick_class should be, based on its name and definition.
-        the possible s223 classes are <s223_properties>{s223_properties}</s223_properties> 
+        the possible s223 classes are <s223_properties>{df_to_csv_str(prop_df)}</s223_properties> 
 
         Only return the s223_class. Do not return any other information.
 
@@ -81,8 +82,8 @@ def process_brick_template(template_file, new_dir, s223_properties, s223_media, 
         # Prompt 2: Determine quantitykind or enumerationkind
         prompt2 = f"""
         Determine what quantitykind or enumerationkind the brick_class should be, based on its name and definition.
-        the possible quantitykinds are <quantitykinds>{quantitykinds}</quantitykinds> 
-        the possible enumerationkinds are <s223_eks>{s223_eks}</s223_eks>
+        the possible quantitykinds are <quantitykinds>{df_to_csv_str(qk_df)}</quantitykinds> 
+        the possible enumerationkinds are <s223_eks>{df_to_csv_str(ek_df)}</s223_eks>
         Only return the quantitykind or enumerationkind. Do not return any other information.
 
         brick_class: {brick_class}
@@ -93,6 +94,7 @@ def process_brick_template(template_file, new_dir, s223_properties, s223_media, 
         print(f"quantitykind/enumerationkind: {qk_ek_result}")
         
         # Check if result is in quantitykind or enumerationkind list
+        # may want to namespace quantitykinds, this is working fine for now
         is_quantitykind = qk_ek_result in qk_df['quantitykinds'].values
         is_enumerationkind = validate_result(qk_ek_result, ek_df)
         
@@ -112,7 +114,7 @@ def process_brick_template(template_file, new_dir, s223_properties, s223_media, 
         # Prompt 3: Determine medium
         prompt3 = f"""
         Determine what medium the brick_class should be associated with, based on its name and definition.
-        the possible media are <media>{s223_media}</media> 
+        the possible media are <media>{df_to_csv_str(media_df)}</media> 
         Only return the medium. Do not return any other information.
 
         If there is no sensible medium, return None.
@@ -138,7 +140,7 @@ def process_brick_template(template_file, new_dir, s223_properties, s223_media, 
         # Prompt 4: Determine aspects
         prompt4 = f"""
         Determine what aspects the brick_class should be associated with, based on its name and definition.
-        The possible aspects are <aspects>{s223_aspects}</aspects> 
+        The possible aspects are <aspects>{df_to_csv_str(asp_df)}</aspects> 
         If there are no directly applicable aspects, return None.
         Only return the aspects as a comma separated list. Do not return any other information.
 
@@ -163,6 +165,32 @@ def process_brick_template(template_file, new_dir, s223_properties, s223_media, 
         updated_definition_data['aspects'] = aspects_result
         updated_definition_data['aspects_valid'] = is_valid_aspects
         
+        #prompt5 determine measurement location
+        # Claude having more trouble with this than openai. Should think more about how I do namespacing, if I do namespacing of the brick_class. 
+        # adding the brick namespace helped with getting namespaces in the output of this prompt for equipment. DomainSpace still not namespaced
+        prompt5 =f"""
+        Determine what kind of equipment or connection point the brick_class may measure, based on its name and definition.
+        The possible equipment and connection points that can be measured are <equipment_and_connection_point>{df_to_csv_str(meas_loc_df)}</equipment_and_connection_point> 
+        If there is no possible equipment or connection points that may be measured by this brick_class, return None.
+        Do not return Sensor, return what the sensor may be measuring. 
+        Only return the equipment or connection point. Do not return any other information. 
+
+        brick_class: brick:{brick_class}
+        definition: {text_definition}
+        """
+        meas_loc_result = get_completion(prompt5, system_prompt)
+        meas_loc_result = meas_loc_result.strip()
+        print(f"measurement location: {meas_loc_result}")
+        # Validate medium result
+        if meas_loc_result.lower() == "none":
+            is_valid_meas_loc = True
+        else:
+            is_valid_meas_loc = validate_result(meas_loc_result, meas_loc_df)
+            print(f"Is valid property: {is_valid_meas_loc}")
+        
+        updated_definition_data['property_of'] = meas_loc_result
+        updated_definition_data['property_of_valid'] = is_valid_meas_loc
+
         # Add the updated definition to the dictionary
         updated_brick_dict[brick_class] = updated_definition_data
     

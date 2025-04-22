@@ -27,7 +27,7 @@ def create_template_for_entity(entity_name, entity_data):
         entity_data: Dictionary containing the entity's properties from the YAML file
     
     Returns:
-        A string containing the template in Turtle format
+        A string containing the template in Turtle format, the optional parameters, and the dependencies
     """
     g = Graph()
     bind_prefixes(g)
@@ -47,28 +47,42 @@ def create_template_for_entity(entity_name, entity_data):
     # TODO: correct namespacing issues 
     if entity_data.get('quantitykind'):
         # Create a property for the quantity kind
-        quantitykind = entity_data.get('quantitykind')
+        quantitykind = entity_data.get('quantitykind').split(':')[-1]
         g.add((entity, QUDT.hasQuantityKind, QK[quantitykind]))
     
     # if enumerationkind present add it
     if entity_data.get('enumerationkind'):
         # Create a property for the enumeration kind
-        enumerationkind = entity_data.get('enumerationkind')
-        g.add((entity, S223.hasEnumerationKind, S223[enumerationkind.split(':')[-1]]))
+        enumerationkind = entity_data.get('enumerationkind').split(':')[-1]
+        g.add((entity, S223.hasEnumerationKind, S223[enumerationkind]))
 
     # Add medium if present
     if entity_data.get('medium') and entity_data.get('medium') != 'None':
-        medium = entity_data.get('medium')
-        g.add((entity, S223.ofMedium, S223[medium.split(':')[-1]]))
+        medium = entity_data.get('medium').split(':')[-1]
+        g.add((entity, S223.ofMedium, S223[medium]))
     
     # Add aspects if present
     if entity_data.get('aspects') and entity_data.get('aspects') != 'None':
         aspects = entity_data.get('aspects').split(',')
         for i, aspect in enumerate(aspects):
-            aspect = aspect.strip()
+            aspect = aspect.strip().split(':')[-1]
             if aspect:
-                g.add((entity, S223.hasAspect, S223[aspect.split(':')[-1]]))
-    return g.serialize()
+                g.add((entity, S223.hasAspect, S223[aspect]))
+
+    # add property of if present
+    if entity_data.get('property_of') and entity_data.get('property_of') != 'None':
+        property_of = entity_data.get('property_of').split(':')[-1]
+        print('ADDING PROP OF: ', property_of)
+        g.add((PARAM[property_of], S223.hasProperty, entity))
+
+        # TODO: Decide how to handle optional and dependencies 
+        optional = [property_of]
+        dependencies = [ {'template': property_of, "args": {"name": property_of}} ]
+    else:
+        optional = None
+        dependencies = None
+
+    return g.serialize(), optional, dependencies
 
 # Define a custom class for folded style text
 class FoldedString(str):
@@ -100,12 +114,15 @@ def process_yaml_file(yaml_path, output_path):
     template_dict = {}
     for entity_name, entity_data in data.items():
         # Generate the S223 template
-        template = create_template_for_entity(entity_name, entity_data)
+        template, optional, dependencies = create_template_for_entity(entity_name, entity_data)
         # Create the YAML template file in the format requested
         template_dict[entity_name] = {
                 'body': FoldedString(template),  # Use the custom class for folded style template
             }
-    print(template_dict)
+        if optional:
+            template_dict[entity_name]['optional'] = optional
+        if dependencies:
+            template_dict[entity_name]['dependencies'] = dependencies
     with open(output_path, 'w') as f:
         yaml.dump(
             template_dict,
