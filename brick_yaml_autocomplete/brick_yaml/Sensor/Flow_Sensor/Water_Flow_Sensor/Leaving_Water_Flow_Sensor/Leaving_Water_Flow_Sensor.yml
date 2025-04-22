@@ -1,0 +1,9 @@
+Leaving_Chilled_Water_Flow_Sensor:
+  brick_parent: Leaving_Water_Flow_Sensor
+  brick_definition: Measures the rate of flow of chilled leaving water
+Leaving_Condenser_Water_Flow_Sensor:
+  brick_parent: Leaving_Water_Flow_Sensor
+  brick_definition: Measures the flow of the leaving condenser water
+Leaving_Hot_Water_Flow_Sensor:
+  brick_parent: Leaving_Water_Flow_Sensor
+  brick_definition: Measures the rate of flow of hot leaving water

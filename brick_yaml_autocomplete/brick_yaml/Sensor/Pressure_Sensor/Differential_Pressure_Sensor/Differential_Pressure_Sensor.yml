@@ -1,0 +1,10 @@
+Filter_Differential_Pressure_Sensor:
+  brick_parent: Differential_Pressure_Sensor
+  brick_definition: Measures the difference in pressure on either side of a filter
+Water_Differential_Pressure_Sensor:
+  brick_parent: Differential_Pressure_Sensor
+  brick_definition: Measures the difference in water pressure between two points in
+    a system.
+Air_Differential_Pressure_Sensor:
+  brick_parent: Differential_Pressure_Sensor
+  brick_definition: Measures the difference in pressure between two regions of air

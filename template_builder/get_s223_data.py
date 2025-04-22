@@ -159,7 +159,7 @@ def get_s223_info():
     FILTER(STRSTARTS (str(?s223_class), \"http://data.ashrae.org/standard223#\"))
     }
     """
-    meas_loc_df = query_to_df(meas_loc_query, s223, remove_namespaces=True))
+    meas_loc_df = query_to_df(meas_loc_query, s223, remove_namespaces=True)
 
     # Convert quantitykinds to dataframe for validation
     qk_df = pd.read_csv(quantityknds_file)

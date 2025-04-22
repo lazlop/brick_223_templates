@@ -1,0 +1,9 @@
+CO_Level_Sensor:
+  brick_parent: CO_Sensor
+  brick_definition: Measures the concentration of CO
+Outside_Air_CO_Sensor:
+  brick_parent: CO_Sensor
+  brick_definition: Measures the concentration of CO in outside air
+Return_Air_CO_Sensor:
+  brick_parent: CO_Sensor
+  brick_definition: Measures the concentration of CO in return air

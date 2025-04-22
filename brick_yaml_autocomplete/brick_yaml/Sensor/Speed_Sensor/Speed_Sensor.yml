@@ -1,0 +1,4 @@
+Wind_Speed_Sensor:
+  brick_parent: Speed_Sensor
+  brick_definition: Measured speed of wind, caused by air moving from high to low
+    pressure

@@ -1,0 +1,12 @@
+Inside_Face_Surface_Temperature_Sensor:
+  brick_parent: Radiant_Panel_Temperature_Sensor
+  brick_definition: Measures the inside surface (relative to the space) of the radiant
+    panel of the radiant heating and cooling HVAC system.
+Outside_Face_Surface_Temperature_Sensor:
+  brick_parent: Radiant_Panel_Temperature_Sensor
+  brick_definition: Measures the outside surface (relative to the space) of the radiant
+    panel of a radiant heating and cooling HVAC system.
+Embedded_Temperature_Sensor:
+  brick_parent: Radiant_Panel_Temperature_Sensor
+  brick_definition: Measures the internal temperature of the radiant layer of the
+    radiant heating and cooling HVAC system.

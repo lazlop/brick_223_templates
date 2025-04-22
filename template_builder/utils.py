@@ -15,7 +15,18 @@ def convert_to_prefixed(uri, g: Graph):
         print(e)
         return uri
 
-def remove_namespaces(uri, g: Graph):
+def convert_to_localname(uri, g: Graph):
+    """
+    Given a URI and a Graph, remove the namespace prefix if it exists.
+
+    Args:
+        uri (str): The URI to strip the namespace from
+        g (Graph): The RDF graph with the namespace mappings
+
+    Returns:
+        str: The URI with the namespace prefix removed
+    """
+    
     try:
         prefix, uri_ref, local_name = g.compute_qname(uri)
         return local_name
@@ -27,7 +38,7 @@ def query_to_df(query, g: Graph, remove_namespaces=False):
     results = g.query(query)
     if remove_namespaces:
         formatted_results = [
-            [remove_namespaces(value, g) if isinstance(value, (str, bytes)) and value.startswith("http") else str(value) for value in row]
+            [convert_to_localname(value, g) if isinstance(value, (str, bytes)) and value.startswith("http") else str(value) for value in row]
             for row in results
         ]
     else:        

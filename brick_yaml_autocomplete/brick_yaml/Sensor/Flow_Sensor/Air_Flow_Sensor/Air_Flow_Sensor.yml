@@ -1,0 +1,24 @@
+Bypass_Air_Flow_Sensor:
+  brick_parent: Air_Flow_Sensor
+  brick_definition: Measures the rate of flow of bypass air
+Fume_Hood_Air_Flow_Sensor:
+  brick_parent: Air_Flow_Sensor
+  brick_definition: Measures the rate of flow of air in a fume hood
+Mixed_Air_Flow_Sensor:
+  brick_parent: Air_Flow_Sensor
+  brick_definition: Measures the rate of flow of mixed air
+Outside_Air_Flow_Sensor:
+  brick_parent: Air_Flow_Sensor
+  brick_definition: Measures the rate of flow of outside air into the system
+Return_Air_Flow_Sensor:
+  brick_parent: Air_Flow_Sensor
+  brick_definition: Measures the rate of flow of return air
+Discharge_Air_Flow_Sensor:
+  brick_parent: Air_Flow_Sensor
+  brick_definition: Measures the rate of flow of discharge air
+Exhaust_Air_Flow_Sensor:
+  brick_parent: Air_Flow_Sensor
+  brick_definition: Measures the rate of flow of exhaust air
+Supply_Air_Flow_Sensor:
+  brick_parent: Air_Flow_Sensor
+  brick_definition: Measures the rate of flow of supply air

@@ -1,0 +1,3 @@
+Radon_Concentration_Sensor:
+  brick_parent: Radioactivity_Concentration_Sensor
+  brick_definition: Measures the concentration of radioactivity due to radon
