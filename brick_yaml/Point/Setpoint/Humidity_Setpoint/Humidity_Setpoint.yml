@@ -1,0 +1,33 @@
+Building_Air_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Setpoint for humidity in a building
+Bypass_Air_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Humidity setpoint for bypass air
+Exhaust_Air_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Humidity setpoint for exhaust air
+Mixed_Air_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Humidity setpoint for mixed air
+Occupied_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Target humidity level when the location is occupied.
+Outside_Air_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Humidity setpoint for outside air
+Return_Air_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Humidity setpoint for return air
+Unoccupied_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Target humidity level when the location is unoccupied.
+Zone_Air_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Humidity setpoint for zone air
+Discharge_Air_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Humidity setpoint for discharge air
+Supply_Air_Humidity_Setpoint:
+  brick_parent: Humidity_Setpoint
+  brick_definition: Humidity setpoint for supply air

@@ -1,0 +1,12 @@
+Humidity_Deadband_Setpoint:
+  brick_parent: Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of humidity
+Air_Flow_Deadband_Setpoint:
+  brick_parent: Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of air flow
+Static_Pressure_Deadband_Setpoint:
+  brick_parent: Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of static pressure
+Temperature_Deadband_Setpoint:
+  brick_parent: Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of temperature

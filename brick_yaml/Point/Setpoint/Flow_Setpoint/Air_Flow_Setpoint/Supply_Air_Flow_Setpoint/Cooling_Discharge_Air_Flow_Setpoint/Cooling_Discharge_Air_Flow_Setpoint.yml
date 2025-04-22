@@ -1,0 +1,9 @@
+Occupied_Cooling_Discharge_Air_Flow_Setpoint:
+  brick_parent: Cooling_Discharge_Air_Flow_Setpoint
+  brick_definition: Sets discharge air flow for cooling when occupied
+Unoccupied_Cooling_Discharge_Air_Flow_Setpoint:
+  brick_parent: Cooling_Discharge_Air_Flow_Setpoint
+  brick_definition: Sets discharge air flow for cooling when unoccupied
+Occupied_Cooling_Supply_Air_Flow_Setpoint:
+  brick_parent: Cooling_Discharge_Air_Flow_Setpoint
+  brick_definition: Sets supply air flow rate for cooling when occupied

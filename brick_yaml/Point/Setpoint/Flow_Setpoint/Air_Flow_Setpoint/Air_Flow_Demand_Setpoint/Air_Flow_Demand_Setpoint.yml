@@ -1,0 +1,6 @@
+Discharge_Air_Flow_Demand_Setpoint:
+  brick_parent: Air_Flow_Demand_Setpoint
+  brick_definition: Sets the rate of discharge air flow required for a process
+Supply_Air_Flow_Demand_Setpoint:
+  brick_parent: Air_Flow_Demand_Setpoint
+  brick_definition: Sets the rate of supply air flow required for a process

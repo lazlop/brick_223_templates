@@ -1,0 +1,4 @@
+Domestic_Hot_Water_Differential_Pressure_Setpoint:
+  brick_parent: Hot_Water_Differential_Pressure_Setpoint
+  brick_definition: Sets the target water differential pressure between an upstream
+    and downstream point in a water pipe used to carry domestic hot water

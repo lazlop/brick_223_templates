@@ -1,0 +1,7 @@
+CO2_Alarm_Sensitivity_Parameter:
+  brick_parent: Alarm_Sensitivity_Parameter
+  brick_definition: A parameter indicates the sensitivity to activate a CO2 alarm.
+Temperature_Alarm_Sensitivity_Parameter:
+  brick_parent: Alarm_Sensitivity_Parameter
+  brick_definition: A parameter indicates the sensitivity to activate a temperature
+    alarm.

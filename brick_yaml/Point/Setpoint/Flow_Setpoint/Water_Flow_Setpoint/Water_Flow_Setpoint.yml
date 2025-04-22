@@ -1,0 +1,15 @@
+Bypass_Water_Flow_Setpoint:
+  brick_parent: Water_Flow_Setpoint
+  brick_definition: Sets the target flow rate of bypass water
+Entering_Water_Flow_Setpoint:
+  brick_parent: Water_Flow_Setpoint
+  brick_definition: Sets the target flow rate of entering water
+Hot_Water_Flow_Setpoint:
+  brick_parent: Water_Flow_Setpoint
+  brick_definition: Sets the target flow rate of hot water
+Chilled_Water_Flow_Setpoint:
+  brick_parent: Water_Flow_Setpoint
+  brick_definition: Sets the target flow rate of chilled water
+Leaving_Water_Flow_Setpoint:
+  brick_parent: Water_Flow_Setpoint
+  brick_definition: Sets the target flow rate of leaving water

@@ -1,0 +1,18 @@
+Max_Water_Temperature_Setpoint:
+  brick_parent: Water_Temperature_Setpoint
+  brick_definition: Setpoint for max water temperature
+Min_Water_Temperature_Setpoint:
+  brick_parent: Water_Temperature_Setpoint
+  brick_definition: Setpoint for min water temperature
+Hot_Water_Temperature_Setpoint:
+  brick_parent: Water_Temperature_Setpoint
+  brick_definition: Sets the temperature of hot water
+Chilled_Water_Temperature_Setpoint:
+  brick_parent: Water_Temperature_Setpoint
+  brick_definition: Sets the temperature of chilled water
+Entering_Water_Temperature_Setpoint:
+  brick_parent: Water_Temperature_Setpoint
+  brick_definition: Sets temperature of entering water
+Leaving_Water_Temperature_Setpoint:
+  brick_parent: Water_Temperature_Setpoint
+  brick_definition: Sets temperature of leaving water

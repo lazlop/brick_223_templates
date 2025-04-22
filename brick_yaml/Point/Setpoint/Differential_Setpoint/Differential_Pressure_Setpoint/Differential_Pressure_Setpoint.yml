@@ -1,0 +1,8 @@
+Water_Differential_Pressure_Setpoint:
+  brick_parent: Differential_Pressure_Setpoint
+  brick_definition: Sets the target water differential pressure between an upstream
+    and downstream point in a water pipe or conduit
+Air_Differential_Pressure_Setpoint:
+  brick_parent: Differential_Pressure_Setpoint
+  brick_definition: Sets the target air differential pressure between an upstream
+    and downstream point in a air duct or conduit

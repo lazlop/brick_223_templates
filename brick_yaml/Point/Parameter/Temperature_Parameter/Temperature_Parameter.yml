@@ -1,0 +1,24 @@
+High_Temperature_Alarm_Parameter:
+  brick_parent: Temperature_Parameter
+  brick_definition: A parameter determining the temperature level at which to trigger
+    a high temperature alarm
+Low_Temperature_Alarm_Parameter:
+  brick_parent: Temperature_Parameter
+  brick_definition: A parameter determining the temperature level at which to trigger
+    a low temperature alarm
+Temperature_Tolerance_Parameter:
+  brick_parent: Temperature_Parameter
+  brick_definition: A parameter determining the difference between upper and lower
+    limits of temperature.
+Air_Temperature_Setpoint_Limit:
+  brick_parent: Temperature_Parameter
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Air_Temperature_Setpoint.
+Max_Temperature_Setpoint_Limit:
+  brick_parent: Temperature_Parameter
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Temperature_Setpoint.
+Min_Temperature_Setpoint_Limit:
+  brick_parent: Temperature_Parameter
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Temperature_Setpoint.

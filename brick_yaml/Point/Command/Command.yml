@@ -1,0 +1,102 @@
+Boiler_Command:
+  brick_parent: Command
+  brick_definition: A command to control a boiler
+Cooling_Command:
+  brick_parent: Command
+  brick_definition: Controls the amount of cooling to be delivered (typically as a
+    proportion of total cooling output)
+Dehumidify_Command:
+  brick_parent: Command
+  brick_definition: Triggers the dehumidification process, actively removing moisture
+    from the air to achieve desired humidity levels
+Direction_Command:
+  brick_parent: Command
+  brick_definition: Commands that affect the direction of some phenomenon
+Heating_Command:
+  brick_parent: Command
+  brick_definition: Controls the amount of heating to be delivered (typically as a
+    proportion of total heating output)
+Lead_Lag_Command:
+  brick_parent: Command
+  brick_definition: Enables lead/lag operation
+Level_Command:
+  brick_parent: Command
+  brick_definition: Adjusts the operational state to a specific level within a predefined
+    range.
+Lighting_Correlated_Color_Temperature_Command:
+  brick_parent: Command
+  brick_definition: A command to set correlated color temperature (CCT) which is the
+    temperature of the Planckian radiator whose perceived color most closely resembles
+    that of a given stimulus at the same brightness and under specified viewing conditions.
+Luminance_Command:
+  brick_parent: Command
+  brick_definition: Controls the amount of luminance delivered by a lighting system
+Occupancy_Command:
+  brick_parent: Command
+  brick_definition: Controls whether or not a device or controller is operating in
+    "Occupied" mode
+Preheat_Command:
+  brick_parent: Command
+  brick_definition: A command to activate preheating. Typically used to preheat cool
+    air coming from a mixing box or economizer
+Pump_Command:
+  brick_parent: Command
+  brick_definition: Controls or reports the speed of a pump (typically as a proportion
+    of its full pumping capacity)
+Reheat_Command:
+  brick_parent: Command
+  brick_definition: A command to activate reheating, which is used for either heating
+    or for dehumidification purposes
+Relay_Command:
+  brick_parent: Command
+  brick_definition: Commands to switch the relay
+Speed_Command:
+  brick_parent: Command
+  brick_definition: A command to set speed to a certain degree.
+Tint_Command:
+  brick_parent: Command
+  brick_definition: The target level of window tint.
+Damper_Command:
+  brick_parent: Command
+  brick_definition: Controls properties of dampers
+Fan_Command:
+  brick_parent: Command
+  brick_definition: Controls properties of fans
+Lighting_Level_Command:
+  brick_parent: Command
+  brick_definition: Controls the amount of the light provided by the device typically
+    in percentages.
+Override_Command:
+  brick_parent: Command
+  brick_definition: Controls or reports whether or not a device or control loop is
+    in 'override'
+Valve_Command:
+  brick_parent: Command
+  brick_definition: Controls or reports the openness of a valve (typically as a proportion
+    of its full range of motion)
+Frequency_Command:
+  brick_parent: Command
+  brick_definition: Controls the frequency of a device's operation (e.g. rotational
+    frequency)
+Position_Command:
+  brick_parent: Command
+  brick_definition: Controls or reports the position of some object
+Load_Shed_Command:
+  brick_parent: Command
+  brick_definition: Controls load shedding behavior provided by a control system
+Mode_Command:
+  brick_parent: Command
+  brick_definition: Controls the operating mode of a device or controller
+Reset_Command:
+  brick_parent: Command
+  brick_definition: Commands that reset a flag, property or value to its default
+Disable_Command:
+  brick_parent: Command
+  brick_definition: Commands that disable functionality
+On_Off_Command:
+  brick_parent: Command
+  brick_definition: An On/Off Command controls or reports the binary status of a control
+    loop, relay or equipment activity
+Enable_Command:
+  brick_parent: Command
+  brick_definition: Commands that enable functionality

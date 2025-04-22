@@ -1,0 +1,4 @@
+Alarm_Delay_Parameter:
+  brick_parent: Delay_Parameter
+  brick_definition: A parameter determining how long to delay an alarm after sufficient
+    conditions have been met

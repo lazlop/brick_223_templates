@@ -1,0 +1,7 @@
+Standby_Unit_On_Off_Status:
+  brick_parent: On_Off_Status
+  brick_definition: Indicates the on/off status of a standby unit
+Start_Stop_Status:
+  brick_parent: On_Off_Status
+  brick_definition: Indicates the active/inactive status of a control loop (but not
+    equipment activities or relays -- use On/Off for this purpose)

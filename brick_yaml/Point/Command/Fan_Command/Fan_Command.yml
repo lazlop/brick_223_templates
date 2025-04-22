@@ -1,0 +1,3 @@
+Fan_Speed_Command:
+  brick_parent: Fan_Command
+  brick_definition: Controls the speed of fans

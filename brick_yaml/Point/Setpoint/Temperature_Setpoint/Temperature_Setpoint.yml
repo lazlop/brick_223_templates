@@ -1,0 +1,21 @@
+Schedule_Temperature_Setpoint:
+  brick_parent: Temperature_Setpoint
+  brick_definition: The current setpoint as indicated by the schedule
+Radiant_Panel_Temperature_Setpoint:
+  brick_parent: Temperature_Setpoint
+  brick_definition: Sets temperature of radiant panel.
+Cooling_Temperature_Setpoint:
+  brick_parent: Temperature_Setpoint
+  brick_definition: Sets temperature for cooling
+Temperature_Deadband_Setpoint:
+  brick_parent: Temperature_Setpoint
+  brick_definition: Sets the size of a deadband of temperature
+Water_Temperature_Setpoint:
+  brick_parent: Temperature_Setpoint
+  brick_definition: Sets temperature of water
+Heating_Temperature_Setpoint:
+  brick_parent: Temperature_Setpoint
+  brick_definition: Sets temperature for heating
+Air_Temperature_Setpoint:
+  brick_parent: Temperature_Setpoint
+  brick_definition: Sets temperature of air

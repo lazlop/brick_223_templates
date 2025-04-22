@@ -1,0 +1,20 @@
+Min_Outside_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Outside_Air_Flow_Setpoint.
+Min_Cooling_Discharge_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Cooling_Discharge_Air_Flow_Setpoint.
+Min_Heating_Discharge_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Heating_Discharge_Air_Flow_Setpoint.
+Min_Cooling_Supply_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Cooling_Supply_Air_Flow_Setpoint.
+Min_Heating_Supply_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Heating_Supply_Air_Flow_Setpoint.

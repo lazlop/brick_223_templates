@@ -1,0 +1,9 @@
+Occupied_Cooling_Temperature_Deadband_Setpoint:
+  brick_parent: Cooling_Temperature_Setpoint
+  brick_definition: Sets the size of a deadband of temperature for cooling when occupied
+Occupied_Cooling_Temperature_Setpoint:
+  brick_parent: Cooling_Temperature_Setpoint
+  brick_definition: Sets temperature for cooling when occupied
+Discharge_Air_Temperature_Cooling_Setpoint:
+  brick_parent: Cooling_Temperature_Setpoint
+  brick_definition: Sets temperature of discharge air for cooling

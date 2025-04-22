@@ -1,0 +1,8 @@
+Humidity_Tolerance_Parameter:
+  brick_parent: Tolerance_Parameter
+  brick_definition: A parameter determining the difference between upper and lower
+    limits of humidity.
+Temperature_Tolerance_Parameter:
+  brick_parent: Tolerance_Parameter
+  brick_definition: A parameter determining the difference between upper and lower
+    limits of temperature.

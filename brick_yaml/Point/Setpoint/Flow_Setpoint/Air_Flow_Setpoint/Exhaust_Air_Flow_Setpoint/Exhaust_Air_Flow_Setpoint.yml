@@ -1,0 +1,3 @@
+Exhaust_Air_Stack_Flow_Setpoint:
+  brick_parent: Exhaust_Air_Flow_Setpoint
+  brick_definition: Sets exhaust air stack flow rate

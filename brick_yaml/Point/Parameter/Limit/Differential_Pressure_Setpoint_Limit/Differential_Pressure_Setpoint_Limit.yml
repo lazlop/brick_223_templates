@@ -1,0 +1,16 @@
+Max_Chilled_Water_Differential_Pressure_Setpoint_Limit:
+  brick_parent: Differential_Pressure_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Chilled_Water_Differential_Pressure_Setpoint.
+Max_Hot_Water_Differential_Pressure_Setpoint_Limit:
+  brick_parent: Differential_Pressure_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Hot_Water_Differential_Pressure_Setpoint.
+Min_Chilled_Water_Differential_Pressure_Setpoint_Limit:
+  brick_parent: Differential_Pressure_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Chilled_Water_Differential_Pressure_Setpoint.
+Min_Hot_Water_Differential_Pressure_Setpoint_Limit:
+  brick_parent: Differential_Pressure_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Hot_Water_Differential_Pressure_Setpoint.

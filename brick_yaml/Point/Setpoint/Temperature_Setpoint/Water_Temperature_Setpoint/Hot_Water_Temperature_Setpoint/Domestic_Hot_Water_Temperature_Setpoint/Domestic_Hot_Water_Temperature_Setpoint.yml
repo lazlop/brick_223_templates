@@ -1,0 +1,3 @@
+Leaving_Domestic_Hot_Water_Temperature_Setpoint:
+  brick_parent: Domestic_Hot_Water_Temperature_Setpoint
+  brick_definition: Sets temperature of leavinging part of domestic hot water

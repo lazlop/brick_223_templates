@@ -1,0 +1,14 @@
+Unoccupied_Cooling_Zone_Air_Temperature_Setpoint:
+  brick_parent: Unoccupied_Air_Temperature_Setpoint
+  brick_definition: Sets temperature of air when unoccupied for cooling within a specific
+    zone
+Unoccupied_Heating_Zone_Air_Temperature_Setpoint:
+  brick_parent: Unoccupied_Air_Temperature_Setpoint
+  brick_definition: Sets temperature of air when unoccupied for heating within a specific
+    zone
+Unoccupied_Target_Zone_Air_Temperature_Setpoint:
+  brick_parent: Unoccupied_Air_Temperature_Setpoint
+  brick_definition: Target Setpoint (also known as Common Setpoint) is a reference
+    point representing the desired unoccupied air temperature in a specific zone of
+    a building. This setpoint acts as a baseline from which deadband setpoints are
+    established by adding or subtracting a deadband width.

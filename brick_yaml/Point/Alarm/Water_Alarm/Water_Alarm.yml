@@ -1,0 +1,16 @@
+Deionized_Water_Alarm:
+  brick_parent: Water_Alarm
+  brick_definition: An alarm that indicates deionized water leaks.
+No_Water_Alarm:
+  brick_parent: Water_Alarm
+  brick_definition: Alarm indicating that there is no water in the equipment or system
+Water_Loss_Alarm:
+  brick_parent: Water_Alarm
+  brick_definition: An alarm that indicates a loss of water e.g. during transport
+Water_Temperature_Alarm:
+  brick_parent: Water_Alarm
+  brick_definition: An alarm that indicates the off-normal conditions associated with
+    temperature of water.
+Water_Level_Alarm:
+  brick_parent: Water_Alarm
+  brick_definition: An alarm that indicates a high or low water level e.g. in a basin

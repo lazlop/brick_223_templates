@@ -1,0 +1,7 @@
+Entering_Chilled_Water_Temperature_Setpoint:
+  brick_parent: Chilled_Water_Temperature_Setpoint
+  brick_definition: Sets the temperature of entering (downstream of the chilled water
+    load) chilled water
+Leaving_Chilled_Water_Temperature_Setpoint:
+  brick_parent: Chilled_Water_Temperature_Setpoint
+  brick_definition: Temperature setpoint for leaving chilled water

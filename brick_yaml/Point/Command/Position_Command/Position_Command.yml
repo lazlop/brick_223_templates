@@ -1,0 +1,6 @@
+Damper_Position_Command:
+  brick_parent: Position_Command
+  brick_definition: Controls the position (the degree of openness) of a damper
+Valve_Position_Command:
+  brick_parent: Position_Command
+  brick_definition: Controls the position (the degree of openness) of a valve

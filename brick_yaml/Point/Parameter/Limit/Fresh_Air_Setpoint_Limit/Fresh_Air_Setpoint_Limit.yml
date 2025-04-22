@@ -1,0 +1,8 @@
+Max_Fresh_Air_Setpoint_Limit:
+  brick_parent: Fresh_Air_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Fresh_Air_Setpoint.
+Min_Fresh_Air_Setpoint_Limit:
+  brick_parent: Fresh_Air_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Fresh_Air_Setpoint.

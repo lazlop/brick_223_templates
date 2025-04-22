@@ -1,0 +1,6 @@
+Entering_Chilled_Water_Flow_Setpoint:
+  brick_parent: Chilled_Water_Flow_Setpoint
+  brick_definition: Sets the target flow rate of chilled entering water
+Leaving_Chilled_Water_Flow_Setpoint:
+  brick_parent: Chilled_Water_Flow_Setpoint
+  brick_definition: Sets the target flow rate of chilled leaving water

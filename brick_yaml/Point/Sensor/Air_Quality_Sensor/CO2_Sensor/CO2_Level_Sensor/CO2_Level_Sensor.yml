@@ -1,0 +1,4 @@
+Zone_CO2_Level_Sensor:
+  brick_parent: CO2_Level_Sensor
+  brick_definition: A physical or virtual sensor which represents the CO2 level of
+    an HVAC Zone

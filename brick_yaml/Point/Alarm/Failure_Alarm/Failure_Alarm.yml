@@ -1,0 +1,3 @@
+Unit_Failure_Alarm:
+  brick_parent: Failure_Alarm
+  brick_definition: An alarm that indicates the failure of an equipment or device

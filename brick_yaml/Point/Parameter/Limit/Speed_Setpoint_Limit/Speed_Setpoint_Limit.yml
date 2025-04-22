@@ -1,0 +1,8 @@
+Max_Speed_Setpoint_Limit:
+  brick_parent: Speed_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Speed_Setpoint.
+Min_Speed_Setpoint_Limit:
+  brick_parent: Speed_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Speed_Setpoint.

@@ -1,0 +1,3 @@
+Pre_Filter_Status:
+  brick_parent: Filter_Status
+  brick_definition: Indicates if a prefilter needs to be replaced

@@ -1,0 +1,21 @@
+Delay_Parameter:
+  brick_parent: Parameter
+  brick_definition: A parameter determining how long to delay a subsequent action
+    to take place after a received signal
+Alarm_Sensitivity_Parameter:
+  brick_parent: Parameter
+  brick_definition: A parameter indicates the sensitivity to activate an alarm.
+Tolerance_Parameter:
+  brick_parent: Parameter
+  brick_definition: difference between upper and lower limits of size for a given
+    nominal dimension or value.
+Humidity_Parameter:
+  brick_parent: Parameter
+  brick_definition: Parameters relevant to humidity-related systems and points
+Limit:
+  brick_parent: Parameter
+  brick_definition: A parameter that places an upper or lower bound on the range of
+    permitted values of another point
+Temperature_Parameter:
+  brick_parent: Parameter
+  brick_definition: Parameters relevant to temperature-related systems and points

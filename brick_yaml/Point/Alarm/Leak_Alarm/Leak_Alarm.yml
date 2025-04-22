@@ -1,0 +1,3 @@
+Condensate_Leak_Alarm:
+  brick_parent: Leak_Alarm
+  brick_definition: An alarm that indicates a leak of condensate from a cooling system

@@ -1,0 +1,6 @@
+Humidifier_Fault_Status:
+  brick_parent: Fault_Status
+  brick_definition: Indicates the presence of a fault in a humidifier
+Last_Fault_Code_Status:
+  brick_parent: Fault_Status
+  brick_definition: Indicates the last fault code that occurred

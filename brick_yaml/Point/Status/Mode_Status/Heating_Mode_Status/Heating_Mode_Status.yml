@@ -1,0 +1,4 @@
+Unoccupied_Heating_Mode_Status:
+  brick_parent: Heating_Mode_Status
+  brick_definition: Indicates whether a system, device or control loop is in an unoccupied
+    heating mode

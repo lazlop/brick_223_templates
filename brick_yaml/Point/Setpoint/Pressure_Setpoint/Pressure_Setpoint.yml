@@ -1,0 +1,6 @@
+Velocity_Pressure_Setpoint:
+  brick_parent: Pressure_Setpoint
+  brick_definition: Sets static veloicty pressure
+Static_Pressure_Setpoint:
+  brick_parent: Pressure_Setpoint
+  brick_definition: Sets static pressure

@@ -1,0 +1,4 @@
+Motor_Direction_Status:
+  brick_parent: Direction_Status
+  brick_definition: Indicates which direction a motor is operating in, e.g. forward
+    or reverse

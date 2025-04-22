@@ -1,0 +1,16 @@
+Min_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Heating_Supply_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Occupied_Heating_Discharge_Air_Flow_Setpoint.
+Min_Unoccupied_Heating_Discharge_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Heating_Supply_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Unoccupied_Heating_Discharge_Air_Flow_Setpoint.
+Min_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Heating_Supply_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Occupied_Heating_Supply_Air_Flow_Setpoint.
+Min_Unoccupied_Heating_Supply_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Heating_Supply_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Unoccupied_Heating_Supply_Air_Flow_Setpoint.

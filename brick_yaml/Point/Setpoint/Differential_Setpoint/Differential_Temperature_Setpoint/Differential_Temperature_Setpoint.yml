@@ -1,0 +1,7 @@
+Differential_Air_Temperature_Setpoint:
+  brick_parent: Differential_Temperature_Setpoint
+  brick_definition: Sets temperature of diffrential air
+Water_Differential_Temperature_Setpoint:
+  brick_parent: Differential_Temperature_Setpoint
+  brick_definition: Sets the target differential temperature between the start and
+    end of a heat transfer cycle in a water circuit

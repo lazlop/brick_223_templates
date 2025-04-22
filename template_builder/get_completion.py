@@ -1,7 +1,7 @@
 # MODEL = "openai/gpt-4.1" # Unsure on performance, more expesnvie
 # MODEL = "anthropic/claude-sonnet" # Best, most expesnvie. So far no other model seems to work
-# MODEL = "lbl/cborg-chat:latest" # Free
-MODEL = "lbl/cborg-coder:latest" # Free, least compute, seems to perform better and faster than llama 
+MODEL = "lbl/cborg-chat:latest" # Free
+# MODEL = "lbl/cborg-coder:latest" # Free, least compute, seems to perform better and faster than llama 
 # MODEL = "lbl/llama" # Free, Does not do well. Needs help to come up with single class answers. Often comes up with wrong thing
 # MODEL = "google/gemini-flash-exp" # Free during experiment, temporary, seems to perform adequately, not as well as sonnet
 # MODEL = "google/gemini-flash" # Cheapest tokens
@@ -132,9 +132,12 @@ def get_completion(prompt, system_prompt = SYSTEM_PROMPT, as_agent= False):
     Returns:
         str: The completed prompt.
     """
-    if as_agent:
-        response = asyncio.run(run_agent(prompt, system_prompt))
-    else:
-        response = get_simple_completion(prompt, system_prompt)
-
+    try: 
+        if as_agent:
+            response = asyncio.run(run_agent(prompt, system_prompt))
+        else:
+            response = get_simple_completion(prompt, system_prompt)
+    except Exception as e:
+        print(f"Error: {e}")
+        response = f"Error: {e}"
     return response

@@ -1,0 +1,7 @@
+High_Return_Air_Temperature_Alarm:
+  brick_parent: High_Temperature_Alarm
+  brick_definition: An alarm that indicates that return air temperature is too high
+High_Discharge_Air_Temperature_Alarm:
+  brick_parent: High_Temperature_Alarm
+  brick_definition: An alarm that indicates that discharge air temperature is too
+    high

@@ -1,0 +1,3 @@
+Return_Air_CO2_Setpoint:
+  brick_parent: CO2_Setpoint
+  brick_definition: Sets some property of CO2 in Return Air

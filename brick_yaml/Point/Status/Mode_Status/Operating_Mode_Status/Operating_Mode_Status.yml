@@ -1,0 +1,3 @@
+Vent_Operating_Mode_Status:
+  brick_parent: Operating_Mode_Status
+  brick_definition: Indicates the current operating mode of a vent

@@ -1,0 +1,23 @@
+Zone_Air_Conditioning_Mode_Status:
+  brick_parent: Mode_Status
+  brick_definition: Indicates the mode of AC for a zone
+Operating_Mode_Status:
+  brick_parent: Mode_Status
+  brick_definition: Indicates the current operating mode of a system, device or control
+    loop
+Speed_Mode_Status:
+  brick_parent: Mode_Status
+  brick_definition: Indicates the speed mode of a motor with various categorical settings,
+    such as a multi-state value including low, medium, and high.
+Cooling_Mode_Status:
+  brick_parent: Mode_Status
+  brick_definition: Indicates whether a system, device or control loop is in a cooling
+    mode
+Heating_Mode_Status:
+  brick_parent: Mode_Status
+  brick_definition: Indicates whether a system, device or control loop is in a heating
+    mode
+Occupied_Mode_Status:
+  brick_parent: Mode_Status
+  brick_definition: Indicates if a system, device or control loop is in "Occupied"
+    mode

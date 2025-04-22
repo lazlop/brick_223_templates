@@ -1,0 +1,3 @@
+Low_Voltage_Alarm:
+  brick_parent: Voltage_Alarm
+  brick_definition: An alarm that indicates the voltage is lower than its normal state.

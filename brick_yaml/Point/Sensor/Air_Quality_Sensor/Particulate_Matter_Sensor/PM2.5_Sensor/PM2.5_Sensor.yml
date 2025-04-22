@@ -1,0 +1,3 @@
+PM2.5_Level_Sensor:
+  brick_parent: PM2.5_Sensor
+  brick_definition: Detects level of particulates of size 2.5 microns

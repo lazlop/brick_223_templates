@@ -1,0 +1,8 @@
+Max_Position_Setpoint_Limit:
+  brick_parent: Position_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Position_Setpoint.
+Min_Position_Setpoint_Limit:
+  brick_parent: Position_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Position_Setpoint.

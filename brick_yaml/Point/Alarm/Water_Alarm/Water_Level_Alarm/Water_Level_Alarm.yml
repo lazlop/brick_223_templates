@@ -1,0 +1,10 @@
+Collection_Basin_Water_Level_Alarm:
+  brick_parent: Water_Level_Alarm
+  brick_definition: An alarm that indicates a high or low level of water in the collection
+    basin, e.g. within a Cooling_Tower
+Max_Water_Level_Alarm:
+  brick_parent: Water_Level_Alarm
+  brick_definition: Alarm indicating that the maximum water level was reached
+Min_Water_Level_Alarm:
+  brick_parent: Water_Level_Alarm
+  brick_definition: Alarm indicating that the minimum water level was reached

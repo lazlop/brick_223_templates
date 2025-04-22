@@ -1,0 +1,3 @@
+Rated_Speed_Setpoint:
+  brick_parent: Speed_Setpoint
+  brick_definition: Sets rated speed

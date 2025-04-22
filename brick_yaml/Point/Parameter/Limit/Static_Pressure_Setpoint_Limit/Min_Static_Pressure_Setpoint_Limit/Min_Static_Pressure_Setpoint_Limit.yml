@@ -1,0 +1,8 @@
+Min_Discharge_Air_Static_Pressure_Setpoint_Limit:
+  brick_parent: Min_Static_Pressure_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Discharge_Air_Static_Pressure_Setpoint.
+Min_Supply_Air_Static_Pressure_Setpoint_Limit:
+  brick_parent: Min_Static_Pressure_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Supply_Air_Static_Pressure_Setpoint.

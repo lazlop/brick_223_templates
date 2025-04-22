@@ -1,0 +1,4 @@
+High_Discharge_Air_Temperature_Alarm:
+  brick_parent: Supply_Air_Temperature_Alarm
+  brick_definition: An alarm that indicates that discharge air temperature is too
+    high

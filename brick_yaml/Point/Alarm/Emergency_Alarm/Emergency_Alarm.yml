@@ -1,0 +1,4 @@
+Emergency_Generator_Alarm:
+  brick_parent: Emergency_Alarm
+  brick_definition: An alarm that indicates off-normal conditions associated with
+    an emergency generator

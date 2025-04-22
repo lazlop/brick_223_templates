@@ -1,0 +1,6 @@
+Occupied_Heating_Discharge_Air_Flow_Setpoint:
+  brick_parent: Heating_Supply_Air_Flow_Setpoint
+  brick_definition: Sets discharge air flow for heating when occupied
+Occupied_Heating_Supply_Air_Flow_Setpoint:
+  brick_parent: Heating_Supply_Air_Flow_Setpoint
+  brick_definition: Sets supply air flow rate for heating when occupied

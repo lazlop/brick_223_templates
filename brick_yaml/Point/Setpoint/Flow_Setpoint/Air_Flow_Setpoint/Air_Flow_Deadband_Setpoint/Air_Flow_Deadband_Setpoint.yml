@@ -1,0 +1,3 @@
+Exhaust_Air_Stack_Flow_Deadband_Setpoint:
+  brick_parent: Air_Flow_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of exhaust air stack flow

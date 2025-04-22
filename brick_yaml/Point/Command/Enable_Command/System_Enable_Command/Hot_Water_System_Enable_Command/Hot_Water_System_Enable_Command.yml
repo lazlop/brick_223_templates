@@ -1,0 +1,3 @@
+Domestic_Hot_Water_System_Enable_Command:
+  brick_parent: Hot_Water_System_Enable_Command
+  brick_definition: Enables operation of the domestic hot water system

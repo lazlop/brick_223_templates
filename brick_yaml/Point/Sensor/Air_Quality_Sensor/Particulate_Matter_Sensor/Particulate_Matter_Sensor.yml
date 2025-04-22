@@ -1,0 +1,9 @@
+PM10_Sensor:
+  brick_parent: Particulate_Matter_Sensor
+  brick_definition: Detects matter of size 10 microns
+PM1_Sensor:
+  brick_parent: Particulate_Matter_Sensor
+  brick_definition: Detects matter of size 1 micron
+PM2.5_Sensor:
+  brick_parent: Particulate_Matter_Sensor
+  brick_definition: Detects matter of size 2.5 microns

@@ -1,0 +1,10 @@
+Effective_Heating_Zone_Air_Temperature_Setpoint:
+  brick_parent: Heating_Zone_Air_Temperature_Setpoint
+  brick_definition: The effective heating setpoint for a specific zone in a building.
+Occupied_Heating_Zone_Air_Temperature_Setpoint:
+  brick_parent: Heating_Zone_Air_Temperature_Setpoint
+  brick_definition: Sets temperature for zone air heating when occupied
+Unoccupied_Heating_Zone_Air_Temperature_Setpoint:
+  brick_parent: Heating_Zone_Air_Temperature_Setpoint
+  brick_definition: Sets temperature of air when unoccupied for heating within a specific
+    zone

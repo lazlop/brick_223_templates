@@ -1,0 +1,5 @@
+Temporary_Occupancy_Status:
+  brick_parent: Occupancy_Status
+  brick_definition: For systems that differentiate between scheduled occupied/unoccupied
+    mode, this indicates if a space is temporarily occupied when it would otherwise
+    be unoccupied

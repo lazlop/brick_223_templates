@@ -1,0 +1,48 @@
+Close_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Close_Setpoint.
+Current_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Current_Setpoint.
+Ventilation_Air_Flow_Ratio_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Ventilation_Air_Flow_Ratio_Setpoint.
+Air_Flow_Setpoint_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Air_Flow_Setpoint.
+Air_Temperature_Setpoint_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Air_Temperature_Setpoint.
+Fresh_Air_Setpoint_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Fresh_Air_Setpoint.
+Position_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Position_Setpoint.
+Speed_Setpoint_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Speed_Setpoint.
+Static_Pressure_Setpoint_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Static_Pressure_Setpoint.
+Differential_Pressure_Setpoint_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Differential_Pressure_Setpoint.
+Max_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Setpoint.
+Min_Limit:
+  brick_parent: Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Setpoint.

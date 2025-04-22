@@ -1,0 +1,12 @@
+Exhaust_Air_Differential_Pressure_Setpoint:
+  brick_parent: Air_Differential_Pressure_Setpoint
+  brick_definition: Sets the target air differential pressure between an upstream
+    and downstream point in a exhaust air duct or conduit
+Return_Air_Differential_Pressure_Setpoint:
+  brick_parent: Air_Differential_Pressure_Setpoint
+  brick_definition: Sets the target air differential pressure between an upstream
+    and downstream point in a return air duct or conduit
+Supply_Air_Differential_Pressure_Setpoint:
+  brick_parent: Air_Differential_Pressure_Setpoint
+  brick_definition: Sets the target air differential pressure between an upstream
+    and downstream point in a supply air duct or conduit

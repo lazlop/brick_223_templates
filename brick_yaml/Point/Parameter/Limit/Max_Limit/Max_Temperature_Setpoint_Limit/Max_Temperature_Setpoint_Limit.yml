@@ -1,0 +1,8 @@
+Max_Discharge_Air_Temperature_Setpoint_Limit:
+  brick_parent: Max_Temperature_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Discharge_Air_Temperature_Setpoint.
+Max_Supply_Air_Temperature_Setpoint_Limit:
+  brick_parent: Max_Temperature_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Supply_Air_Temperature_Setpoint.

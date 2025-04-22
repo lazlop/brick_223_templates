@@ -1,0 +1,8 @@
+Automatic_Mode_Command:
+  brick_parent: Mode_Command
+  brick_definition: Controls whether or not a device or controller is operating in
+    "Automatic" mode
+Maintenance_Mode_Command:
+  brick_parent: Mode_Command
+  brick_definition: Controls whether or not a device or controller is operating in
+    "Maintenance" mode

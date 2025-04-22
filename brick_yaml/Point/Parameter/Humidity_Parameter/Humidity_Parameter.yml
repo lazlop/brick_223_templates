@@ -1,0 +1,12 @@
+High_Humidity_Alarm_Parameter:
+  brick_parent: Humidity_Parameter
+  brick_definition: A parameter determining the humidity level at which to trigger
+    a high humidity alarm
+Humidity_Tolerance_Parameter:
+  brick_parent: Humidity_Parameter
+  brick_definition: A parameter determining the difference between upper and lower
+    limits of humidity.
+Low_Humidity_Alarm_Parameter:
+  brick_parent: Humidity_Parameter
+  brick_definition: A parameter determining the humidity level at which to trigger
+    a low humidity alarm

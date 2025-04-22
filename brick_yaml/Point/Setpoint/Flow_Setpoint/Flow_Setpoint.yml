@@ -1,0 +1,6 @@
+Air_Flow_Setpoint:
+  brick_parent: Flow_Setpoint
+  brick_definition: Sets air flow
+Water_Flow_Setpoint:
+  brick_parent: Flow_Setpoint
+  brick_definition: Sets the target flow rate of water

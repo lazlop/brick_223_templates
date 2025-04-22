@@ -1,0 +1,55 @@
+Current_Ratio_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets the ratio of currents in a transformer
+Damper_Position_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets the position of damper
+Dewpoint_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets dew point
+Enthalpy_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets enthalpy
+Frequency_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets frequency
+Illuminance_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Target Illuminance of the zone.
+Luminance_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets luminance
+Voltage_Ratio_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets the ratio of voltage in a transformer
+CO2_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets some property of CO2
+Speed_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets speed
+Flow_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets flow
+Deadband_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets the size of a deadband
+Demand_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets the rate required for a process
+Pressure_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets pressure
+Reset_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Setpoints used in reset strategies
+Differential_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: A type of Setpoints that is related to the difference between
+    two measurements
+Temperature_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets temperature
+Humidity_Setpoint:
+  brick_parent: Setpoint
+  brick_definition: Sets humidity

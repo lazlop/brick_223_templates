@@ -1,0 +1,18 @@
+Leaving_Water_Temperature_Deadband_Setpoint:
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  brick_definition: Sets the size of a deadband of temperature of leaving water
+Entering_Condenser_Water_Temperature_Setpoint:
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  brick_definition: The temperature setpoint for the entering condenser water
+Leaving_Chilled_Water_Temperature_Setpoint:
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  brick_definition: Temperature setpoint for leaving chilled water
+Leaving_Condenser_Water_Temperature_Setpoint:
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  brick_definition: The temperature setpoint for the leaving condenser water
+Leaving_Domestic_Hot_Water_Temperature_Setpoint:
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  brick_definition: Sets temperature of leavinging part of domestic hot water
+Leaving_Hot_Water_Temperature_Setpoint:
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  brick_definition: Temperature setpoint for leaving hot water

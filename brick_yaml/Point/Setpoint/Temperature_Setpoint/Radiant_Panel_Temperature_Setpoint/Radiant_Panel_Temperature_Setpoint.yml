@@ -1,0 +1,12 @@
+Inside_Face_Surface_Temperature_Setpoint:
+  brick_parent: Radiant_Panel_Temperature_Setpoint
+  brick_definition: Sets temperature for the inside face surface temperature of the
+    radiant panel.
+Outside_Face_Surface_Temperature_Setpoint:
+  brick_parent: Radiant_Panel_Temperature_Setpoint
+  brick_definition: Sets temperature for the outside face surface temperature of the
+    radiant panel.
+Embedded_Temperature_Setpoint:
+  brick_parent: Radiant_Panel_Temperature_Setpoint
+  brick_definition: Sets temperature for the internal material, e.g. concrete slab,
+    of the radiant panel.

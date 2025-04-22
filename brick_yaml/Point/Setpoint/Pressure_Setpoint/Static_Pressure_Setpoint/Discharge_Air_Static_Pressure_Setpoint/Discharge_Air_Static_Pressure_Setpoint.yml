@@ -1,0 +1,6 @@
+Discharge_Air_Static_Pressure_Deadband_Setpoint:
+  brick_parent: Discharge_Air_Static_Pressure_Setpoint
+  brick_definition: Sets the size of a deadband of static pressure of discharge air
+Supply_Air_Static_Pressure_Deadband_Setpoint:
+  brick_parent: Discharge_Air_Static_Pressure_Setpoint
+  brick_definition: Sets the size of a deadband of static pressure of supply air

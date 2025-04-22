@@ -1,0 +1,10 @@
+Entering_Hot_Water_Temperature_Setpoint:
+  brick_parent: Hot_Water_Temperature_Setpoint
+  brick_definition: Sets the temperature of entering (downstream of the hot water
+    load) hot water
+Domestic_Hot_Water_Temperature_Setpoint:
+  brick_parent: Hot_Water_Temperature_Setpoint
+  brick_definition: Sets temperature of domestic hot water
+Leaving_Hot_Water_Temperature_Setpoint:
+  brick_parent: Hot_Water_Temperature_Setpoint
+  brick_definition: Temperature setpoint for leaving hot water

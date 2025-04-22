@@ -1,0 +1,24 @@
+Building_Air_Static_Pressure_Setpoint:
+  brick_parent: Static_Pressure_Setpoint
+  brick_definition: Sets static pressure of the entire building
+Chilled_Water_Static_Pressure_Setpoint:
+  brick_parent: Static_Pressure_Setpoint
+  brick_definition: Sets static pressure of chilled water
+Exhaust_Air_Static_Pressure_Setpoint:
+  brick_parent: Static_Pressure_Setpoint
+  brick_definition: Sets static pressure of exhaust air
+Hot_Water_Static_Pressure_Setpoint:
+  brick_parent: Static_Pressure_Setpoint
+  brick_definition: Sets static pressure of hot air
+Underfloor_Air_Plenum_Static_Pressure_Setpoint:
+  brick_parent: Static_Pressure_Setpoint
+  brick_definition: Sets the underfloor air plenum static pressure
+Static_Pressure_Deadband_Setpoint:
+  brick_parent: Static_Pressure_Setpoint
+  brick_definition: Sets the size of a deadband of static pressure
+Discharge_Air_Static_Pressure_Setpoint:
+  brick_parent: Static_Pressure_Setpoint
+  brick_definition: Sets static pressure of discharge air
+Supply_Air_Static_Pressure_Setpoint:
+  brick_parent: Static_Pressure_Setpoint
+  brick_definition: Sets static pressure of supply air

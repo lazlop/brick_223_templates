@@ -1,0 +1,24 @@
+Formaldehyde_Level_Sensor:
+  brick_parent: Air_Quality_Sensor
+  brick_definition: Measures the concentration of formaldehyde in air
+Methane_Level_Sensor:
+  brick_parent: Air_Quality_Sensor
+  brick_definition: Measures the concentration of methane in air
+NO2_Level_Sensor:
+  brick_parent: Air_Quality_Sensor
+  brick_definition: Measures the concentration of NO2 in air
+Ozone_Level_Sensor:
+  brick_parent: Air_Quality_Sensor
+  brick_definition: Measures the concentration of ozone in air
+Radioactivity_Concentration_Sensor:
+  brick_parent: Air_Quality_Sensor
+  brick_definition: Measures the concentration of radioactivity
+CO2_Sensor:
+  brick_parent: Air_Quality_Sensor
+  brick_definition: Measures properties of CO2 in air
+CO_Sensor:
+  brick_parent: Air_Quality_Sensor
+  brick_definition: Measures properties of CO
+Particulate_Matter_Sensor:
+  brick_parent: Air_Quality_Sensor
+  brick_definition: Detects pollutants in the ambient air

@@ -1,0 +1,34 @@
+Max_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: Setpoint for maximum air temperature
+Min_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: Setpoint for minimum air temperature
+Mixed_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: Sets temperature of mixed air
+Discharge_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: Sets temperature of discharge air
+Return_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: The target temperature for return air, often used as an approximation
+    of zone air temperature
+Room_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: Sets temperature of room air
+Cooling_Zone_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: The cooling setpoint for a specific zone in a building.
+Heating_Zone_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: The heating setpoint for a specific zone in a building.
+Outside_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: Sets temperature of outside air
+Unoccupied_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: Sets temperature of air when unoccupied
+Supply_Air_Temperature_Setpoint:
+  brick_parent: Air_Temperature_Setpoint
+  brick_definition: Temperature setpoint for supply air

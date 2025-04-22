@@ -1,0 +1,6 @@
+Solar_Azimuth_Angle_Sensor:
+  brick_parent: Angle_Sensor
+  brick_definition: Measures the azimuth angle of the sun
+Solar_Zenith_Angle_Sensor:
+  brick_parent: Angle_Sensor
+  brick_definition: Measures the zenith angle of the sun

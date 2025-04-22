@@ -1,0 +1,12 @@
+Disable_Differential_Enthalpy_Command:
+  brick_parent: Disable_Command
+  brick_definition: Disables the use of differential enthalpy control
+Disable_Differential_Temperature_Command:
+  brick_parent: Disable_Command
+  brick_definition: Disables the use of differential temperature control
+Disable_Fixed_Enthalpy_Command:
+  brick_parent: Disable_Command
+  brick_definition: Disables the use of fixed enthalpy control
+Disable_Fixed_Temperature_Command:
+  brick_parent: Disable_Command
+  brick_definition: Disables the use of fixed temperature temperature

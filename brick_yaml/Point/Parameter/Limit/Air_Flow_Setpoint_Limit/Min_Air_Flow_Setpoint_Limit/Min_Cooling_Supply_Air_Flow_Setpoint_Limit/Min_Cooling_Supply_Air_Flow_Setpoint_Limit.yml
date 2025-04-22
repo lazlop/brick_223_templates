@@ -1,0 +1,16 @@
+Min_Occupied_Cooling_Discharge_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Cooling_Supply_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Occupied_Cooling_Discharge_Air_Flow_Setpoint.
+Min_Unoccupied_Cooling_Discharge_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Cooling_Supply_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Unoccupied_Cooling_Discharge_Air_Flow_Setpoint.
+Min_Occupied_Cooling_Supply_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Cooling_Supply_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Occupied_Cooling_Supply_Air_Flow_Setpoint.
+Min_Unoccupied_Cooling_Supply_Air_Flow_Setpoint_Limit:
+  brick_parent: Min_Cooling_Supply_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Unoccupied_Cooling_Supply_Air_Flow_Setpoint.

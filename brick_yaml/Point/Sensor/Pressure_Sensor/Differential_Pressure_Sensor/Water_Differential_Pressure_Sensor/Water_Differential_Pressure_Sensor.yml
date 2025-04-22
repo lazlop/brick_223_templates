@@ -1,0 +1,12 @@
+Chilled_Water_Differential_Pressure_Sensor:
+  brick_parent: Water_Differential_Pressure_Sensor
+  brick_definition: Measures the difference in water pressure on either side of a
+    chilled water valve
+Filter_Water_Differential_Pressure_Sensor:
+  brick_parent: Water_Differential_Pressure_Sensor
+  brick_definition: Measures the difference in water pressure before and after a water
+    filter.
+Hot_Water_Differential_Pressure_Sensor:
+  brick_parent: Water_Differential_Pressure_Sensor
+  brick_definition: Measures the difference in water pressure on either side of a
+    hot water valve

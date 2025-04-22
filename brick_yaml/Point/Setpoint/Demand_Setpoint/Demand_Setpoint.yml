@@ -1,0 +1,12 @@
+Cooling_Demand_Setpoint:
+  brick_parent: Demand_Setpoint
+  brick_definition: Sets the rate required for cooling
+Heating_Demand_Setpoint:
+  brick_parent: Demand_Setpoint
+  brick_definition: Sets the rate required for heating
+Preheat_Demand_Setpoint:
+  brick_parent: Demand_Setpoint
+  brick_definition: Sets the rate required for preheat
+Air_Flow_Demand_Setpoint:
+  brick_parent: Demand_Setpoint
+  brick_definition: Sets the rate of air flow required for a process

@@ -1,0 +1,18 @@
+Entering_Water_Temperature_Deadband_Setpoint:
+  brick_parent: Temperature_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of temperature of entering water
+Leaving_Water_Temperature_Deadband_Setpoint:
+  brick_parent: Temperature_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of temperature of leaving water
+Occupied_Cooling_Temperature_Deadband_Setpoint:
+  brick_parent: Temperature_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of temperature for cooling when occupied
+Occupied_Heating_Temperature_Deadband_Setpoint:
+  brick_parent: Temperature_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of temperature for heating when occupied
+Discharge_Air_Temperature_Deadband_Setpoint:
+  brick_parent: Temperature_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of temperature of discharge air
+Supply_Air_Temperature_Deadband_Setpoint:
+  brick_parent: Temperature_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of temperature of supply air

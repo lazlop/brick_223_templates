@@ -1,0 +1,24 @@
+Discharge_Air_Flow_Demand_Setpoint:
+  brick_parent: Supply_Air_Flow_Setpoint
+  brick_definition: Sets the rate of discharge air flow required for a process
+Occupied_Discharge_Air_Flow_Setpoint:
+  brick_parent: Supply_Air_Flow_Setpoint
+  brick_definition: Sets discharge air flow when occupied
+Supply_Air_Flow_Demand_Setpoint:
+  brick_parent: Supply_Air_Flow_Setpoint
+  brick_definition: Sets the rate of supply air flow required for a process
+Cooling_Discharge_Air_Flow_Setpoint:
+  brick_parent: Supply_Air_Flow_Setpoint
+  brick_definition: Sets discharge air flow for cooling
+Heating_Discharge_Air_Flow_Setpoint:
+  brick_parent: Supply_Air_Flow_Setpoint
+  brick_definition: Sets discharge air flow for heating
+Cooling_Supply_Air_Flow_Setpoint:
+  brick_parent: Supply_Air_Flow_Setpoint
+  brick_definition: Sets supply air flow rate for cooling
+Heating_Supply_Air_Flow_Setpoint:
+  brick_parent: Supply_Air_Flow_Setpoint
+  brick_definition: Sets supply air flow rate for heating
+Occupied_Supply_Air_Flow_Setpoint:
+  brick_parent: Supply_Air_Flow_Setpoint
+  brick_definition: Sets supply air flow rate when occupied

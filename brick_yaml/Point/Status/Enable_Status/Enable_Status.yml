@@ -1,0 +1,3 @@
+Heat_Exchanger_System_Enable_Status:
+  brick_parent: Enable_Status
+  brick_definition: Indicates if the heat exchanger system has been enabled

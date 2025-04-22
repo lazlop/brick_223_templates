@@ -1,0 +1,98 @@
+Availability_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a piece of equipment, system, or functionality is
+    available for operation
+Disable_Status:
+  brick_parent: Status
+  brick_definition: Indicates if functionality has been disabled
+Drive_Ready_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a hard drive or other storage device is ready to
+    be used, e.g. in the context of RAID
+Emergency_Generator_Status:
+  brick_parent: Status
+  brick_definition: Indicates if an emergency generator is active
+Emergency_Push_Button_Status:
+  brick_parent: Status
+  brick_definition: Indicates if an emergency button has been pushed
+Freeze_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a substance contained within a vessel has frozen
+Lead_Lag_Status:
+  brick_parent: Status
+  brick_definition: Indicates if lead/lag operation is enabled
+Level_Status:
+  brick_parent: Status
+  brick_definition: The current operational state of a specific level within a predefined
+    range.
+Lockout_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a piece of equipment, system, or functionality has
+    been locked out from operation
+Manual_Auto_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a system is under manual or automatic operation
+Open_Close_Status:
+  brick_parent: Status
+  brick_definition: Indicates the open/close status of a device such as a damper or
+    valve
+Pump_Status:
+  brick_parent: Status
+  brick_definition: Status of a pump
+Stages_Status:
+  brick_parent: Status
+  brick_definition: Indicates which stage a control loop or equipment is in
+Switch_Status:
+  brick_parent: Status
+  brick_definition: Status of a switch
+Thermostat_Status:
+  brick_parent: Status
+  brick_definition: Status of a thermostat
+Tint_Status:
+  brick_parent: Status
+  brick_definition: The current level of window tint, errors, or transient states.
+Valve_Status:
+  brick_parent: Status
+  brick_definition: The current status of the valve.
+Direction_Status:
+  brick_parent: Status
+  brick_definition: Indicates which direction a device is operating in
+Enable_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a system or piece of functionality has been enabled
+Fan_Status:
+  brick_parent: Status
+  brick_definition: Indicates properties of fans
+Filter_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a filter needs to be replaced
+Occupancy_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a room or space is occupied
+Fault_Status:
+  brick_parent: Status
+  brick_definition: Indicates the presence of a fault in a device, system or control
+    loop
+On_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a control loop, relay or equipment is on
+Overridden_Status:
+  brick_parent: Status
+  brick_definition: Indicates if the expected operating status of an equipment or
+    control loop has been overridden
+Load_Shed_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a load shedding policy is in effect
+Off_Status:
+  brick_parent: Status
+  brick_definition: Indicates if a control loop, relay or equipment is off
+Pressure_Status:
+  brick_parent: Status
+  brick_definition: Indicates if pressure is within expected bounds
+System_Status:
+  brick_parent: Status
+  brick_definition: Indicates properties of the activity of a system
+Mode_Status:
+  brick_parent: Status
+  brick_definition: Indicates which mode a system, device or control loop is currently
+    in

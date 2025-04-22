@@ -1,0 +1,15 @@
+Chilled_Water_Differential_Pressure_Deadband_Setpoint:
+  brick_parent: Differential_Pressure_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of differential pressure of chilled
+    water
+Entering_Water_Differential_Pressure_Deadband_Setpoint:
+  brick_parent: Differential_Pressure_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of differential pressure of entering
+    water
+Hot_Water_Differential_Pressure_Deadband_Setpoint:
+  brick_parent: Differential_Pressure_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of differential pressure of hot water
+Leaving_Water_Differential_Pressure_Deadband_Setpoint:
+  brick_parent: Differential_Pressure_Deadband_Setpoint
+  brick_definition: Sets the size of a deadband of differential pressure of leaving
+    water

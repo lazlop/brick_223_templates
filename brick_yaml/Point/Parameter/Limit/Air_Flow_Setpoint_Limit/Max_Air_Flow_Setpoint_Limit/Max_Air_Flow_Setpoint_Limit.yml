@@ -1,0 +1,20 @@
+Max_Outside_Air_Flow_Setpoint_Limit:
+  brick_parent: Max_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Outside_Air_Flow_Setpoint.
+Max_Cooling_Discharge_Air_Flow_Setpoint_Limit:
+  brick_parent: Max_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Cooling_Discharge_Air_Flow_Setpoint.
+Max_Heating_Discharge_Air_Flow_Setpoint_Limit:
+  brick_parent: Max_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Heating_Discharge_Air_Flow_Setpoint.
+Max_Cooling_Supply_Air_Flow_Setpoint_Limit:
+  brick_parent: Max_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Cooling_Supply_Air_Flow_Setpoint.
+Max_Heating_Supply_Air_Flow_Setpoint_Limit:
+  brick_parent: Max_Air_Flow_Setpoint_Limit
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Heating_Supply_Air_Flow_Setpoint.

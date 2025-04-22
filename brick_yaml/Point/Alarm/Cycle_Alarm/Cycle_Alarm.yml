@@ -1,0 +1,4 @@
+Short_Cycle_Alarm:
+  brick_parent: Cycle_Alarm
+  brick_definition: An alarm that indicates a short cycle occurred. A short cycle
+    occurs when a cooling cycle is prevented from completing its full cycle

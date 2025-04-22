@@ -1,0 +1,3 @@
+Max_Frequency_Command:
+  brick_parent: Frequency_Command
+  brick_definition: Sets the maximum permitted frequency

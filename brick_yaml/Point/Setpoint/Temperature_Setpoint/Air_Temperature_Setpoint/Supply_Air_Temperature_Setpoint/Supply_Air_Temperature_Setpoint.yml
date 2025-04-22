@@ -1,0 +1,6 @@
+Discharge_Air_Temperature_Cooling_Setpoint:
+  brick_parent: Supply_Air_Temperature_Setpoint
+  brick_definition: Sets temperature of discharge air for cooling
+Discharge_Air_Temperature_Heating_Setpoint:
+  brick_parent: Supply_Air_Temperature_Setpoint
+  brick_definition: Sets temperature of discharge air for heating

@@ -1,0 +1,12 @@
+Discharge_Air_Temperature_Alarm:
+  brick_parent: Air_Temperature_Alarm
+  brick_definition: An alarm that indicates the off-normal conditions associated with
+    the temperature of discharge air.
+Return_Air_Temperature_Alarm:
+  brick_parent: Air_Temperature_Alarm
+  brick_definition: An alarm that indicates the off-normal conditions associated with
+    the temperature of return air.
+Supply_Air_Temperature_Alarm:
+  brick_parent: Air_Temperature_Alarm
+  brick_definition: An alarm that indicates the off-normal conditions associated with
+    the temperature of supply air.

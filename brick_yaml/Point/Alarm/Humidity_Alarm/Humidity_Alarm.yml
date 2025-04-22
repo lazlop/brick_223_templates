@@ -1,0 +1,8 @@
+High_Humidity_Alarm:
+  brick_parent: Humidity_Alarm
+  brick_definition: An alarm that indicates high concentration of water vapor in the
+    air.
+Low_Humidity_Alarm:
+  brick_parent: Humidity_Alarm
+  brick_definition: An alarm that indicates low concentration of water vapor in the
+    air.

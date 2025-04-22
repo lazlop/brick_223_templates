@@ -1,0 +1,11 @@
+Entering_Water_Temperature_Deadband_Setpoint:
+  brick_parent: Entering_Water_Temperature_Setpoint
+  brick_definition: Sets the size of a deadband of temperature of entering water
+Entering_Chilled_Water_Temperature_Setpoint:
+  brick_parent: Entering_Water_Temperature_Setpoint
+  brick_definition: Sets the temperature of entering (downstream of the chilled water
+    load) chilled water
+Entering_Hot_Water_Temperature_Setpoint:
+  brick_parent: Entering_Water_Temperature_Setpoint
+  brick_definition: Sets the temperature of entering (downstream of the hot water
+    load) hot water

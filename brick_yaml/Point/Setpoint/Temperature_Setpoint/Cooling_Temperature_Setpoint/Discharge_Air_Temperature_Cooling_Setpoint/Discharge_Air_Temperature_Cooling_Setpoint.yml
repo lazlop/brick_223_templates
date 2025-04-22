@@ -1,0 +1,7 @@
+Cooling_Discharge_Air_Temperature_Deadband_Setpoint:
+  brick_parent: Discharge_Air_Temperature_Cooling_Setpoint
+  brick_definition: Sets the size of a deadband of temperature of cooling discharge
+    air
+Cooling_Supply_Air_Temperature_Deadband_Setpoint:
+  brick_parent: Discharge_Air_Temperature_Cooling_Setpoint
+  brick_definition: Sets the size of a deadband of temperature of supply air for cooling

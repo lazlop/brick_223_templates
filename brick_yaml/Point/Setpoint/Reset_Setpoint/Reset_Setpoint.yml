@@ -1,0 +1,3 @@
+Discharge_Air_Flow_Reset_Setpoint:
+  brick_parent: Reset_Setpoint
+  brick_definition: Setpoints used in Reset strategies

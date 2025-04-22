@@ -1,0 +1,32 @@
+Cooling_Enable_Command:
+  brick_parent: Enable_Command
+  brick_definition: Command that enables cooling functionality in equipment but certain
+    condition(s) must be met first before actively cooling. For the actively cooling
+    control, see Cooling_Command.
+Enable_Differential_Enthalpy_Command:
+  brick_parent: Enable_Command
+  brick_definition: Enables the use of differential enthalpy control
+Enable_Differential_Temperature_Command:
+  brick_parent: Enable_Command
+  brick_definition: Enables the use of differential temperature control
+Enable_Fixed_Enthalpy_Command:
+  brick_parent: Enable_Command
+  brick_definition: Enables the use of fixed enthalpy control
+Enable_Fixed_Temperature_Command:
+  brick_parent: Enable_Command
+  brick_definition: Enables the use of fixed temperature control
+Heating_Enable_Command:
+  brick_parent: Enable_Command
+  brick_definition: Command that enables heating functionality in equipment but certain
+    condition(s) must be met first before actively heating. For the actively heating
+    control, see Heating_Command.
+Stage_Enable_Command:
+  brick_parent: Enable_Command
+  brick_definition: A point representing a discrete stage which the equipment should
+    be operating at. The desired stage number should be identified by an entity property
+VFD_Enable_Command:
+  brick_parent: Enable_Command
+  brick_definition: Enables operation of a variable frequency drive
+System_Enable_Command:
+  brick_parent: Enable_Command
+  brick_definition: Enables operation of a system

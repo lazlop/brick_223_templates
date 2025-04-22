@@ -1,0 +1,6 @@
+Chilled_Water_System_Enable_Command:
+  brick_parent: System_Enable_Command
+  brick_definition: Enables operation of the chilled water system
+Hot_Water_System_Enable_Command:
+  brick_parent: System_Enable_Command
+  brick_definition: Enables operation of the hot water system

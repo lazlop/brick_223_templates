@@ -1,0 +1,3 @@
+High_CO2_Alarm:
+  brick_parent: CO2_Alarm
+  brick_definition: A device that indicates high concentration of carbon dioxide.

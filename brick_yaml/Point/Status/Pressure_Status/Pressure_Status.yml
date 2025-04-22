@@ -1,0 +1,7 @@
+Discharge_Air_Duct_Pressure_Status:
+  brick_parent: Pressure_Status
+  brick_definition: Indicates if air pressure in discharge duct is within expected
+    bounds
+Supply_Air_Duct_Pressure_Status:
+  brick_parent: Pressure_Status
+  brick_definition: Indicates if air pressure in supply duct is within expected bounds

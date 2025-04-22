@@ -1,0 +1,8 @@
+Disable_Hot_Water_System_Outside_Air_Temperature_Setpoint:
+  brick_parent: Outside_Air_Temperature_Setpoint
+  brick_definition: Disables hot water system when outside air temperature reaches
+    the indicated value
+Enable_Hot_Water_System_Outside_Air_Temperature_Setpoint:
+  brick_parent: Outside_Air_Temperature_Setpoint
+  brick_definition: Enables hot water system when outside air temperature reaches
+    the indicated value

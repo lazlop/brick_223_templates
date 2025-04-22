@@ -1,0 +1,4 @@
+Unoccupied_Cooling_Mode_Status:
+  brick_parent: Cooling_Mode_Status
+  brick_definition: Indicates whether a system, device or control loop is in an unoccupied
+    cooling mode

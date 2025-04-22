@@ -1,0 +1,13 @@
+Differential_Speed_Setpoint:
+  brick_parent: Differential_Setpoint
+  brick_definition: Sets differential speed
+Differential_Temperature_Setpoint:
+  brick_parent: Differential_Setpoint
+  brick_definition: A type of Setpoints that is related to the difference between
+    two temperature measurements
+Differential_Pressure_Setpoint:
+  brick_parent: Differential_Setpoint
+  brick_definition: Sets differential pressure
+Differential_Pressure_Deadband_Setpoint:
+  brick_parent: Differential_Setpoint
+  brick_definition: Sets the size of a deadband of differential pressure

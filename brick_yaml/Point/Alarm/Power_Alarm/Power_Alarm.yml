@@ -1,0 +1,3 @@
+Power_Loss_Alarm:
+  brick_parent: Power_Alarm
+  brick_definition: An alarm that indicates a power failure.
