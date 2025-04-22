@@ -17,7 +17,7 @@ prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df= get_s223_info()
 #%%
 g = Graph()
 g.parse("https://brickschema.org/schema/1.4.3/Brick.ttl", format = "ttl")
-start_parent = "brick:Sensor"
+start_parent = "brick:Temperature_Sensor"
 start_parent_clean = strip_namespace(start_parent)
 
 # Ensure templates directory exists

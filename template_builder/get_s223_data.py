@@ -15,7 +15,7 @@ quantityknds_file = str(files('template_builder').joinpath('data/quantitykinds.c
 def get_s223_info():
     s223 = Graph()
     s223.parse("https://open223.info/223p.ttl", format="ttl")
-    bind_prefixes(s223)
+    bind_prefixes(s223, override=True)
     # Get properties
     prop_query = """ SELECT DISTINCT ?s223_class ?s223_definition WHERE {
         ?s223_class rdfs:subClassOf* s223:Property ;
@@ -163,5 +163,7 @@ def get_s223_info():
 
     # Convert quantitykinds to dataframe for validation
     qk_df = pd.read_csv(quantityknds_file)
-    
+    qk_df.quantitykinds = qk_df.quantitykinds.apply(lambda x: f"quantitykind:{x}")
+    # adding namespace
+
     return prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df

@@ -1,0 +1,12 @@
+Leaving_Domestic_Hot_Water_Temperature_Sensor:
+  brick_parent: Leaving_Hot_Water_Temperature_Sensor
+  brick_definition: Measures the temperature of domestic water supplied by a hot water
+    system
+Leaving_High_Temperature_Hot_Water_Temperature_Sensor:
+  brick_parent: Leaving_Hot_Water_Temperature_Sensor
+  brick_definition: Measures the temperature of high-temperature hot water supplied
+    by a hot water system
+Leaving_Medium_Temperature_Hot_Water_Temperature_Sensor:
+  brick_parent: Leaving_Hot_Water_Temperature_Sensor
+  brick_definition: Measures the temperature of medium-temperature hot water supplied
+    by a hot water system

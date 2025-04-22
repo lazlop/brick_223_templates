@@ -1,0 +1,27 @@
+Collection_Basin_Water_Temperature_Sensor:
+  brick_parent: Water_Temperature_Sensor
+  brick_definition: Measures the temperature of the water in the collection basin,
+    e.g. within a Cooling_Tower
+Entering_Water_Temperature_Sensor:
+  brick_parent: Water_Temperature_Sensor
+  brick_definition: Measures the temperature of entering water
+Entering_Hot_Water_Temperature_Sensor:
+  brick_parent: Water_Temperature_Sensor
+  brick_definition: Measures the temperature of water enteringed to a hot water system
+Leaving_Water_Temperature_Sensor:
+  brick_parent: Water_Temperature_Sensor
+  brick_definition: Measures the temperature of water leaving a piece of equipment
+    or system
+Water_Differential_Temperature_Sensor:
+  brick_parent: Water_Temperature_Sensor
+  brick_definition: Measures the difference in water temperature between an upstream
+    and downstream point in a pipe or conduit
+Condenser_Water_Temperature_Sensor:
+  brick_parent: Water_Temperature_Sensor
+  brick_definition: Measures the temperature of condenser water
+Leaving_Hot_Water_Temperature_Sensor:
+  brick_parent: Water_Temperature_Sensor
+  brick_definition: Measures the temperature of water supplied by a hot water system
+Chilled_Water_Temperature_Sensor:
+  brick_parent: Water_Temperature_Sensor
+  brick_definition: Measures the temperature of chilled water

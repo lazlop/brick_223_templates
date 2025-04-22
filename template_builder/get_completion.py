@@ -1,5 +1,5 @@
 # MODEL = "openai/gpt-4.1" # Unsure on performance, more expesnvie
-# MODEL = "anthropic/claude-sonnet" # Best, most expesnvie 
+# MODEL = "anthropic/claude-sonnet" # Best, most expesnvie. So far no other model seems to work
 # MODEL = "lbl/cborg-chat:latest" # Free
 # MODEL = "lbl/cborg-coder:latest" # Free, least compute
 MODEL = "lbl/llama" # Free

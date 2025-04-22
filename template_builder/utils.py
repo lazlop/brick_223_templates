@@ -15,6 +15,15 @@ def convert_to_prefixed(uri, g: Graph):
         print(e)
         return uri
 
+def convert_to_uri(str_in, g: Graph):
+    if str_in is None:
+        return None
+    if str_in.startswith("http"):
+        return URIRef(str_in)
+    if str_in.contains(":"):
+        str_in.split(':')[-1]
+        
+
 def convert_to_localname(uri, g: Graph):
     """
     Given a URI and a Graph, remove the namespace prefix if it exists.
