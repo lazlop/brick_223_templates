@@ -1,0 +1,38 @@
+Humidity_Tolerance_Parameter:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter determining the difference between upper and lower
+    limits of humidity.
+  brick_parent: Tolerance_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableProperty
+  s223_class_valid: true
+Temperature_Tolerance_Parameter:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter determining the difference between upper and lower
+    limits of temperature.
+  brick_parent: Tolerance_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableProperty
+  s223_class_valid: true

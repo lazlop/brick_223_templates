@@ -1,0 +1,80 @@
+Bypass_Water_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the target flow rate of bypass water
+  brick_parent: Water_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Chilled_Water_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the target flow rate of chilled water
+  brick_parent: Water_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Entering_Water_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the target flow rate of entering water
+  brick_parent: Water_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Hot_Water_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the target flow rate of hot water
+  brick_parent: Water_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Leaving_Water_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the target flow rate of leaving water
+  brick_parent: Water_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

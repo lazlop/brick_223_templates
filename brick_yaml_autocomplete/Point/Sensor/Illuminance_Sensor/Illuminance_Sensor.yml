@@ -1,0 +1,21 @@
+Outside_Illuminance_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the total luminous flux incident on an outside, per unit
+    area
+  brick_parent: Illuminance_Sensor
+  enumerationkind_valid: false
+  medium: Light-Visible
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

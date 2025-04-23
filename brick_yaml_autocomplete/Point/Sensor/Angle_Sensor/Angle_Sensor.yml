@@ -1,0 +1,32 @@
+Solar_Azimuth_Angle_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the azimuth angle of the sun
+  brick_parent: Angle_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Solar_Zenith_Angle_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the zenith angle of the sun
+  brick_parent: Angle_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

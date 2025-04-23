@@ -1,0 +1,38 @@
+Electrical_Energy_Usage_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: A sensor that records the quantity of electrical energy consumed
+    in a given period
+  brick_parent: Energy_Usage_Sensor
+  enumerationkind_valid: false
+  medium: Constituent-Electricity
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Thermal_Energy_Usage_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: A sensor that records the quantity of thermal energy consumed
+    in a given period
+  brick_parent: Energy_Usage_Sensor
+  enumerationkind_valid: false
+  medium: Medium-ThermalContact
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

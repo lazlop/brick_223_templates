@@ -1,0 +1,19 @@
+Ice_Tank_Leaving_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of water leaving an ice tank
+  brick_parent: Leaving_Water_Temperature_Sensor
+  enumerationkind: ThermodynamicPhase-Liquid
+  enumerationkind_valid: true
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: IceMaker
+  property_of_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

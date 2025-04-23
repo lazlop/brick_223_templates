@@ -1,0 +1,108 @@
+Bypass_Water_Flow_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the rate of flow of bypass water
+  brick_parent: Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Chilled_Water_Flow_Sensor:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Nominal
+  - Aspect-OperatingStatus
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  - true
+  - true
+  brick_definition: Measures the rate of flow in a chilled water circuit
+  brick_parent: Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Condenser_Water_Flow_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the flow of the condenser water
+  brick_parent: Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Entering_Water_Flow_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the rate of flow of water entering a piece of equipment
+    or system
+  brick_parent: Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Hot_Water_Flow_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the rate of flow in a hot water circuit
+  brick_parent: Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Leaving_Water_Flow_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the rate of flow of water that is leaving a piece of
+    equipment or system
+  brick_parent: Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

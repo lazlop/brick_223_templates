@@ -1,0 +1,54 @@
+On_Timer_Sensor:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Measures the duration for which a device was in an active or "on"
+    state
+  brick_parent: Duration_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Rain_Duration_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the duration of precipitation within some time frame
+  brick_parent: Duration_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Run_Time_Sensor:
+  aspects:
+  - Aspect-OperatingStatus
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Measures the duration for which a device was in an active or "on"
+    state
+  brick_parent: Duration_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

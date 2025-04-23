@@ -1,0 +1,33 @@
+Max_Position_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Position_Setpoint.
+  brick_parent: Position_Limit
+  enumerationkind: Position-Open
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Position_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Position_Setpoint.
+  brick_parent: Position_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: Position
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

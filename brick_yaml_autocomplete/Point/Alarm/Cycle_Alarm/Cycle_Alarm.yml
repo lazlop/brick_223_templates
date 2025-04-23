@@ -1,0 +1,16 @@
+Short_Cycle_Alarm:
+  aspects:
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  brick_definition: An alarm that indicates a short cycle occurred. A short cycle
+    occurs when a cooling cycle is prevented from completing its full cycle
+  brick_parent: Cycle_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true

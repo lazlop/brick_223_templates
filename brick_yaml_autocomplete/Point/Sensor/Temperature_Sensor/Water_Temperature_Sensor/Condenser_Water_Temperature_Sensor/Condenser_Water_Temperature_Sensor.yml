@@ -1,0 +1,40 @@
+Entering_Condenser_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Minimum
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of the entering condenser water
+  brick_parent: Condenser_Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: ConnectionPoint
+  property_of_valid: false
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Leaving_Condenser_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of the leaving condenser water
+  brick_parent: Condenser_Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: ConnectionPoint
+  property_of_valid: false
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

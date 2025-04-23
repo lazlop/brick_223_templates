@@ -52,7 +52,7 @@ for root, dirs, files in os.walk(new_dir):
  #%%
 # Now manually review and edit the files
 review_dir = "brick_yaml_reviewed"
-os.makedirs(review_dir, exist_ok=False)
+# os.makedirs(review_dir, exist_ok=False)
 shutil.copytree(new_dir, review_dir, dirs_exist_ok=False)
 
 # %%

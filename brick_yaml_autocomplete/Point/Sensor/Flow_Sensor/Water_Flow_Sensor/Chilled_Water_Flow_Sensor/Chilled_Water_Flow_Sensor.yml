@@ -1,0 +1,44 @@
+Entering_Chilled_Water_Flow_Sensor:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Nominal
+  - Aspect-OperatingStatus
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  - true
+  - true
+  brick_definition: Measures the rate of flow of chilled entering water
+  brick_parent: Chilled_Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Leaving_Chilled_Water_Flow_Sensor:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Nominal
+  - Aspect-OperatingStatus
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  - true
+  - true
+  brick_definition: Measures the rate of flow of chilled leaving water
+  brick_parent: Chilled_Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

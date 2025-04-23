@@ -1,0 +1,292 @@
+CO2_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets some property of CO2
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Current_Ratio_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the ratio of currents in a transformer
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: ElectricEnergyTransformer
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Damper_Position_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the position of damper
+  brick_parent: Setpoint
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Damper
+  property_of_valid: true
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets the size of a deadband
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Demand_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the rate required for a process
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Dewpoint_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets dew point
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Differential_Setpoint:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A type of Setpoints that is related to the difference between
+    two measurements
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Enthalpy_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets enthalpy
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets flow
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Frequency_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets frequency
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Humidity_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets humidity
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Illuminance_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Target Illuminance of the zone.
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Luminance_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets luminance
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Pressure_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets pressure
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Reset_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Setpoints used in reset strategies
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Speed_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets speed
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Thermostat
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Voltage_Ratio_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the ratio of voltage in a transformer
+  brick_parent: Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: ElectricEnergyTransformer
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

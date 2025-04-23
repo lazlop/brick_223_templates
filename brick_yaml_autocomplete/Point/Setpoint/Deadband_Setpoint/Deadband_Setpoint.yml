@@ -1,0 +1,72 @@
+Air_Flow_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of air flow
+  brick_parent: Deadband_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Humidity_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of humidity
+  brick_parent: Deadband_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Static_Pressure_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of static pressure
+  brick_parent: Deadband_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Temperature_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of temperature
+  brick_parent: Deadband_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

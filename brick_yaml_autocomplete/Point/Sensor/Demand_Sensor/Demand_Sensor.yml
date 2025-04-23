@@ -1,0 +1,56 @@
+Cooling_Demand_Sensor:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Measures the amount of power consumed by a cooling process; typically
+    found by multiplying the tonnage of a unit (e.g. RTU) by the efficiency rating
+    in kW/ton
+  brick_parent: Demand_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: CoolingCoil
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Heating_Demand_Sensor:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Measures the amount of power consumed by a heating process; typically
+    found by multiplying the tonnage of a unit (e.g. RTU) by the efficiency rating
+    in kW/ton
+  brick_parent: Demand_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Peak_Demand_Sensor:
+  aspects:
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  brick_definition: The peak power consumed by a process over some period of time
+  brick_parent: Demand_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

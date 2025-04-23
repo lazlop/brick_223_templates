@@ -1,0 +1,16 @@
+Return_Air_CO2_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets some property of CO2 in Return Air
+  brick_parent: CO2_Setpoint
+  enumerationkind_valid: false
+  medium: Constituent-CO2
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

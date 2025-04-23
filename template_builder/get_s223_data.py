@@ -24,9 +24,9 @@ def get_s223_info():
         FILTER NOT EXISTS {
             ?s223_class qudt:hasQuantityKind ?qk .
         }
-        FILTER NOT EXISTS {
-            ?s223_class2 rdfs:subClassOf ?s223_class .
-        }
+        # FILTER NOT EXISTS {
+        #     ?s223_class2 rdfs:subClassOf ?s223_class .
+        # }
         FILTER(STRSTARTS (str(?s223_class), \"http://data.ashrae.org/standard223#\"))
     }
     """

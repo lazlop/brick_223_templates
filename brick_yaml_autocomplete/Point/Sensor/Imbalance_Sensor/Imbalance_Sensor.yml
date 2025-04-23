@@ -1,0 +1,34 @@
+Current_Imbalance_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: A sensor which measures the current difference (imbalance) between
+    phases of an electrical system
+  brick_parent: Imbalance_Sensor
+  enumerationkind_valid: false
+  medium: Electricity-AC
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Voltage_Imbalance_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: A sensor which measures the voltage difference (imbalance) between
+    phases of an electrical system
+  brick_parent: Imbalance_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

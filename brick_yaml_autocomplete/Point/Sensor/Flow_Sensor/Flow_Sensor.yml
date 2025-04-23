@@ -1,0 +1,48 @@
+Air_Flow_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the rate of flow of air
+  brick_parent: Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Natural_Gas_Flow_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the rate of flow of natural gas
+  brick_parent: Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-NaturalGas
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Water_Flow_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the rate of flow of water
+  brick_parent: Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

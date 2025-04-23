@@ -1,0 +1,16 @@
+Leaving_Domestic_Hot_Water_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature of leavinging part of domestic hot water
+  brick_parent: Domestic_Hot_Water_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

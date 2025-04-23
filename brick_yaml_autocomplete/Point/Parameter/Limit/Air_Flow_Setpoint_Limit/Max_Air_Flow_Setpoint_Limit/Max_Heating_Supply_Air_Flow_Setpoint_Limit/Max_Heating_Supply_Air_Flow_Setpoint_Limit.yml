@@ -1,0 +1,67 @@
+Max_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Occupied_Heating_Discharge_Air_Flow_Setpoint.
+  brick_parent: Max_Heating_Supply_Air_Flow_Setpoint_Limit
+  enumerationkind: EnumerationKind-Occupancy
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Max_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Occupied_Heating_Supply_Air_Flow_Setpoint.
+  brick_parent: Max_Heating_Supply_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Max_Unoccupied_Heating_Discharge_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Unoccupied_Heating_Discharge_Air_Flow_Setpoint.
+  brick_parent: Max_Heating_Supply_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Max_Unoccupied_Heating_Supply_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Unoccupied_Heating_Supply_Air_Flow_Setpoint.
+  brick_parent: Max_Heating_Supply_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

@@ -1,0 +1,21 @@
+Air_Static_Pressure_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the pressure exerted by the air in a system, not influenced
+    by its motion.
+  brick_parent: Static_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

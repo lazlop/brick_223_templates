@@ -1,0 +1,16 @@
+Deionised_Water_Conductivity_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the electrical conductance of deionised water
+  brick_parent: Conductivity_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

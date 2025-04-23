@@ -1,0 +1,57 @@
+Leaving_Domestic_Hot_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of domestic water supplied by a hot water
+    system
+  brick_parent: Leaving_Hot_Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind-Temperature
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Leaving_High_Temperature_Hot_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Measures the temperature of high-temperature hot water supplied
+    by a hot water system
+  brick_parent: Leaving_Hot_Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind-Temperature
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Leaving_Medium_Temperature_Hot_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: Measures the temperature of medium-temperature hot water supplied
+    by a hot water system
+  brick_parent: Leaving_Hot_Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

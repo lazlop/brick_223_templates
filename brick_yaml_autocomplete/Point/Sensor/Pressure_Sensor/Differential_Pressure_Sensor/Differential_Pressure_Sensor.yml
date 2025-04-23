@@ -1,0 +1,49 @@
+Air_Differential_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference in pressure between two regions of air
+  brick_parent: Differential_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Filter_Differential_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference in pressure on either side of a filter
+  brick_parent: Differential_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Filter
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Water_Differential_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference in water pressure between two points in
+    a system.
+  brick_parent: Differential_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

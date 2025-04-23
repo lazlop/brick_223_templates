@@ -1,0 +1,88 @@
+Lead_On_Off_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Controls the active/inactive status of the "lead" part of a lead/lag
+    system
+  brick_parent: On_Off_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Off_Command:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: An Off Command controls or reports the binary 'off' status of
+    a control loop, relay or equipment activity. It can only be used to stop/deactivate
+    an associated equipment or process, or determine that the related entity is 'off'
+  brick_parent: On_Off_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+On_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: An On Command controls or reports the binary 'on' status of a
+    control loop, relay or equipment activity. It can only be used to start/activate
+    an associated equipment or process, or determine that the related entity is 'on'
+  brick_parent: On_Off_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Open_Close_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: A binary signal given to a device, such as a damper or valve,
+    to either open or close
+  brick_parent: On_Off_Command
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Start_Stop_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A Start/Stop Command controls or reports the active/inactive status
+    of a control sequence
+  brick_parent: On_Off_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedActuatableProperty
+  s223_class_valid: true

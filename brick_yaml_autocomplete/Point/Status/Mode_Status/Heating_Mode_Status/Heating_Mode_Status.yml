@@ -1,0 +1,18 @@
+Unoccupied_Heating_Mode_Status:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Indicates whether a system, device or control loop is in an unoccupied
+    heating mode
+  brick_parent: Heating_Mode_Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

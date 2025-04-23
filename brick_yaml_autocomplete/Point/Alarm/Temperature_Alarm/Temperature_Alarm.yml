@@ -1,0 +1,67 @@
+Air_Temperature_Alarm:
+  aspects:
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  brick_definition: An alarm that indicates the off-normal conditions associated with
+    the temperature of air.
+  brick_parent: Temperature_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+High_Temperature_Alarm:
+  aspects:
+  - Aspect-HighLimit
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  - true
+  brick_definition: An alarm that indicates high temperature.
+  brick_parent: Temperature_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Low_Temperature_Alarm:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  - true
+  brick_definition: An alarm that indicates low temperature.
+  brick_parent: Temperature_Alarm
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Water_Temperature_Alarm:
+  aspects:
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  brick_definition: An alarm that indicates the off-normal conditions associated with
+    temperature of water.
+  brick_parent: Temperature_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true

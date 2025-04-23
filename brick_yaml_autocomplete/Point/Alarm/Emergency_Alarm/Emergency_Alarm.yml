@@ -1,0 +1,16 @@
+Emergency_Generator_Alarm:
+  aspects:
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  brick_definition: An alarm that indicates off-normal conditions associated with
+    an emergency generator
+  brick_parent: Emergency_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true

@@ -1,0 +1,63 @@
+Embedded_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the internal temperature of the radiant layer of the
+    radiant heating and cooling HVAC system.
+  brick_parent: Radiant_Panel_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: RadiantHeater
+  property_of_valid: true
+  quantitykind: ThermodynamicPhase
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Inside_Face_Surface_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Minimum
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the inside surface (relative to the space) of the radiant
+    panel of the radiant heating and cooling HVAC system.
+  brick_parent: Radiant_Panel_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: RadiantHeater
+  property_of_valid: true
+  quantitykind: ThermodynamicPhase
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Outside_Face_Surface_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the outside surface (relative to the space) of the radiant
+    panel of a radiant heating and cooling HVAC system.
+  brick_parent: Radiant_Panel_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: ThermodynamicPhase
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

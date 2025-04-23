@@ -1,0 +1,136 @@
+Min_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Air_Flow_Setpoint.
+  brick_parent: Min_Limit
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Chilled_Water_Differential_Pressure_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Chilled_Water_Differential_Pressure_Setpoint.
+  brick_parent: Min_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Fresh_Air_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Fresh_Air_Setpoint.
+  brick_parent: Min_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Hot_Water_Differential_Pressure_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Hot_Water_Differential_Pressure_Setpoint.
+  brick_parent: Min_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Position_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Position_Setpoint.
+  brick_parent: Min_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: Position
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Speed_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Speed_Setpoint.
+  brick_parent: Min_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Static_Pressure_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Static_Pressure_Setpoint.
+  brick_parent: Min_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Temperature_Setpoint.
+  brick_parent: Min_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

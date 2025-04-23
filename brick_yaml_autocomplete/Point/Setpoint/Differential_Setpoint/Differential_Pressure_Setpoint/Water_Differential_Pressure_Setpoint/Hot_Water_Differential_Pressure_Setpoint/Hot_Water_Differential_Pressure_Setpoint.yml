@@ -1,0 +1,19 @@
+Domestic_Hot_Water_Differential_Pressure_Setpoint:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets the target water differential pressure between an upstream
+    and downstream point in a water pipe used to carry domestic hot water
+  brick_parent: Hot_Water_Differential_Pressure_Setpoint
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

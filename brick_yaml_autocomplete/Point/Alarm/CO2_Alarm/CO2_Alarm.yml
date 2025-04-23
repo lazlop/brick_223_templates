@@ -1,0 +1,17 @@
+High_CO2_Alarm:
+  aspects:
+  - Aspect-HighLimit
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A device that indicates high concentration of carbon dioxide.
+  brick_parent: CO2_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: Medium-Constituent
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true

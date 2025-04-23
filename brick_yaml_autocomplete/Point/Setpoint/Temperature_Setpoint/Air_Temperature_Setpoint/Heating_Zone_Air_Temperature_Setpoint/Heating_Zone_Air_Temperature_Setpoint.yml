@@ -1,0 +1,49 @@
+Effective_Heating_Zone_Air_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: The effective heating setpoint for a specific zone in a building.
+  brick_parent: Heating_Zone_Air_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Occupied_Heating_Zone_Air_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature for zone air heating when occupied
+  brick_parent: Heating_Zone_Air_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Thermostat
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Unoccupied_Heating_Zone_Air_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature of air when unoccupied for heating within a specific
+    zone
+  brick_parent: Heating_Zone_Air_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Thermostat
+  property_of_valid: true
+  quantitykind: ThermodynamicPhase
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

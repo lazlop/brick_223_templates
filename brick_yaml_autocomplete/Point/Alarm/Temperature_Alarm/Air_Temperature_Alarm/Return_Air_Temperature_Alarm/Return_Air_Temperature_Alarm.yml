@@ -1,0 +1,34 @@
+High_Return_Air_Temperature_Alarm:
+  aspects:
+  - Aspect-Alarm
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: An alarm that indicates that return air temperature is too high
+  brick_parent: Return_Air_Temperature_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Low_Return_Air_Temperature_Alarm:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  - true
+  brick_definition: An alarm that indicates that return air temperature is too low
+  brick_parent: Return_Air_Temperature_Alarm
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true

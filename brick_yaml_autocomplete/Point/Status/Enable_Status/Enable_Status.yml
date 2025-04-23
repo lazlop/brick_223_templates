@@ -1,0 +1,15 @@
+Heat_Exchanger_System_Enable_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if the heat exchanger system has been enabled
+  brick_parent: Enable_Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

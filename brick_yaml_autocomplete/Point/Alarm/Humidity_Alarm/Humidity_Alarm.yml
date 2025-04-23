@@ -1,0 +1,36 @@
+High_Humidity_Alarm:
+  aspects:
+  - Aspect-Alarm
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: An alarm that indicates high concentration of water vapor in the
+    air.
+  brick_parent: Humidity_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Low_Humidity_Alarm:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  - true
+  brick_definition: An alarm that indicates low concentration of water vapor in the
+    air.
+  brick_parent: Humidity_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true

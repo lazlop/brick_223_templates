@@ -1,0 +1,32 @@
+Average_Discharge_Air_Flow_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: The computed average flow of discharge air over some interval
+  brick_parent: Supply_Air_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Average_Supply_Air_Flow_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: The computed average flow of supply air over some interval
+  brick_parent: Supply_Air_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Duct
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

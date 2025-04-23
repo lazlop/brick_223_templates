@@ -1,0 +1,30 @@
+Chilled_Water_System_Enable_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Enables operation of the chilled water system
+  brick_parent: System_Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Hot_Water_System_Enable_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Enables operation of the hot water system
+  brick_parent: System_Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true

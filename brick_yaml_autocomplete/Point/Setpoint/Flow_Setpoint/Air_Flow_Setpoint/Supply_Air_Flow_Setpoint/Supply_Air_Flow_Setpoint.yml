@@ -1,0 +1,128 @@
+Cooling_Discharge_Air_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets discharge air flow for cooling
+  brick_parent: Supply_Air_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Cooling_Supply_Air_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets supply air flow rate for cooling
+  brick_parent: Supply_Air_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Discharge_Air_Flow_Demand_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the rate of discharge air flow required for a process
+  brick_parent: Supply_Air_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Heating_Discharge_Air_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets discharge air flow for heating
+  brick_parent: Supply_Air_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Heating_Supply_Air_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets supply air flow rate for heating
+  brick_parent: Supply_Air_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Occupied_Discharge_Air_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets discharge air flow when occupied
+  brick_parent: Supply_Air_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: Occupancy
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Occupied_Supply_Air_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets supply air flow rate when occupied
+  brick_parent: Supply_Air_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: Occupancy
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Supply_Air_Flow_Demand_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets the rate of supply air flow required for a process
+  brick_parent: Supply_Air_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

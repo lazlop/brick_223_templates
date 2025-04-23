@@ -1,0 +1,32 @@
+Outside_Air_Grains_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the mass of water vapor in outside air
+  brick_parent: Air_Grains_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Return_Air_Grains_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the mass of water vapor in return air
+  brick_parent: Air_Grains_Sensor
+  enumerationkind_valid: false
+  medium: Particulate-PM10.0
+  medium_valid: true
+  property_of: ReturnAir
+  property_of_valid: false
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

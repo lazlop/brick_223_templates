@@ -1,0 +1,15 @@
+Standby_Glycool_Unit_On_Off_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates the on/off status of a standby glycool unit
+  brick_parent: Standby_Unit_On_Off_Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

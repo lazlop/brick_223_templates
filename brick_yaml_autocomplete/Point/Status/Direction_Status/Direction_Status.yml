@@ -1,0 +1,16 @@
+Motor_Direction_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates which direction a motor is operating in, e.g. forward
+    or reverse
+  brick_parent: Direction_Status
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Motor
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

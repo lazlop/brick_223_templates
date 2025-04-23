@@ -1,0 +1,110 @@
+Air_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Air_Temperature_Setpoint.
+  brick_parent: Temperature_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+High_Temperature_Alarm_Parameter:
+  aspects:
+  - Aspect-HighLimit
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter determining the temperature level at which to trigger
+    a high temperature alarm
+  brick_parent: Temperature_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Low_Temperature_Alarm_Parameter:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter determining the temperature level at which to trigger
+    a low temperature alarm
+  brick_parent: Temperature_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Max_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Temperature_Setpoint.
+  brick_parent: Temperature_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Temperature_Setpoint.
+  brick_parent: Temperature_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Temperature_Tolerance_Parameter:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter determining the difference between upper and lower
+    limits of temperature.
+  brick_parent: Temperature_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableProperty
+  s223_class_valid: true

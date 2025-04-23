@@ -1,0 +1,16 @@
+Electric_Power_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the amount of instantaneous electric power consumed
+  brick_parent: Power_Sensor
+  enumerationkind_valid: false
+  medium: Constituent-Electricity
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

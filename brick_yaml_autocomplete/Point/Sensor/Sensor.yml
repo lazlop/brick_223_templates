@@ -1,0 +1,693 @@
+Adjust_Sensor:
+  aspects:
+  - Adjust_Sensor
+  - Measures user-provided adjustment of some value
+  aspects_valid:
+  - false
+  - false
+  brick_definition: Measures user-provided adjustment of some value
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Air_Grains_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the mass of water vapor in air
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Air_Quality_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: A sensor which provides a measure of air quality
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Angle_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measues the planar angle of some phenomenon
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Conductivity_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures electrical conductance
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Constituent-Electricity
+  medium_valid: true
+  property_of: Conductor
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Contact_Sensor:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Senses or detects contact, such as for determining if a door is
+    closed.
+  brick_parent: Sensor
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Door
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Current_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Senses the amperes of electrical current passing through the sensor
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Constituent-Electricity
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Demand_Sensor:
+  aspects:
+  - Demand_Sensor
+  - Measures the amount of power consumed by the use of some process; typically found
+    by multiplying the tonnage of a unit (e.g. RTU) by the efficiency rating in kW/ton
+  aspects_valid:
+  - false
+  - false
+  brick_definition: Measures the amount of power consumed by the use of some process;
+    typically found by multiplying the tonnage of a unit (e.g. RTU) by the efficiency
+    rating in kW/ton
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Dewpoint_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Senses the dewpoint temperature . Dew point is the temperature
+    to which air must be cooled to become saturated with water vapor
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Direction_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the direction in degrees in which a phenomenon is occuring
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Duration_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the duration of a phenomenon or event
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Energy_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures energy consumption
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Constituent-Electricity
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Enthalpy_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the total heat content of some substance
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Fire_Sensor:
+  aspects:
+  - Aspect-OperatingStatus
+  - Aspect-Fault
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Measures the presence of fire
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: EnumerationKind-Presence
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Flow_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the rate of flow of some substance
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Frequency_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the frequency of a phenomenon or aspect of a phenomenon,
+    e.g. the frequency of a fan turning
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Fan
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Gas_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures gas concentration (other than CO2)
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Generation_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: A sensor measuring how much something has been generated.
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Generator
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Hail_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures hail in terms of its size and damage potential
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Humidity_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the concentration of water vapor in air
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Illuminance_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the total luminous flux incident on a surface, per unit
+    area
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Light-Visible
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Imbalance_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: A sensor which measures difference (imbalance) between phases
+    of an electrical system
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Lighting_Correlated_Color_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Minimum
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: A sensor to measure correlated color temperature (CCT) which is
+    the temperature of the Planckian radiator whose perceived color most closely resembles
+    that of a given stimulus at the same brightness and under specified viewing conditions.
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Luminance_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the luminous intensity per unit area of light travelling
+    in a given direction
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Light-Visible
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Motion_Sensor:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Detects the presence of motion in some area
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: EnumerationKind-Motion
+  quantitykind_valid: false
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Occupancy_Count_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Sensors measuring the number of people in an area
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Occupancy_Sensor:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Detects occupancy of some space or area
+  brick_parent: Sensor
+  enumerationkind: EnumerationKind-Occupancy
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Piezoelectric_Sensor:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Nominal
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Senses changes pressure, acceleration, temperature, force or strain
+    via the piezoelectric effect
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Position_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: Measures the current position of a component in terms of a fraction
+    of its full range of motion
+  brick_parent: Sensor
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Power_Factor_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: Sensors measuring power Factor, under periodic conditions, is
+    the ratio of the absolute value of the active power (P) to the apparent power
+    (S).
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Power_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the amount of instantaneous power consumed
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Constituent-Electricity
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Pressure_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measure the amount of force acting on a unit area
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Rain_Level_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the amount of precipitation fallen
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Solar_Irradiance_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures solar irradiance levels for photovoltaic systems
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: PhotovoltaicModule
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Speed_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the magnitude of velocity of some form of movement
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Temperature_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: 'Measures temperature: the physical property of matter that quantitatively
+    expresses the common notions of hot and cold'
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Torque_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures torque, the tendency of a force to rotate an object about
+    some axis
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Usage_Sensor:
+  aspects:
+  - Usage_Sensor
+  - Measures the amount of some substance that is consumed or used, over some period
+    of time
+  aspects_valid:
+  - false
+  - false
+  brick_definition: Measures the amount of some substance that is consumed or used,
+    over some period of time
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Voltage_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the voltage of an electrical device or object
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Electricity-DC
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Waste_Amount_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: A metric used for measuring the quantity of waste generated in
+    a building.
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Water_Level_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the height/level of water in some container
+  brick_parent: Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

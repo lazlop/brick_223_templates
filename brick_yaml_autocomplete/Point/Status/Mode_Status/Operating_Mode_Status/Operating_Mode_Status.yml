@@ -1,0 +1,17 @@
+Vent_Operating_Mode_Status:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Indicates the current operating mode of a vent
+  brick_parent: Operating_Mode_Status
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

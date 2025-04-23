@@ -1,0 +1,47 @@
+PM10_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Detects matter of size 10 microns
+  brick_parent: Particulate_Matter_Sensor
+  enumerationkind_valid: false
+  medium: Particulate-PM10.0
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: ObservableProperty
+  s223_class_valid: true
+PM1_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Detects matter of size 1 micron
+  brick_parent: Particulate_Matter_Sensor
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: Particulate-PM1.0
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+PM2.5_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Detects matter of size 2.5 microns
+  brick_parent: Particulate_Matter_Sensor
+  enumerationkind_valid: false
+  medium: Particulate-PM2.5
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: ObservableProperty
+  s223_class_valid: true

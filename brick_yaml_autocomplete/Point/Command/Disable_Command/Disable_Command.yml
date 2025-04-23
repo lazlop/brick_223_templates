@@ -1,0 +1,62 @@
+Disable_Differential_Enthalpy_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Disables the use of differential enthalpy control
+  brick_parent: Disable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Disable_Differential_Temperature_Command:
+  aspects:
+  - Aspect-Delta
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Disables the use of differential temperature control
+  brick_parent: Disable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Disable_Fixed_Enthalpy_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Disables the use of fixed enthalpy control
+  brick_parent: Disable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Disable_Fixed_Temperature_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Disables the use of fixed temperature temperature
+  brick_parent: Disable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true

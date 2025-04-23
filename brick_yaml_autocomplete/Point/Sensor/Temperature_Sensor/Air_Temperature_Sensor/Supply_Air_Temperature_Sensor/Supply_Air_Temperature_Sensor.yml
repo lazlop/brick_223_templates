@@ -1,0 +1,36 @@
+Preheat_Discharge_Air_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: Measures the temperature of discharge air before heating is applied
+  brick_parent: Supply_Air_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Preheat_Supply_Air_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Minimum
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of supply air before it is heated
+  brick_parent: Supply_Air_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: SupplyAir
+  property_of_valid: false
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

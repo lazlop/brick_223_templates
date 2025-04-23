@@ -1,0 +1,85 @@
+Max_Cooling_Discharge_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Cooling_Discharge_Air_Flow_Setpoint.
+  brick_parent: Max_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: CoolingCoil
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Max_Cooling_Supply_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Cooling_Supply_Air_Flow_Setpoint.
+  brick_parent: Max_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Max_Heating_Discharge_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Heating_Discharge_Air_Flow_Setpoint.
+  brick_parent: Max_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Max_Heating_Supply_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Heating_Supply_Air_Flow_Setpoint.
+  brick_parent: Max_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Max_Outside_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Outside_Air_Flow_Setpoint.
+  brick_parent: Max_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

@@ -1,0 +1,68 @@
+Max_Discharge_Air_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Discharge_Air_Temperature_Setpoint.
+  brick_parent: Supply_Air_Temperature_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Max_Supply_Air_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Supply_Air_Temperature_Setpoint.
+  brick_parent: Supply_Air_Temperature_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Discharge_Air_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Discharge_Air_Temperature_Setpoint.
+  brick_parent: Supply_Air_Temperature_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Supply_Air_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Supply_Air_Temperature_Setpoint.
+  brick_parent: Supply_Air_Temperature_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

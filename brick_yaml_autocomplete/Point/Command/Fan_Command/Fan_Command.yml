@@ -1,0 +1,16 @@
+Fan_Speed_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Controls the speed of fans
+  brick_parent: Fan_Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Fan
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

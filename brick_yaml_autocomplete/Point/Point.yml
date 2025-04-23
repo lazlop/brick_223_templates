@@ -13,7 +13,7 @@ Alarm:
   medium_valid: true
   property_of: None
   property_of_valid: true
-  s223_class: EnumeratedObservableProperty
+  s223_class: ObservableProperty
   s223_class_valid: true
 Command:
   aspects:
@@ -32,7 +32,7 @@ Command:
   property_of_valid: true
   quantitykind: Command
   quantitykind_valid: false
-  s223_class: EnumeratedActuatableProperty
+  s223_class: ActuatableProperty
   s223_class_valid: true
 Parameter:
   aspects:
@@ -52,7 +52,7 @@ Parameter:
   property_of_valid: true
   quantitykind: quantitykind
   quantitykind_valid: false
-  s223_class: QuantifiableActuatableProperty
+  s223_class: ActuatableProperty
   s223_class_valid: true
 Sensor:
   aspects:

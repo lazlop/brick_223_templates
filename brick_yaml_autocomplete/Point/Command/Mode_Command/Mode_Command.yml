@@ -1,0 +1,32 @@
+Automatic_Mode_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Controls whether or not a device or controller is operating in
+    "Automatic" mode
+  brick_parent: Mode_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Maintenance_Mode_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Controls whether or not a device or controller is operating in
+    "Maintenance" mode
+  brick_parent: Mode_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true

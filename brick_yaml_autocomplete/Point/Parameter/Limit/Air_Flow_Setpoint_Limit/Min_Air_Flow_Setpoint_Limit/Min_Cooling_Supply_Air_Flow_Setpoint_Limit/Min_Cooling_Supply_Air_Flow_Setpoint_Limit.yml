@@ -1,0 +1,68 @@
+Min_Occupied_Cooling_Discharge_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Occupied_Cooling_Discharge_Air_Flow_Setpoint.
+  brick_parent: Min_Cooling_Supply_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Occupied_Cooling_Supply_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Occupied_Cooling_Supply_Air_Flow_Setpoint.
+  brick_parent: Min_Cooling_Supply_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Unoccupied_Cooling_Discharge_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Unoccupied_Cooling_Discharge_Air_Flow_Setpoint.
+  brick_parent: Min_Cooling_Supply_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Unoccupied_Cooling_Supply_Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Unoccupied_Cooling_Supply_Air_Flow_Setpoint.
+  brick_parent: Min_Cooling_Supply_Air_Flow_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

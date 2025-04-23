@@ -1,0 +1,18 @@
+Rated_Speed_Setpoint:
+  aspects:
+  - Aspect-Rated
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets rated speed
+  brick_parent: Speed_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

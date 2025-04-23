@@ -1,0 +1,16 @@
+Max_Frequency_Command:
+  aspects:
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  brick_definition: Sets the maximum permitted frequency
+  brick_parent: Frequency_Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

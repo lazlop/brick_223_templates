@@ -1,0 +1,33 @@
+Absolute_Humidity_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the present state of absolute humidity
+  brick_parent: Humidity_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Relative_Humidity_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: Measures the present state of absolute humidity relative to a
+    maximum humidity given the same temperature
+  brick_parent: Humidity_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

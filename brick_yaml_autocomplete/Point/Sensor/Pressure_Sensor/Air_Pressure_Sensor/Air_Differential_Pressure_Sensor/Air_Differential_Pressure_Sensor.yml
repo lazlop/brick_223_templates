@@ -1,0 +1,68 @@
+Exhaust_Air_Differential_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference in pressure between an upstream and downstream
+    of an air duct or other air conduit used to exhaust air from the building
+  brick_parent: Air_Differential_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Duct
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Filter_Air_Differential_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference in air pressure before and after an air
+    filter.
+  brick_parent: Air_Differential_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Filter
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Return_Air_Differential_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference in pressure between the return and supply
+    side
+  brick_parent: Air_Differential_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Supply_Air_Differential_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference in pressure between an upstream and downstream
+    of an air duct or other air conduit used to supply air into the building
+  brick_parent: Air_Differential_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Duct
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

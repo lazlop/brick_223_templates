@@ -1,0 +1,36 @@
+High_Head_Pressure_Alarm:
+  aspects:
+  - Aspect-HighLimit
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  - true
+  brick_definition: An alarm that indicates a high pressure generated on the output
+    side of a gas compressor in a refrigeration or air conditioning system.
+  brick_parent: Pressure_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Compressor
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Low_Suction_Pressure_Alarm:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  - true
+  brick_definition: An alarm that indicates a low suction pressure in the compressor
+    in a refrigeration or air conditioning system.
+  brick_parent: Pressure_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Compressor
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true

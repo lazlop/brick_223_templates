@@ -1,0 +1,99 @@
+Air_Pressure_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the pressure of the surrounding air.
+  brick_parent: Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Differential_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference between two applied pressures
+  brick_parent: Pressure_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Gauge_Pressure_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Pressure sensor which is zero-referenced against ambient air pressure
+  brick_parent: Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Static_Pressure_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures resistance to airflow in a heating and cooling system's
+    components and duct work
+  brick_parent: Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Medium-ThermalContact
+  medium_valid: true
+  property_of: Duct
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Velocity_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference between total pressure and static pressure
+  brick_parent: Pressure_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Water_Pressure_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the pressure exerted by water in a system.
+  brick_parent: Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
