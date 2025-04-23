@@ -9,6 +9,7 @@ import yaml
 import sys
 from .get_s223_data import get_s223_info
 import pandas as pd
+import re
 
 def display_s223_info(df, column_name='s223_class'):
     """
@@ -24,7 +25,7 @@ def display_s223_info(df, column_name='s223_class'):
         definition = row.get('s223_definition', '')
         print(f"{i}. {class_name}: {definition[:100]}{'...' if len(definition) > 100 else ''}")
 
-def select_from_df(df, prompt, column_name='s223_class', allow_none=True):
+def select_from_df(df, prompt, column_name='s223_class', allow_none=True, allow_string = True):
     """
     Allow user to select an item from a DataFrame.
     
@@ -49,6 +50,14 @@ def select_from_df(df, prompt, column_name='s223_class', allow_none=True):
             if allow_none and (choice.lower() == 'none' or choice == ''):
                 return None
             
+            if allow_string:
+                is_int = bool(re.fullmatch(r"[-+]?\d+", choice))
+                if not is_int:
+                    if choice in df[column_name].values:
+                        return choice
+                    else:
+                        print(f"Invalid choice. Please enter a valid class name")
+                        continue
             choice = int(choice)
             if 1 <= choice <= len(df):
                 return df.iloc[choice-1][column_name]
@@ -94,7 +103,7 @@ def review_and_edit_s223_class(brick_class, definition_data, prop_df):
             if view_options.lower() == 'y':
                 display_s223_info(prop_df)
             
-            prompt = "\nEnter the number of the s223_class to use (v to view options, q to quit): "
+            prompt = "\nEnter the number or name of the s223_class to use (v to view options, q to quit): "
             new_s223_class = select_from_df(prop_df, prompt)
             
             if new_s223_class is not None:
@@ -135,8 +144,9 @@ def review_and_edit_quantitykind(brick_class, definition_data, qk_df):
         print("1. Keep current quantitykind")
         print("2. Change quantitykind")
         print("3. Set to None")
+        print("4. Change to EnumerationKind")
         
-        choice = input("Enter your choice (1-3): ")
+        choice = input("Enter your choice (1-4): ")
         
         if choice == '1':
             return definition_data
@@ -145,7 +155,7 @@ def review_and_edit_quantitykind(brick_class, definition_data, qk_df):
             if view_options.lower() == 'y':
                 display_s223_info(qk_df, 's223_class')
             
-            prompt = "\nEnter the number of the quantitykind to use (v to view options, q to quit): "
+            prompt = "\nEnter the number or name of the quantitykind to use (v to view options, q to quit): "
             new_quantitykind = select_from_df(qk_df, prompt, 's223_class')
             
             if new_quantitykind is not None:
@@ -157,6 +167,12 @@ def review_and_edit_quantitykind(brick_class, definition_data, qk_df):
                     definition_data['enumerationkind_valid'] = False
             return definition_data
         elif choice == '3':
+            definition_data['quantitykind'] = None
+            definition_data['quantitykind_valid'] = False
+            return definition_data
+        elif choice == '4':
+            definition_data['enumerationkind'] = None
+            definition_data['enumerationkind_valid'] = False
             definition_data['quantitykind'] = None
             definition_data['quantitykind_valid'] = False
             return definition_data
@@ -190,6 +206,7 @@ def review_and_edit_enumerationkind(brick_class, definition_data, ek_df):
         print("1. Keep current enumerationkind")
         print("2. Change enumerationkind")
         print("3. Set to None")
+        print("4. Change to QuantityKind")
         
         choice = input("Enter your choice (1-3): ")
         
@@ -200,7 +217,7 @@ def review_and_edit_enumerationkind(brick_class, definition_data, ek_df):
             if view_options.lower() == 'y':
                 display_s223_info(ek_df)
             
-            prompt = "\nEnter the number of the enumerationkind to use (v to view options, q to quit): "
+            prompt = "\nEnter the number or name of the enumerationkind to use (v to view options, q to quit): "
             new_enumerationkind = select_from_df(ek_df, prompt)
             
             if new_enumerationkind is not None:
@@ -214,6 +231,12 @@ def review_and_edit_enumerationkind(brick_class, definition_data, ek_df):
         elif choice == '3':
             definition_data['enumerationkind'] = None
             definition_data['enumerationkind_valid'] = False
+            return definition_data
+        elif choice == '4':
+            definition_data['enumerationkind'] = None
+            definition_data['enumerationkind_valid'] = False
+            definition_data['quantitykind'] = None
+            definition_data['quantitykind_valid'] = False
             return definition_data
         else:
             print("Invalid choice. Please enter a number between 1 and 3.")
@@ -255,7 +278,7 @@ def review_and_edit_medium(brick_class, definition_data, media_df):
             if view_options.lower() == 'y':
                 display_s223_info(media_df)
             
-            prompt = "\nEnter the number of the medium to use (v to view options, q to quit): "
+            prompt = "\nEnter the number or name of the medium to use (v to view options, q to quit): "
             new_medium = select_from_df(media_df, prompt)
             
             if new_medium is not None:
@@ -313,7 +336,7 @@ def review_and_edit_aspects(brick_class, definition_data, asp_df):
                 display_s223_info(asp_df)
             
             new_aspects = []
-            print("\nEnter the numbers of the aspects to use, one at a time.")
+            print("\nEnter the number or names of the aspects to use, one at a time.")
             print("Press Enter with no input when done, 'v' to view options, 'q' to quit.")
             
             while True:
@@ -375,7 +398,7 @@ def review_and_edit_property_of(brick_class, definition_data, meas_loc_df):
             if view_options.lower() == 'y':
                 display_s223_info(meas_loc_df)
             
-            prompt = "\nEnter the number of the property_of to use (v to view options, q to quit): "
+            prompt = "\nEnter the number or name of the property_of to use (v to view options, q to quit): "
             new_property_of = select_from_df(meas_loc_df, prompt)
             
             if new_property_of is not None:
@@ -438,6 +461,41 @@ def add_note_to_entity(brick_class, definition_data):
         else:
             print("Invalid choice. Please enter a number between 1 and 3.")
 
+def add_is_represented_to_entity(brick_class, definition_data):
+    """
+    Add a note to a Brick entity.
+    
+    Args:
+        brick_class (str): The Brick class name
+        definition_data (dict): The definition data for the Brick class
+        
+    Returns:
+        dict: Updated definition data with note
+    """
+    print("\n" + "="*80)
+    print(f"Add is_represented for {brick_class}")
+    print("="*80)
+    
+    current_is_represented = definition_data.get('is_represented', '')
+    
+    print(f"Current is_represented: {current_is_represented}")
+    
+    while True:
+        print("\nOptions:")
+        print("1. True")
+        print("2. False")
+        
+        choice = input("Enter your choice (1-3): ")
+        
+        if choice == '1':
+            definition_data['is_represented'] = True
+            return definition_data
+        elif choice == '2':
+            definition_data['is_represented'] = False
+            return definition_data
+        else:
+            print("Invalid choice. Please enter a number between 1 and 2.")
+
 def review_and_edit_yaml(yaml_file):
     """
     Review and edit a YAML file containing Brick classes and their S223 mappings.
@@ -493,7 +551,8 @@ def review_and_edit_yaml(yaml_file):
             updated_definition_data = review_and_edit_quantitykind(brick_class, updated_definition_data, qk_df)
         elif updated_definition_data.get('enumerationkind'):
             updated_definition_data = review_and_edit_enumerationkind(brick_class, updated_definition_data, ek_df)
-        else:
+        
+        if not updated_definition_data.get('quantitykind') and not updated_definition_data.get('enumerationkind'):
             # Ask which one to set
             print("\n" + "="*80)
             print(f"Neither quantitykind nor enumerationkind is set for {brick_class}")
@@ -524,6 +583,9 @@ def review_and_edit_yaml(yaml_file):
         
         # Add note to the entity
         updated_definition_data = add_note_to_entity(brick_class, updated_definition_data)
+
+        # Add is represented 
+        updated_definition_data = add_is_represented_to_entity(brick_class, updated_definition_data)
         
         # Add the updated definition to the dictionary
         updated_brick_dict[brick_class] = updated_definition_data
