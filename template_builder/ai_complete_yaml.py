@@ -26,7 +26,11 @@ def validate_result(result, df, column_name='s223_class'):
     return (result in df[column_name].values)
 
 def df_to_csv_str(df):
-    return df.to_csv(index=False)
+    # json instead of csv
+    df_temp = df.copy()
+    df_temp.index = df_temp.s223_class
+    df_temp.drop(columns = 's223_class', inplace = True)
+    return df_temp.to_json()
 
 def process_brick_template(template_file, prop_df, media_df, asp_df, ek_df, qk_df, meas_loc_df, as_agent = False):
     """
@@ -42,7 +46,7 @@ def process_brick_template(template_file, prop_df, media_df, asp_df, ek_df, qk_d
         brick_dict = yaml.safe_load(f)
     
     # Process each brick class and definition
-    system_prompt = """"""
+    system_prompt = """Think hard about your response"""
     updated_brick_dict = {}
     
     for brick_class, definition_data in brick_dict.items():
@@ -63,7 +67,7 @@ def process_brick_template(template_file, prop_df, media_df, asp_df, ek_df, qk_d
         Determine what s223_class the brick_class should be, based on its name and definition.
         the possible s223 classes are <s223_properties>{df_to_csv_str(prop_df)}</s223_properties> 
 
-        Only return the s223_class. Do not return any other information.
+        Only return the s223_class.  Do not return any other information. 
 
         brick_class: {brick_class}
         definition: {text_definition}
@@ -84,7 +88,7 @@ def process_brick_template(template_file, prop_df, media_df, asp_df, ek_df, qk_d
         Determine what quantitykind or enumerationkind the brick_class should be, based on its name and definition.
         the possible quantitykinds are <quantitykinds>{df_to_csv_str(qk_df)}</quantitykinds> 
         the possible enumerationkinds are <s223_eks>{df_to_csv_str(ek_df)}</s223_eks>
-        Only return the quantitykind or enumerationkind. Do not return any other information.
+        Only return the quantitykind or enumerationkind.  Do not return any other information. 
 
         brick_class: {brick_class}
         definition: {text_definition}
@@ -95,7 +99,7 @@ def process_brick_template(template_file, prop_df, media_df, asp_df, ek_df, qk_d
         
         # Check if result is in quantitykind or enumerationkind list
         # may want to namespace quantitykinds, this is working fine for now
-        is_quantitykind = qk_ek_result in qk_df['quantitykinds'].values
+        is_quantitykind = qk_ek_result in qk_df['s223_class'].values
         is_enumerationkind = validate_result(qk_ek_result, ek_df)
         
         qk_ek_type = "None"
@@ -115,7 +119,7 @@ def process_brick_template(template_file, prop_df, media_df, asp_df, ek_df, qk_d
         prompt3 = f"""
         Determine what medium the brick_class should be associated with, based on its name and definition.
         the possible media are <media>{df_to_csv_str(media_df)}</media> 
-        Only return the medium. Do not return any other information.
+        Only return the medium.  Do not return any other information. 
 
         If there is no sensible medium, return None.
 
@@ -139,28 +143,31 @@ def process_brick_template(template_file, prop_df, media_df, asp_df, ek_df, qk_d
         
         # Prompt 4: Determine aspects
         prompt4 = f"""
-        Determine what aspects the brick_class should be associated with, based on its name and definition.
-        The possible aspects are <aspects>{df_to_csv_str(asp_df)}</aspects> 
-        If there are no directly applicable aspects, return None.
-        Only return the aspects as a comma separated list. Do not return any other information.
+        Determine what aspect the brick_class should be associated with, based on its name and definition.
+        The possible aspects are <aspect_choices>{df_to_csv_str(asp_df)}</aspect_choices> 
+        Return only the aspect. If multiple aspects are relevant, return a comma separated list. If no aspects are relevant, return none.
 
         brick_class: {brick_class}
         definition: {text_definition}
         """
-        aspects_result = get_completion(prompt4, system_prompt, as_agent = as_agent)
-        aspects_result = aspects_result.strip()
+        aspects_result = get_completion(prompt4, system_prompt, as_agent = as_agent, comma_sep_list = True)
+        # used strip if there was a string
+        # aspects_result = aspects_result.strip()
         print(f"aspects: {aspects_result}")
         
-        # Validate aspects result
-        is_valid_aspects = True
-        for aspect in aspects_result.split(","):
+        # did comma sep for string output
+        # for aspect in aspects_result.split(","):
+        is_valid_aspects = []
+        for aspect in aspects_result:
             print(f"Validating aspect: {aspect}")
             is_valid_aspect = validate_result(aspect, asp_df)
             if is_valid_aspect == False:
                 print(f"Warning: {aspect} not found in aspect list")
             else:
                 print(f"Is valid aspect: {is_valid_aspects}")
-            is_valid_aspects = is_valid_aspects and is_valid_aspect
+            is_valid_aspects.append(is_valid_aspect)
+        if is_valid_aspects == []:
+            is_valid_aspects = False
         
         updated_definition_data['aspects'] = aspects_result
         updated_definition_data['aspects_valid'] = is_valid_aspects

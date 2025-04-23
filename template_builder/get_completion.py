@@ -1,7 +1,7 @@
 # MODEL = "openai/gpt-4.1" # Unsure on performance, more expesnvie
 # MODEL = "anthropic/claude-sonnet" # Best, most expesnvie. So far no other model seems to work
-MODEL = "lbl/cborg-chat:latest" # Free
-# MODEL = "lbl/cborg-coder:latest" # Free, least compute, seems to perform better and faster than llama 
+# MODEL = "lbl/cborg-chat:latest" # Free
+MODEL = "lbl/cborg-coder:latest" # Free, least compute, seems to perform better and faster than llama 
 # MODEL = "lbl/llama" # Free, Does not do well. Needs help to come up with single class answers. Often comes up with wrong thing
 # MODEL = "google/gemini-flash-exp" # Free during experiment, temporary, seems to perform adequately, not as well as sonnet
 # MODEL = "google/gemini-flash" # Cheapest tokens
@@ -34,7 +34,7 @@ client = openai.OpenAI(
 )
 SYSTEM_PROMPT = None
 # llama needs a little help returning a single class
-def get_simple_completion(prompt, system_prompt):
+def get_completion(prompt, system_prompt = SYSTEM_PROMPT, as_agent = False, comma_sep_list = False):
     messages = [
         {
             "role": "user",
@@ -48,10 +48,32 @@ def get_simple_completion(prompt, system_prompt):
                 "content":system_prompt
             }
         )
-    response = client.chat.completions.create(
-            model=MODEL, 
-            messages = messages,
-            tools=[{  # Note: newer versions use 'tools' instead of 'functions'
+    if comma_sep_list:
+        tools=[{
+            "type": "function",
+            "function": {
+                "name": "provide_class_names",
+                "description": "Provide a list of class names",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "class_names": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "description": "A class name"
+                            },
+                            "description": "List of class names"
+                        }
+                    },
+                    "required": ["class_names"]
+                }
+            }
+        }]
+        function_key = "class_names"
+        tool_choice = {"type": "function", "function": {"name": "provide_class_names"}}
+    else:
+        tools=[{  # Note: newer versions use 'tools' instead of 'functions'
                 "type": "function",
                 "function": {
                     "name": "provide_class_name",
@@ -67,8 +89,15 @@ def get_simple_completion(prompt, system_prompt):
                         "required": ["class_name"]
                     }
                 }
-            }],
-            tool_choice={"type": "function", "function": {"name": "provide_class_name"}},  # Force use of this tool
+            }]
+        function_key = "class_name"
+        tool_choice = {"type": "function", "function": {"name": "provide_class_name"}}
+        
+    response = client.chat.completions.create(
+            model=MODEL, 
+            messages = messages,
+            tools=tools,
+            tool_choice=tool_choice,  # Force use of this tool
             temperature=0.0  
         )
 
@@ -76,68 +105,68 @@ def get_simple_completion(prompt, system_prompt):
     tool_call = response.choices[0].message.tool_calls[0]
     function_args = json.loads(tool_call.function.arguments)
     
-    return function_args.get("class_name")
+    return function_args.get(function_key)
 
-# server = MCPServerStdio(
-#     "uv",
-#     args=[
-#         "run",
-#         "--with",
-#         "mcp[cli]",
-#         "--with",
-#         "rdflib",
-#         "--with",
-#         "oxrdflib",
-#         "mcp",
-#         "run",
-#         "brick.py"
-#     ],
+# # server = MCPServerStdio(
+# #     "uv",
+# #     args=[
+# #         "run",
+# #         "--with",
+# #         "mcp[cli]",
+# #         "--with",
+# #         "rdflib",
+# #         "--with",
+# #         "oxrdflib",
+# #         "mcp",
+# #         "run",
+# #         "brick.py"
+# #     ],
+# # )
+
+# model = OpenAIModel(
+#         model_name=MODEL,
+#         # i'm using LM Studio here, but you could use any other provider that exposes
+#         # an OpenAI-like API
+#         provider=OpenAIProvider(base_url=BASE_URL, api_key=API_KEY),
+#     )
+
+# class S223_Type(BaseModel):
+#     name: str
+
+# agent = Agent(
+#     model,
+#     output = S223_Type
+#     # mcp_servers=[server],
 # )
 
-model = OpenAIModel(
-        model_name=MODEL,
-        # i'm using LM Studio here, but you could use any other provider that exposes
-        # an OpenAI-like API
-        provider=OpenAIProvider(base_url=BASE_URL, api_key=API_KEY),
-    )
-
-class S223_Type(BaseModel):
-    name: str
-
-agent = Agent(
-    model,
-    output = S223_Type
-    # mcp_servers=[server],
-)
-
-async def run_agent(prompt, system_prompt = SYSTEM_PROMPT):
-    with capture_run_messages() as messages:
-        result = await agent.run(prompt, system_prompt=system_prompt)
-        # async with agent.run_mcp_servers():
-        #     result = await agent.run(prompt, system_prompt=system_prompt)
-    # pprint(messages)
-    return result
+# async def run_agent(prompt, system_prompt = SYSTEM_PROMPT):
+#     with capture_run_messages() as messages:
+#         result = await agent.run(prompt, system_prompt=system_prompt)
+#         # async with agent.run_mcp_servers():
+#         #     result = await agent.run(prompt, system_prompt=system_prompt)
+#     # pprint(messages)
+#     return result
     
 
-def get_completion(prompt, system_prompt = SYSTEM_PROMPT, as_agent= False):
+# def get_completion(prompt, system_prompt = SYSTEM_PROMPT, as_agent= False):
 
-    """
-    Get a completion for a given prompt, with an optional system prompt. Optionally runs the prompt through the mcp server.
+#     """
+#     Get a completion for a given prompt, with an optional system prompt. Optionally runs the prompt through the mcp server.
 
-    Args:
-        prompt (str): The prompt to complete.
-        system_prompt (str, optional): The system prompt to provide to the model. Defaults to None.
-        with_mcp (bool, optional): Whether to run the prompt through the mcp server. Defaults to False.
+#     Args:
+#         prompt (str): The prompt to complete.
+#         system_prompt (str, optional): The system prompt to provide to the model. Defaults to None.
+#         with_mcp (bool, optional): Whether to run the prompt through the mcp server. Defaults to False.
 
-    Returns:
-        str: The completed prompt.
-    """
-    try: 
-        if as_agent:
-            response = asyncio.run(run_agent(prompt, system_prompt))
-        else:
-            response = get_simple_completion(prompt, system_prompt)
-    except Exception as e:
-        print(f"Error: {e}")
-        response = f"Error: {e}"
-    return response
+#     Returns:
+#         str: The completed prompt.
+#     """
+#     try: 
+#         if as_agent:
+#             response = asyncio.run(run_agent(prompt, system_prompt))
+#         else:
+#             response = get_simple_completion(prompt, system_prompt)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         response = f"Error: {e}"
+#     return response
