@@ -1,0 +1,60 @@
+Leaving_Chilled_Water_Flow_Sensor:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Nominal
+  - Aspect-OperatingStatus
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  - true
+  - true
+  brick_definition: Measures the rate of flow of chilled leaving water
+  brick_parent: Leaving_Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Leaving_Condenser_Water_Flow_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the flow of the leaving condenser water
+  brick_parent: Leaving_Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Leaving_Hot_Water_Flow_Sensor:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Measures the rate of flow of hot leaving water
+  brick_parent: Leaving_Water_Flow_Sensor
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

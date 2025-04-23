@@ -1,0 +1,49 @@
+Damper_Position_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: Measures the current position of a damper in terms of the percent
+    of fully open
+  brick_parent: Position_Sensor
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Damper
+  property_of_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Sash_Position_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: Measures the current position of a sash in terms of the percent
+    of fully open
+  brick_parent: Position_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Window
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Valve_Position_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: Measures the current position of a valve in terms of the percent
+    of fully open
+  brick_parent: Position_Sensor
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Valve
+  property_of_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

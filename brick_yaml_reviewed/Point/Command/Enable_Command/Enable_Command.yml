@@ -1,0 +1,140 @@
+Cooling_Enable_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Command that enables cooling functionality in equipment but certain
+    condition(s) must be met first before actively cooling. For the actively cooling
+    control, see Cooling_Command.
+  brick_parent: Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Enable_Differential_Enthalpy_Command:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Enables the use of differential enthalpy control
+  brick_parent: Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Enable_Differential_Temperature_Command:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Enables the use of differential temperature control
+  brick_parent: Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Enable_Fixed_Enthalpy_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Enables the use of fixed enthalpy control
+  brick_parent: Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Enable_Fixed_Temperature_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Enables the use of fixed temperature control
+  brick_parent: Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Heating_Enable_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Command that enables heating functionality in equipment but certain
+    condition(s) must be met first before actively heating. For the actively heating
+    control, see Heating_Command.
+  brick_parent: Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Stage_Enable_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: A point representing a discrete stage which the equipment should
+    be operating at. The desired stage number should be identified by an entity property
+  brick_parent: Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedActuatableProperty
+  s223_class_valid: true
+System_Enable_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Enables operation of a system
+  brick_parent: Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+VFD_Enable_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Enables operation of a variable frequency drive
+  brick_parent: Enable_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: VariableFrequencyDrive
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true

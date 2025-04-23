@@ -1,0 +1,15 @@
+PM1_Level_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Detects level of particulates of size 1 microns
+  brick_parent: PM1_Sensor
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: Particulate-PM1.0
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

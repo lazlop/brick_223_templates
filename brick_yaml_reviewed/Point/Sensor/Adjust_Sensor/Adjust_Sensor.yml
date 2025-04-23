@@ -1,0 +1,35 @@
+Temperature_Adjust_Sensor:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Measures user-provided adjustment of temperature
+  brick_parent: Adjust_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Warm_Cool_Adjust_Sensor:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: User provided adjustment of zone temperature, typically in the
+    range of +/- 5 degrees
+  brick_parent: Adjust_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

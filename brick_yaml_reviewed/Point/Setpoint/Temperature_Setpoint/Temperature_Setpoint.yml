@@ -1,0 +1,114 @@
+Air_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature of air
+  brick_parent: Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Thermostat
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Cooling_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature for cooling
+  brick_parent: Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Thermostat
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Heating_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature for heating
+  brick_parent: Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Thermostat
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Radiant_Panel_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature of radiant panel.
+  brick_parent: Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind-Temperature
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Schedule_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: The current setpoint as indicated by the schedule
+  brick_parent: Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Temperature_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of temperature
+  brick_parent: Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Water_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature of water
+  brick_parent: Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: ThermodynamicPhase
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

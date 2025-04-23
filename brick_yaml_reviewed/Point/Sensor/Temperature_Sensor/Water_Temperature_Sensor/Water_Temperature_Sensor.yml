@@ -1,0 +1,159 @@
+Chilled_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Minimum
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of chilled water
+  brick_parent: Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: ChilledBeam
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Collection_Basin_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Minimum
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of the water in the collection basin,
+    e.g. within a Cooling_Tower
+  brick_parent: Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: CoolingTower
+  property_of_valid: true
+  quantitykind: ThermodynamicPhase
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Condenser_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of condenser water
+  brick_parent: Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Entering_Hot_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Minimum
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of water enteringed to a hot water system
+  brick_parent: Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Entering_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Minimum
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of entering water
+  brick_parent: Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Leaving_Hot_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of water supplied by a hot water system
+  brick_parent: Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Leaving_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the temperature of water leaving a piece of equipment
+    or system
+  brick_parent: Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Water_Differential_Temperature_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference in water temperature between an upstream
+    and downstream point in a pipe or conduit
+  brick_parent: Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

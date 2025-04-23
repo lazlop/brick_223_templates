@@ -1,0 +1,17 @@
+Zone_CO2_Level_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: A physical or virtual sensor which represents the CO2 level of
+    an HVAC Zone
+  brick_parent: CO2_Level_Sensor
+  enumerationkind_valid: false
+  medium: Medium-Constituent
+  medium_valid: true
+  property_of: DomainSpace
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

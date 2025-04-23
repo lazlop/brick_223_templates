@@ -1,0 +1,52 @@
+Discharge_Air_Temperature_Cooling_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature of discharge air for cooling
+  brick_parent: Cooling_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: CoolingCoil
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Occupied_Cooling_Temperature_Deadband_Setpoint:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Deadband
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of temperature for cooling when occupied
+  brick_parent: Cooling_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Occupied_Cooling_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature for cooling when occupied
+  brick_parent: Cooling_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Thermostat
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

@@ -1,0 +1,83 @@
+Chilled_Water_Differential_Pressure_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Delta
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of differential pressure of chilled
+    water
+  brick_parent: Differential_Pressure_Deadband_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Entering_Water_Differential_Pressure_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Delta
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of differential pressure of entering
+    water
+  brick_parent: Differential_Pressure_Deadband_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Hot_Water_Differential_Pressure_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Delta
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of differential pressure of hot water
+  brick_parent: Differential_Pressure_Deadband_Setpoint
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Leaving_Water_Differential_Pressure_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Delta
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of differential pressure of leaving
+    water
+  brick_parent: Differential_Pressure_Deadband_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

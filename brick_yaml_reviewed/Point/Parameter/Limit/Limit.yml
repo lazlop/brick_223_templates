@@ -1,0 +1,223 @@
+Air_Flow_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Air_Flow_Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Air_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Air_Temperature_Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Close_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Close_Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableProperty
+  s223_class_valid: true
+Current_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Current_Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Differential_Pressure_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Differential_Pressure_Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Fresh_Air_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Fresh_Air_Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Max_Limit:
+  aspects:
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places an upper bound on the range of permitted
+    values of a Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Min_Limit:
+  aspects:
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  brick_definition: A parameter that places a lower bound on the range of permitted
+    values of a Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableProperty
+  s223_class_valid: true
+Position_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Position_Setpoint.
+  brick_parent: Limit
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Speed_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Speed_Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Static_Pressure_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Static_Pressure_Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Ventilation_Air_Flow_Ratio_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Ventilation_Air_Flow_Ratio_Setpoint.
+  brick_parent: Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

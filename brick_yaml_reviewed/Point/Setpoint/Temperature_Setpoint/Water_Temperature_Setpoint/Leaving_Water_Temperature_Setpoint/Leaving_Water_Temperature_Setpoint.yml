@@ -1,0 +1,98 @@
+Entering_Condenser_Water_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: The temperature setpoint for the entering condenser water
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Leaving_Chilled_Water_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Temperature setpoint for leaving chilled water
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Leaving_Condenser_Water_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: The temperature setpoint for the leaving condenser water
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Leaving_Domestic_Hot_Water_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature of leavinging part of domestic hot water
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Leaving_Hot_Water_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Temperature setpoint for leaving hot water
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Leaving_Water_Temperature_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of temperature of leaving water
+  brick_parent: Leaving_Water_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

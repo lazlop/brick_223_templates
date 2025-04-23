@@ -1,0 +1,17 @@
+Temporary_Occupancy_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: For systems that differentiate between scheduled occupied/unoccupied
+    mode, this indicates if a space is temporarily occupied when it would otherwise
+    be unoccupied
+  brick_parent: Occupancy_Status
+  enumerationkind: EnumerationKind-Occupancy
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

@@ -1,0 +1,35 @@
+Discharge_Air_Duct_Pressure_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Indicates if air pressure in discharge duct is within expected
+    bounds
+  brick_parent: Pressure_Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Duct
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Supply_Air_Duct_Pressure_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Indicates if air pressure in supply duct is within expected bounds
+  brick_parent: Pressure_Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Duct
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

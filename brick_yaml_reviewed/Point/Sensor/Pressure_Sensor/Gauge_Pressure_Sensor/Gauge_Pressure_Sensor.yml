@@ -1,0 +1,42 @@
+Chilled_Water_Gauge_Pressure_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Sensor measuring the gauge pressure (zero-referenced against ambient
+    air pressure) of chilled water
+  brick_parent: Gauge_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Water-ChilledWater
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Hot_Water_Gauge_Pressure_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Sensor measuring the gauge pressure (zero-referenced against ambient
+    air pressure) of hot water
+  brick_parent: Gauge_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

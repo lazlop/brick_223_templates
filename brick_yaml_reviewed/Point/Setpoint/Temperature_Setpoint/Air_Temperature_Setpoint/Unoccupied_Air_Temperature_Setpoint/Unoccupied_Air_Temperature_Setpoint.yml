@@ -1,0 +1,55 @@
+Unoccupied_Cooling_Zone_Air_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature of air when unoccupied for cooling within a specific
+    zone
+  brick_parent: Unoccupied_Air_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: ThermodynamicPhase
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Unoccupied_Heating_Zone_Air_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature of air when unoccupied for heating within a specific
+    zone
+  brick_parent: Unoccupied_Air_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: Thermostat
+  property_of_valid: true
+  quantitykind: ThermodynamicPhase
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Unoccupied_Target_Zone_Air_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Target Setpoint (also known as Common Setpoint) is a reference
+    point representing the desired unoccupied air temperature in a specific zone of
+    a building. This setpoint acts as a baseline from which deadband setpoints are
+    established by adding or subtracting a deadband width.
+  brick_parent: Unoccupied_Air_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: ThermodynamicPhase
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

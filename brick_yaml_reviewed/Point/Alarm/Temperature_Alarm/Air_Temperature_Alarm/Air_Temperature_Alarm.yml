@@ -1,0 +1,48 @@
+Discharge_Air_Temperature_Alarm:
+  aspects:
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  brick_definition: An alarm that indicates the off-normal conditions associated with
+    the temperature of discharge air.
+  brick_parent: Air_Temperature_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Return_Air_Temperature_Alarm:
+  aspects:
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  brick_definition: An alarm that indicates the off-normal conditions associated with
+    the temperature of return air.
+  brick_parent: Air_Temperature_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Supply_Air_Temperature_Alarm:
+  aspects:
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  brick_definition: An alarm that indicates the off-normal conditions associated with
+    the temperature of supply air.
+  brick_parent: Air_Temperature_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true

@@ -1,0 +1,17 @@
+PIR_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Detects the presense of motion in some area using the differential
+    change in infrared intensity between two or more receptors
+  brick_parent: Motion_Sensor
+  enumerationkind_valid: false
+  medium: Medium-Constituent
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: Motion
+  quantitykind_valid: false
+  s223_class: ObservableProperty
+  s223_class_valid: true

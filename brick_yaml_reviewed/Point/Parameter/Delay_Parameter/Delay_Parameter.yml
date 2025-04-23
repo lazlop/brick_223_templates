@@ -1,0 +1,19 @@
+Alarm_Delay_Parameter:
+  aspects:
+  - Aspect-Alarm
+  - Aspect-Delay
+  aspects_valid:
+  - true
+  - false
+  brick_definition: A parameter determining how long to delay an alarm after sufficient
+    conditions have been met
+  brick_parent: Delay_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

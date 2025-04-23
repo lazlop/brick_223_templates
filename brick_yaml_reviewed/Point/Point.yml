@@ -1,0 +1,98 @@
+Alarm:
+  aspects:
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  brick_definition: Alarm points are signals (either audible or visual) that alert
+    an operator to an off-normal condition which requires some form of corrective
+    action
+  brick_parent: Point
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Command:
+  aspects: []
+  aspects_valid: false
+  brick_definition: A Command is an output point that directly determines the behavior
+    of equipment and/or affects relevant operational points.
+  brick_parent: Point
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: null
+  property_of_valid: false
+  quantitykind: null
+  quantitykind_valid: false
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Parameter:
+  aspects: []
+  aspects_valid: false
+  brick_definition: Parameter points are configuration settings used to guide the
+    operation of equipment and control systems; for example they may provide bounds
+    on valid setpoint values
+  brick_parent: Point
+  enumerationkind_valid: false
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  quantitykind: null
+  quantitykind_valid: false
+  s223_class: QuantifiableProperty
+  s223_class_valid: true
+Sensor:
+  aspects: []
+  aspects_valid: false
+  brick_definition: A Sensor is an input point that represents the value of a device
+    or instrument designed to detect and measure a variable (ASHRAE Dictionary).
+  brick_parent: Point
+  enumerationkind_valid: false
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  quantitykind: null
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: A Setpoint is an input value at which the desired property is
+    set
+  brick_parent: Point
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: null
+  property_of_valid: false
+  quantitykind: null
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Status:
+  aspects: []
+  aspects_valid: false
+  brick_definition: A Status is input point that reports the current operating mode,
+    state, position, or condition of an item. Statuses are observations and should
+    be considered 'read-only'
+  brick_parent: Point
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedActuatableProperty
+  s223_class_valid: true
+  note: 'Should change back to enumerated observable property
+
+    '

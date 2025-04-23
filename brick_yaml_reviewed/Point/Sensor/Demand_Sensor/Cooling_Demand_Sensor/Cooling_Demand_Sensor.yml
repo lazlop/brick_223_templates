@@ -1,0 +1,17 @@
+Average_Cooling_Demand_Sensor:
+  aspects:
+  - Aspect-Nominal
+  aspects_valid:
+  - true
+  brick_definition: Measures the average power consumed by a cooling process as the
+    amount of power consumed over some interval
+  brick_parent: Cooling_Demand_Sensor
+  enumerationkind_valid: false
+  medium: Electricity-AC
+  medium_valid: true
+  property_of: CoolingCoil
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

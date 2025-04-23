@@ -1,0 +1,37 @@
+PV_Current_Output_Sensor:
+  aspects:
+  - PV_Current_Output_Sensor
+  - Photovoltaic_Current_Output_Sensor
+  aspects_valid:
+  - false
+  - false
+  brick_definition: See Photovoltaic_Current_Output_Sensor
+  brick_parent: Current_Output_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: PhotovoltaicModule
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Photovoltaic_Current_Output_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Senses the amperes of electrical current produced as output by
+    a photovoltaic device
+  brick_parent: Current_Output_Sensor
+  enumerationkind_valid: false
+  medium: Electricity-DC
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

@@ -1,0 +1,111 @@
+Alarm_Sensitivity_Parameter:
+  aspects:
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  brick_definition: A parameter indicates the sensitivity to activate an alarm.
+  brick_parent: Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: EnumeratedActuatableProperty
+  s223_class_valid: true
+Delay_Parameter:
+  aspects:
+  - Aspect-Delay
+  - Aspect-Setpoint
+  - Aspect-Threshold
+  aspects_valid:
+  - false
+  - true
+  - true
+  brick_definition: A parameter determining how long to delay a subsequent action
+    to take place after a received signal
+  brick_parent: Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Humidity_Parameter:
+  aspects:
+  - Humidity_Parameter
+  - Parameters relevant to humidity-related systems and points
+  aspects_valid:
+  - false
+  - false
+  brick_definition: Parameters relevant to humidity-related systems and points
+  brick_parent: Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Limit:
+  aspects:
+  - Aspect-HighLimit
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places an upper or lower bound on the range of
+    permitted values of another point
+  brick_parent: Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableProperty
+  s223_class_valid: true
+Temperature_Parameter:
+  aspects:
+  - Temperature_Parameter
+  - Parameters relevant to temperature-related systems and points
+  aspects_valid:
+  - false
+  - false
+  brick_definition: Parameters relevant to temperature-related systems and points
+  brick_parent: Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableProperty
+  s223_class_valid: true
+Tolerance_Parameter:
+  aspects:
+  - Aspect-Delta
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  brick_definition: difference between upper and lower limits of size for a given
+    nominal dimension or value.
+  brick_parent: Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableProperty
+  s223_class_valid: true

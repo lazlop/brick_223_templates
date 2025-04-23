@@ -1,0 +1,505 @@
+Availability_Status:
+  aspects: []
+  aspects_valid: false
+  brick_definition: Indicates if a piece of equipment, system, or functionality is
+    available for operation
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'Can''t quite represent availability status but not sure we have to
+
+    Invalid choice. Please enter a number between 1 and 3.
+
+    '
+Direction_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates which direction a device is operating in
+  brick_parent: Status
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: "Can't fully represent this, need an EnumerationKind-Direction. Would be property\
+    \ of something like a fan  \nInvalid choice. Please enter a number between 1 and\
+    \ 3.\n"
+Disable_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if functionality has been disabled
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Drive_Ready_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if a hard drive or other storage device is ready to
+    be used, e.g. in the context of RAID
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'Don''t have a hard drive, don''t need to represent
+
+    Invalid choice. Please enter a number between 1 and 3.
+
+    '
+Emergency_Generator_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if an emergency generator is active
+  brick_parent: Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: Generator
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Emergency_Push_Button_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if an emergency button has been pushed
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: "Probably don't need to represent this, do we need an equipment that is a\
+    \ button? \n"
+Enable_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid: true
+  brick_definition: Indicates if a system or piece of functionality has been enabled
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'Unsure of aspect operating-mode for this. Should get second opinions
+
+    '
+Fan_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates properties of fans
+  brick_parent: Status
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Fan
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Fault_Status:
+  aspects:
+  - Aspect-Fault
+  aspects_valid:
+  - true
+  brick_definition: Indicates the presence of a fault in a device, system or control
+    loop
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Filter_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if a filter needs to be replaced
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: Filter
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Freeze_Status:
+  aspects: []
+  aspects_valid: false
+  brick_definition: Indicates if a substance contained within a vessel has frozen
+  brick_parent: Status
+  enumerationkind: EnumerationKind-ThermodynamicPhase
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'can''t represent, need something to represent freezing
+
+    '
+Lead_Lag_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Indicates if lead/lag operation is enabled
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'Pertains to pumps or chillers. Not sure this is in scope
+
+    '
+Level_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: The current operational state of a specific level within a predefined
+    range.
+  brick_parent: Status
+  enumerationkind: EnumerationKind-RunStatus
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: "Don't know what enumerationkind to use for this. Also not sure exactly how\
+    \ this will be used. \n"
+Load_Shed_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if a load shedding policy is in effect
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'Maybe out of scope? maybe need an enumerationkind or aspect
+
+    '
+Lockout_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if a piece of equipment, system, or functionality has
+    been locked out from operation
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'Maybe out of scope. Could be like availability
+
+    '
+Manual_Auto_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Indicates if a system is under manual or automatic operation
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Mode_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Indicates which mode a system, device or control loop is currently
+    in
+  brick_parent: Status
+  enumerationkind_valid: false
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  quantitykind: EnumerationKind
+  quantitykind_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'TODO should be enumerationkind Aspect-operating mode
+
+    '
+Occupancy_Status:
+  aspects: []
+  aspects_valid: false
+  brick_definition: Indicates if a room or space is occupied
+  brick_parent: Status
+  enumerationkind: EnumerationKind-Occupancy
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'TODO should be Occupancy-Presence
+
+    '
+Off_Status:
+  aspects: []
+  aspects_valid: false
+  brick_definition: Indicates if a control loop, relay or equipment is off
+  brick_parent: Status
+  enumerationkind_valid: false
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  quantitykind: EnumerationKind-Binary-OnOff
+  quantitykind_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: "TODO need to change this one, should have aspect of off \n"
+On_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if a control loop, relay or equipment is on
+  brick_parent: Status
+  enumerationkind: OnOff-Off
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Open_Close_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid: true
+  brick_definition: Indicates the open/close status of a device such as a damper or
+    valve
+  brick_parent: Status
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'Could be relevant to valve or dampers.
+
+    '
+Overridden_Status:
+  aspects: []
+  aspects_valid: false
+  brick_definition: Indicates if the expected operating status of an equipment or
+    control loop has been overridden
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'Can''t represent this. Are some complexities to overrides that I think have
+    been discussed in gitlab
+
+    '
+Pressure_Status:
+  aspects:
+  - Aspect-Alarm
+  - Aspect-Deadband
+  aspects_valid: true
+  brick_definition: Indicates if pressure is within expected bounds
+  brick_parent: Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'TODO need to remove deadband. Is pressure status not an alarm? We can''t
+    exactly represent this.
+
+    '
+Pump_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Status of a pump
+  brick_parent: Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: Pump
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Stages_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Indicates which stage a control loop or equipment is in
+  brick_parent: Status
+  enumerationkind_valid: false
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  quantitykind: EnumerationKind
+  quantitykind_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'TODO need to change to enumerationkind. Can''t represent. Need enumerationkind
+    stages
+
+    '
+Switch_Status:
+  aspects: []
+  aspects_valid: false
+  brick_definition: Status of a switch
+  brick_parent: Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: 'Can''t represent. Don''t have a switch.
+
+    '
+System_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates properties of the activity of a system
+  brick_parent: Status
+  enumerationkind: EnumerationKind-RunStatus
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: "TODO target of this is system or equipment \n"
+Thermostat_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Status of a thermostat
+  brick_parent: Status
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: Thermostat
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+  note: "Not sure what this generally represents. May be out of scope. \n"
+Tint_Status:
+  aspects: []
+  aspects_valid: false
+  brick_definition: The current level of window tint, errors, or transient states.
+  brick_parent: Status
+  enumerationkind: null
+  enumerationkind_valid: false
+  medium: null
+  medium_valid: false
+  property_of: null
+  property_of_valid: false
+  s223_class: EnumerableProperty
+  s223_class_valid: true
+  note: 'Can''t represent. Too obscure. skipping
+
+    '
+Valve_Status:
+  aspects: []
+  aspects_valid: false
+  brick_definition: The current status of the valve.
+  brick_parent: Status
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: null
+  medium_valid: false
+  property_of: Valve
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

@@ -1,0 +1,15 @@
+Fault_Reset_Command:
+  aspects:
+  - Aspect-Fault
+  aspects_valid:
+  - true
+  brick_definition: Clears a fault status
+  brick_parent: Reset_Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true

@@ -1,0 +1,37 @@
+Heating_Discharge_Air_Temperature_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of temperature of heating discharge
+    air
+  brick_parent: Discharge_Air_Temperature_Heating_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Heating_Supply_Air_Temperature_Deadband_Setpoint:
+  aspects:
+  - Aspect-Deadband
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Sets the size of a deadband of temperature of supply air for heating
+  brick_parent: Discharge_Air_Temperature_Heating_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

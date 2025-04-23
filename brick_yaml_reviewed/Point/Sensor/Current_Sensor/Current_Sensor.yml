@@ -1,0 +1,59 @@
+Current_Output_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Senses the amperes of electrical current produced as output by
+    a device
+  brick_parent: Current_Sensor
+  enumerationkind_valid: false
+  medium: Constituent-Electricity
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Load_Current_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the current consumed by a load
+  brick_parent: Current_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Motor_Current_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  - Aspect-Minimum
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: Measures the current consumed by a motor
+  brick_parent: Current_Sensor
+  enumerationkind_valid: false
+  medium: Electricity-AC
+  medium_valid: true
+  property_of: ElectricCurrentSensor
+  property_of_valid: false
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

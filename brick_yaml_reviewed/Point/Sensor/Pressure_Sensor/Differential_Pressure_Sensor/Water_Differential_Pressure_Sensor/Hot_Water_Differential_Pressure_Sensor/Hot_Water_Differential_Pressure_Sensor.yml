@@ -1,0 +1,33 @@
+Domestic_Hot_Water_Differential_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the pressure difference in domestic hot water systems.
+  brick_parent: Hot_Water_Differential_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Medium_Temperature_Hot_Water_Differential_Pressure_Sensor:
+  aspects:
+  - Aspect-Delta
+  aspects_valid:
+  - true
+  brick_definition: Measures the difference in water pressure between sections of
+    a medium temperature hot water system
+  brick_parent: Hot_Water_Differential_Pressure_Sensor
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: Connection
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

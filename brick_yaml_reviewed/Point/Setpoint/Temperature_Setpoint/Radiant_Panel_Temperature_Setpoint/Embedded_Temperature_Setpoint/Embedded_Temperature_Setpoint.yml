@@ -1,0 +1,17 @@
+Core_Temperature_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets temperature for the core, i.e. the temperature at the heat
+    source or sink level, of the radiant panel.
+  brick_parent: Embedded_Temperature_Setpoint
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: RadiantHeater
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

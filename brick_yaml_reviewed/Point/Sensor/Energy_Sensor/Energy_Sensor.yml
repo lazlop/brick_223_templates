@@ -1,0 +1,16 @@
+Energy_Usage_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the total amount of energy used over some period of time
+  brick_parent: Energy_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

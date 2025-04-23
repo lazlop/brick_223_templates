@@ -1,0 +1,16 @@
+Motor_Torque_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the torque, or rotating power, of a motor
+  brick_parent: Torque_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Motor
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

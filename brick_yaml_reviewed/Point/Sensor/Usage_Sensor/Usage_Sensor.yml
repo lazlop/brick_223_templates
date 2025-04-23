@@ -1,0 +1,67 @@
+Energy_Usage_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the total amount of energy used over some period of time
+  brick_parent: Usage_Sensor
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: ElectricityMeter
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Natural_Gas_Usage_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the amount of natural gas that is consumed or used, over
+    some period of time
+  brick_parent: Usage_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-NaturalGas
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Steam_Usage_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the amount of steam that is consumed or used, over some
+    period of time
+  brick_parent: Usage_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Steam
+  medium_valid: false
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Water_Usage_Sensor:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Measures the amount of water that is consumed, over some period
+    of time
+  brick_parent: Usage_Sensor
+  enumerationkind_valid: false
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

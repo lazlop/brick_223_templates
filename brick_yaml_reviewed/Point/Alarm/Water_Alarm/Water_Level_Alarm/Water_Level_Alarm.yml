@@ -1,0 +1,54 @@
+Collection_Basin_Water_Level_Alarm:
+  aspects:
+  - Aspect-HighLimit
+  - Aspect-LowLimit
+  - Aspect-Alarm
+  aspects_valid:
+  - true
+  - true
+  - true
+  brick_definition: An alarm that indicates a high or low level of water in the collection
+    basin, e.g. within a Cooling_Tower
+  brick_parent: Water_Level_Alarm
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: Fluid-Water
+  medium_valid: true
+  property_of: CoolingTower
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Max_Water_Level_Alarm:
+  aspects:
+  - Aspect-Alarm
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Alarm indicating that the maximum water level was reached
+  brick_parent: Water_Level_Alarm
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true
+Min_Water_Level_Alarm:
+  aspects:
+  - Aspect-Alarm
+  - Aspect-LowLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Alarm indicating that the minimum water level was reached
+  brick_parent: Water_Level_Alarm
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ObservableProperty
+  s223_class_valid: true

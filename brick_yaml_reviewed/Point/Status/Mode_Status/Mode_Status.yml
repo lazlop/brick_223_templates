@@ -1,0 +1,99 @@
+Cooling_Mode_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Indicates whether a system, device or control loop is in a cooling
+    mode
+  brick_parent: Mode_Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Heating_Mode_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Indicates whether a system, device or control loop is in a heating
+    mode
+  brick_parent: Mode_Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Occupied_Mode_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Indicates if a system, device or control loop is in "Occupied"
+    mode
+  brick_parent: Mode_Status
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: Occupancy
+  quantitykind_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Operating_Mode_Status:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Indicates the current operating mode of a system, device or control
+    loop
+  brick_parent: Mode_Status
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Speed_Mode_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Indicates the speed mode of a motor with various categorical settings,
+    such as a multi-state value including low, medium, and high.
+  brick_parent: Mode_Status
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Motor
+  property_of_valid: true
+  quantitykind: EnumerationKind
+  quantitykind_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Zone_Air_Conditioning_Mode_Status:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Indicates the mode of AC for a zone
+  brick_parent: Mode_Status
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

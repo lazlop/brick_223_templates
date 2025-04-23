@@ -1,0 +1,15 @@
+Pre_Filter_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if a prefilter needs to be replaced
+  brick_parent: Filter_Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Filter
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

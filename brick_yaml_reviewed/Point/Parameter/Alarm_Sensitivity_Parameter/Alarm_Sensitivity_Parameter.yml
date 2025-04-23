@@ -1,0 +1,37 @@
+CO2_Alarm_Sensitivity_Parameter:
+  aspects:
+  - Aspect-Alarm
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter indicates the sensitivity to activate a CO2 alarm.
+  brick_parent: Alarm_Sensitivity_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: EnumeratedActuatableProperty
+  s223_class_valid: true
+Temperature_Alarm_Sensitivity_Parameter:
+  aspects:
+  - Aspect-Alarm
+  - Aspect-Threshold
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter indicates the sensitivity to activate a temperature
+    alarm.
+  brick_parent: Alarm_Sensitivity_Parameter
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

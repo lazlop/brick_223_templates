@@ -1,0 +1,30 @@
+Humidifier_Fault_Status:
+  aspects:
+  - Aspect-Fault
+  aspects_valid:
+  - true
+  brick_definition: Indicates the presence of a fault in a humidifier
+  brick_parent: Fault_Status
+  enumerationkind: Binary-Logical
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Humidifier
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Last_Fault_Code_Status:
+  aspects:
+  - Aspect-Fault
+  aspects_valid:
+  - true
+  brick_definition: Indicates the last fault code that occurred
+  brick_parent: Fault_Status
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true

@@ -1,0 +1,38 @@
+Entering_High_Temperature_Hot_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Maximum
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Measures the temperature of high-temperature hot water enteringed
+    to a hot water system
+  brick_parent: Entering_Hot_Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: QuantityKind-Temperature
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true
+Entering_Medium_Temperature_Hot_Water_Temperature_Sensor:
+  aspects:
+  - Aspect-Nominal
+  - Aspect-Measurement
+  aspects_valid:
+  - true
+  - false
+  brick_definition: Measures the temperature of medium-temperature hot water entering
+    a hot water system
+  brick_parent: Entering_Hot_Water_Temperature_Sensor
+  enumerationkind_valid: false
+  medium: Water-HotWater
+  medium_valid: true
+  property_of: Pipe
+  property_of_valid: true
+  quantitykind: QuantityKind-Temperature
+  quantitykind_valid: false
+  s223_class: QuantifiableObservableProperty
+  s223_class_valid: true

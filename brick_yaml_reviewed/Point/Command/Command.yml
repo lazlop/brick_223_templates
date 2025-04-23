@@ -1,0 +1,477 @@
+Boiler_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A command to control a boiler
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Cooling_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Controls the amount of cooling to be delivered (typically as a
+    proportion of total cooling output)
+  brick_parent: Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Damper_Command:
+  aspects:
+  - Damper_Command
+  aspects_valid:
+  - false
+  brick_definition: Controls properties of dampers
+  brick_parent: Command
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Damper
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Dehumidify_Command:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Triggers the dehumidification process, actively removing moisture
+    from the air to achieve desired humidity levels
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Direction_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Commands that affect the direction of some phenomenon
+  brick_parent: Command
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Disable_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Commands that disable functionality
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Enable_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Commands that enable functionality
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Fan_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Controls properties of fans
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Fan
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Frequency_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Controls the frequency of a device's operation (e.g. rotational
+    frequency)
+  brick_parent: Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Heating_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Controls the amount of heating to be delivered (typically as a
+    proportion of total heating output)
+  brick_parent: Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Lead_Lag_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Enables lead/lag operation
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Level_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Adjusts the operational state to a specific level within a predefined
+    range.
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Lighting_Correlated_Color_Temperature_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: A command to set correlated color temperature (CCT) which is the
+    temperature of the Planckian radiator whose perceived color most closely resembles
+    that of a given stimulus at the same brightness and under specified viewing conditions.
+  brick_parent: Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Lighting_Level_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Controls the amount of the light provided by the device typically
+    in percentages.
+  brick_parent: Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Load_Shed_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Controls load shedding behavior provided by a control system
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Luminance_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Controls the amount of luminance delivered by a lighting system
+  brick_parent: Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Luminaire
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Mode_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Controls the operating mode of a device or controller
+  brick_parent: Command
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Occupancy_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Controls whether or not a device or controller is operating in
+    "Occupied" mode
+  brick_parent: Command
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+On_Off_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: An On/Off Command controls or reports the binary status of a control
+    loop, relay or equipment activity
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: EnumeratedActuatableProperty
+  s223_class_valid: true
+Override_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: Controls or reports whether or not a device or control loop is
+    in 'override'
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Position_Command:
+  aspects:
+  - Aspect-Setpoint
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Controls or reports the position of some object
+  brick_parent: Command
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Preheat_Command:
+  aspects:
+  - Aspect-OperatingMode
+  aspects_valid:
+  - true
+  brick_definition: A command to activate preheating. Typically used to preheat cool
+    air coming from a mixing box or economizer
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Pump_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Controls or reports the speed of a pump (typically as a proportion
+    of its full pumping capacity)
+  brick_parent: Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: Pump
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Reheat_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-Command
+  aspects_valid:
+  - true
+  - false
+  brick_definition: A command to activate reheating, which is used for either heating
+    or for dehumidification purposes
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Relay_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Commands to switch the relay
+  brick_parent: Command
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Reset_Command:
+  aspects:
+  - none
+  aspects_valid:
+  - false
+  brick_definition: Commands that reset a flag, property or value to its default
+  brick_parent: Command
+  enumerationkind: EnumerationKind-Binary
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true
+Speed_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: A command to set speed to a certain degree.
+  brick_parent: Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Tint_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: The target level of window tint.
+  brick_parent: Command
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: EnumeratedActuatableProperty
+  s223_class_valid: true
+Valve_Command:
+  aspects:
+  - Aspect-OperatingMode
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  - true
+  brick_definition: Controls or reports the openness of a valve (typically as a proportion
+    of its full range of motion)
+  brick_parent: Command
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Valve
+  property_of_valid: true
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

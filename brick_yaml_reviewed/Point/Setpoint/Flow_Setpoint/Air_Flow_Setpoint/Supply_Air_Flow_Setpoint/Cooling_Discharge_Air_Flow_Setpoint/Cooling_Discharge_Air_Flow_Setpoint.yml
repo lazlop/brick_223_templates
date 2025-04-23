@@ -1,0 +1,47 @@
+Occupied_Cooling_Discharge_Air_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets discharge air flow for cooling when occupied
+  brick_parent: Cooling_Discharge_Air_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: Occupancy
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Occupied_Cooling_Supply_Air_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets supply air flow rate for cooling when occupied
+  brick_parent: Cooling_Discharge_Air_Flow_Setpoint
+  enumerationkind_valid: false
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: Occupancy
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Unoccupied_Cooling_Discharge_Air_Flow_Setpoint:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Sets discharge air flow for cooling when unoccupied
+  brick_parent: Cooling_Discharge_Air_Flow_Setpoint
+  enumerationkind: EnumerationKind-Occupancy
+  enumerationkind_valid: true
+  medium: Fluid-Air
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true

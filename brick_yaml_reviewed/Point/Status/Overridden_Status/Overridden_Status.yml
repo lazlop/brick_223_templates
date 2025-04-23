@@ -1,0 +1,33 @@
+Overridden_Off_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if a control loop, relay or equipment has been turned
+    off when it would otherwise be scheduled to be on
+  brick_parent: Overridden_Status
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: EnumerationKind-OnOff
+  quantitykind_valid: false
+  s223_class: EnumeratedObservableProperty
+  s223_class_valid: true
+Overridden_On_Status:
+  aspects:
+  - Aspect-OperatingStatus
+  aspects_valid:
+  - true
+  brick_definition: Indicates if a control loop, relay or equipment has been turned
+    on when it would otherwise be scheduled to be off
+  brick_parent: Overridden_Status
+  enumerationkind: Binary-OnOff
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true

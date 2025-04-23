@@ -1,0 +1,15 @@
+Damper_Position_Command:
+  aspects:
+  - Aspect-Setpoint
+  aspects_valid:
+  - true
+  brick_definition: Controls the position (the degree of openness) of a damper
+  brick_parent: Damper_Command
+  enumerationkind: Binary-Position
+  enumerationkind_valid: true
+  medium: None
+  medium_valid: true
+  property_of: Damper
+  property_of_valid: true
+  s223_class: ActuatableProperty
+  s223_class_valid: true

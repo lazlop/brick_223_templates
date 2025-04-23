@@ -1,0 +1,38 @@
+Discharge_Air_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Discharge_Air_Temperature_Setpoint.
+  brick_parent: Air_Temperature_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: quantitykind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
+Supply_Air_Temperature_Setpoint_Limit:
+  aspects:
+  - Aspect-LowLimit
+  - Aspect-HighLimit
+  aspects_valid:
+  - true
+  - true
+  brick_definition: A parameter that places a lower or upper bound on the range of
+    permitted values of a Supply_Air_Temperature_Setpoint.
+  brick_parent: Air_Temperature_Setpoint_Limit
+  enumerationkind_valid: false
+  medium: None
+  medium_valid: true
+  property_of: None
+  property_of_valid: true
+  quantitykind: QuantityKind
+  quantitykind_valid: false
+  s223_class: QuantifiableActuatableProperty
+  s223_class_valid: true
