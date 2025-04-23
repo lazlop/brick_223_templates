@@ -7,23 +7,11 @@ MODEL = "lbl/cborg-coder:latest" # Free, least compute, seems to perform better 
 # MODEL = "google/gemini-flash" # Cheapest tokens
 # MODEL = "anthropic/claude-haiku" # More expensive, less performant than gemeni
 
-import asyncio
-from devtools import pprint
-from pydantic import BaseModel
-from pydantic_ai import Agent, capture_run_messages
-from pydantic_ai.models.openai import OpenAIModel
-from pydantic_ai.providers.openai import OpenAIProvider
-from pydantic_ai.mcp import MCPServerStdio
-
 import openai # CBORG API Proxy Server is OpenAI-compatible through the openai module
 import yaml
 import json
 
-# allowing nest_asyncio for running in ipynb or ipy
-import nest_asyncio
-nest_asyncio.apply()
-
-with open('/Users/lazlopaul/Desktop/cborg/api_key.yaml', 'r') as file:
+with open('../../../cborg/api_key.yaml', 'r') as file:
     config = yaml.safe_load(file)
     API_KEY = config['key']
     BASE_URL = config['base_url']
@@ -106,67 +94,3 @@ def get_completion(prompt, system_prompt = SYSTEM_PROMPT, as_agent = False, comm
     function_args = json.loads(tool_call.function.arguments)
     
     return function_args.get(function_key)
-
-# # server = MCPServerStdio(
-# #     "uv",
-# #     args=[
-# #         "run",
-# #         "--with",
-# #         "mcp[cli]",
-# #         "--with",
-# #         "rdflib",
-# #         "--with",
-# #         "oxrdflib",
-# #         "mcp",
-# #         "run",
-# #         "brick.py"
-# #     ],
-# # )
-
-# model = OpenAIModel(
-#         model_name=MODEL,
-#         # i'm using LM Studio here, but you could use any other provider that exposes
-#         # an OpenAI-like API
-#         provider=OpenAIProvider(base_url=BASE_URL, api_key=API_KEY),
-#     )
-
-# class S223_Type(BaseModel):
-#     name: str
-
-# agent = Agent(
-#     model,
-#     output = S223_Type
-#     # mcp_servers=[server],
-# )
-
-# async def run_agent(prompt, system_prompt = SYSTEM_PROMPT):
-#     with capture_run_messages() as messages:
-#         result = await agent.run(prompt, system_prompt=system_prompt)
-#         # async with agent.run_mcp_servers():
-#         #     result = await agent.run(prompt, system_prompt=system_prompt)
-#     # pprint(messages)
-#     return result
-    
-
-# def get_completion(prompt, system_prompt = SYSTEM_PROMPT, as_agent= False):
-
-#     """
-#     Get a completion for a given prompt, with an optional system prompt. Optionally runs the prompt through the mcp server.
-
-#     Args:
-#         prompt (str): The prompt to complete.
-#         system_prompt (str, optional): The system prompt to provide to the model. Defaults to None.
-#         with_mcp (bool, optional): Whether to run the prompt through the mcp server. Defaults to False.
-
-#     Returns:
-#         str: The completed prompt.
-#     """
-#     try: 
-#         if as_agent:
-#             response = asyncio.run(run_agent(prompt, system_prompt))
-#         else:
-#             response = get_simple_completion(prompt, system_prompt)
-#     except Exception as e:
-#         print(f"Error: {e}")
-#         response = f"Error: {e}"
-#     return response

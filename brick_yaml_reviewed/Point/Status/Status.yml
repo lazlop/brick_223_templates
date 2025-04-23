@@ -388,7 +388,7 @@ Pressure_Status:
   s223_class: EnumeratedObservableProperty
   s223_class_valid: true
   note: 'TODO need to remove deadband. Is pressure status not an alarm? We can''t
-    exactly represent this.
+    exactly represent this. Can it have the aspect of quantitykind pressure?
 
     '
 Pump_Status:
