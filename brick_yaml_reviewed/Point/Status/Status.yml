@@ -369,7 +369,7 @@ Overridden_Status:
   s223_class: EnumeratedObservableProperty
   s223_class_valid: true
   note: 'Can''t represent this. Are some complexities to overrides that I think have
-    been discussed in gitlab
+    been discussed in gitlab. We decided not to represent this
 
     '
 Pressure_Status:
